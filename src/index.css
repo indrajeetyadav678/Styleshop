@@ -1,0 +1,398 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: Verdana; */
+    font-family: Comic Sans MS;
+
+}
+
+#body {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    /* border: 2px solid red; */
+    overflow-x: hidden;
+
+}
+
+/*==================== Layout Component =======================  */
+/* ================ Navbar section ======================================= */
+.navbar {
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2%;
+    padding-left: 2%;
+    /* background-color: rgb(246, 244, 244); */
+    background-color: white;
+    background-color: whitesmoke;
+    /* border: 2px solid red; */
+}
+
+#navleft {
+    width: 120px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+
+}
+
+#navmiddle {
+    width: 49%;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid rgb(15, 60, 243); */
+    position: sticky;
+    top: -5px;
+}
+
+#navright {
+    width: 150px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+
+.nabbtn1 {
+    /* margin-right: 20px; */
+    text-decoration: none;
+    font-size: 28px;
+    color: black;
+    /* font-family:sens-serif ; */
+    font-style: italic;
+    font-family: Harlow Solid;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    /* border: 2px solid red; */
+
+}
+
+.nabbtn2,
+.nabbtn3,
+.nabbtn4,
+.nabbtn5,
+.nabbtn6,
+.nabbtn7 {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    /* margin-left: 25px; */
+    padding: 5px;
+    color: rgb(110, 99, 99);
+    font-family: Segoe Print;
+    font-family: sans-serif;
+    /* font-family: Calibri; */
+    /* border: 2px solid red; */
+}
+
+.nabbtn2:hover,
+.nabbtn3:hover,
+.nabbtn4:hover,
+.nabbtn5:hover,
+.nabbtn6:hover,
+.nabbtn7:hover {
+    color: rgb(211, 20, 20);
+    text-decoration: underline;
+}
+
+.Rnavbtn1 {
+    font-size: 20px;
+    color: rgb(36, 36, 188);
+}
+
+#sear-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(85, 85, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 20px rgb(205, 77, 245);
+}
+
+#sear-box:hover {
+    background-color: rgb(174, 244, 192);
+    color: rgb(141, 128, 128);
+    box-shadow: 2px 3px 25px rgb(146, 241, 169);
+}
+
+#carticon {
+    position: relative;
+    /* border: 1px solid rgb(133, 126, 126); */
+
+}
+
+#showcartno {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    /* border: 1px solid rgb(133, 126, 126); */
+    position: absolute;
+    right: 100px;
+    top: 2px;
+    font-size: 14px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: rgb(24, 12, 10);
+    z-index: 2;
+}
+
+/* .nabbtn2:visited,.nabbtn3:visited,.nabbtn4:visited,.nabbtn5:visited,.nabbtn6:visited,.nabbtn7:visited{
+    color:green;
+} */
+/* ============================= Dropdown manu section ================== */
+#dropdown {
+    width: 300px;
+    height: 130px;
+    list-style: none;
+    position: absolute;
+    top: 46px;
+    left: 40%;
+    z-index: 2;
+    padding-top: 15px;
+    padding-left: 25px;
+    /* border: 1px solid black; */
+    display: none;
+    background-color: rgb(255, 255, 255);
+}
+
+#dropdown li {
+    margin-bottom: 15px;
+}
+
+
+/* =================== footer section ============ */
+.footerbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    background-color: rgb(10, 10, 10);
+}
+
+.linkbox {
+    width: 200px;
+    list-style: none;
+}
+
+.foottitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(196, 196, 212);
+    letter-spacing: 1.4px;
+    /* text-decoration: underline; */
+}
+
+.footlink2 {
+    font-size: 14px;
+    color: white;
+    letter-spacing: 1.4px;
+    text-decoration: none;
+}
+
+.developer {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+
+.shopname {
+    width: 120px;
+    font-size: 25px;
+    color: rgb(240, 229, 15);
+    /* font-family:Gabriola ; */
+    font-family: Harlow Solid;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    border: 1px solid white;
+}
+
+/* ====================== Home Componenet ================ */
+
+.sliderbox {
+    padding-top: 0px;
+    width: 100%;
+    height: auto;
+    overflow-x: scroll;
+    /* border: 2px solid rgb(98, 255, 0); */
+}
+
+.sliderbox::-webkit-scrollbar {
+    display: none;
+}
+
+.slider img {
+    width: 25%;
+    height: 93vh;
+
+}
+
+.slider {
+    width: 400%;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    /* animation: carousel 8s infinite; */
+    animation: carousel 8s ease-in-out infinite;
+    /* border: 2px solid red; */
+}
+
+@keyframes carousel {
+    0% {
+        left: 0;
+        top: 0px;
+    }
+
+    33% {
+        left: -100%;
+        top: 0px;
+    }
+
+    66% {
+        left: -200%;
+        top: 0px;
+    }
+
+    100% {
+        left: -300%;
+        top: 0px;
+    }
+}
+
+.slide1 {
+    width: 25%;
+    height: 80vh;
+}
+
+.dot_box {
+    width: 400px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 45%;
+    top: -50px
+}
+
+.dot {
+    width: 15px;
+    margin-left: 10px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(239, 239, 239);
+    border: 1px solid black;
+}
+
+.dot:hover {
+    background-color: rgb(135, 43, 43);
+}
+
+/* ======== landing Product =============== */
+.landing {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid black; */
+    background-color: rgb(251, 251, 251);
+    border-bottom: none;
+}
+
+.cont_box {
+    width: 320px;
+    height: 480px;
+    border: 2px solid rgb(243, 239, 239);
+    background-color: rgba(237, 237, 236, 0.9);
+    box-shadow: 2px 2px 8px rgb(222, 223, 216);
+    border-radius: 15px;
+    margin: 50px 15px;
+    overflow:hidden;
+}
+
+.cont_box:hover {
+    scale: 1.02;
+}
+
+.img {
+    width: 320px;
+    height: 300px;
+    /* text-align: center; */
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    /* overflow:visible; */
+}
+
+.img img {
+    width: 316px;
+    height: 300px;
+    border-radius: 15px;
+    
+    /* z-index: -1; */
+}
+
+.img img:hover {
+    /* scale: 1.06; */
+    /* transition: 1s; */
+    border-radius: 20px;
+    transform: rotateY(180deg);
+}
+
+.prod_name {
+    width: 300px;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 0px 5px;
+    text-align: center;
+}
+
+.detail {
+    width: 300px;
+    font-size: 16px;
+    font-weight: 800;
+    margin-left: 70px;
+}
+
+.cartbtn,
+.buybtn {
+    padding: 3px 10px;
+    background-color: rgb(3, 3, 24);
+    border-radius: 10px;
+    color: white;
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+.buybtn {
+    margin-left: 120px;
+}
+
+.heading {
+    background-color: rgb(223, 215, 215);
+    text-align: center;
+
+}
