@@ -6,7 +6,7 @@ const product = [
         "image4": "",
         "brand": "",
         "details": "Spark night party dress one piece dress, stylish dress ",
-        "price": "₹1300",
+        "price": "1300",
         "originprice": "₹5,999",
         "offer": "",
         "id": 1
@@ -18,7 +18,7 @@ const product = [
         "image4": "",
         "brand": "",
         "details": "Alnich night dress navy one piece dress, stylish dress",
-        "price": "₹1200",
+        "price": "12000",
         "originprice": "₹5,999",
         "offer": "",
         "id": 2
@@ -30,7 +30,7 @@ const product = [
         "image4": "",
         "brand": "",
         "details": "Eterna log dress Black one piece dress, stylish dress",
-        "price": "₹900",
+        "price": "1900",
         "originprice": "₹5,999",
         "offer": "",
         "id": 3
@@ -42,7 +42,7 @@ const product = [
         "image4": "",
         "brand": "",
         "details": "Meena dress maroon",
-        "price": "₹1100",
+        "price": "1100",
         "originprice": "₹5,999",
         "offer": "",
         "id": 4
@@ -54,7 +54,7 @@ const product = [
         "image4": "",
         "brand": "skibry",
         "details": "Self Design Bollywood Georgette Saree  (Grey)",
-        "price": "₹1599",
+        "price": "₹599",
         "originprice": "₹5,999",
         "offer": "73% off",
         "id": 5
@@ -66,7 +66,7 @@ const product = [
         "image4": "https://images.meesho.com/images/products/388850878/5vh7s_512.webp",
         "brand": "Denim",
         "details": "Straight Fit Women Regular Mid Rise Navy Blue Jeans",
-        "price": "₹467",
+        "price": "467",
         "originprice": "₹5,999",
         "offer": "",
         "id": 6
@@ -78,7 +78,7 @@ const product = [
         "image4": "https://images.meesho.com/images/products/387478318/eersw_512.webp",
         "brand": "Denim",
         "details": "Hubberholme Women's Slim Black Jeans",
-        "price": "₹462",
+        "price": "462",
         "originprice": "₹660",
         "offer": "30% off",
         "id": 7
@@ -90,7 +90,7 @@ const product = [
         "image4": "https://images.meesho.com/images/products/382591443/w0teq_512.webp",
         "brand": "",
         "details": "Sheetal Associates Women V-Neck Fit and Flare Maxi Grey Dress",
-        "price": "₹396",
+        "price": "1396",
         "originprice": "₹449",
         "offer": "12% off",
         "id": 8
@@ -102,7 +102,7 @@ const product = [
         "image4": "https://images.meesho.com/images/products/296426594/3woni_512.webp",
         "brand": "Norzy Paris",
         "details": "Norzy Paris - Party wear self Designer Women Dress",
-        "price": "₹675",
+        "price": "1675",
         "originprice": "",
         "offer": "",
         "id": 9
@@ -114,7 +114,7 @@ const product = [
         "image4": "https://images.meesho.com/images/products/318952703/rie41_512.webp",
         "brand": "Norzy Paris",
         "details": "Norzy Paris - Party wear self Designer Women Dress",
-        "price": "₹570",
+        "price": "1570",
         "originprice": "",
         "offer": "",
         "id": 10
@@ -126,7 +126,7 @@ const product = [
         "image4": "https://images.meesho.com/images/products/224799344/fr8sh_512.webp",
         "brand": "styletailler",
         "details": "Dhoti jumpsuit, stylish jumpsuit, one piece dress, stylish dress, owl print,",
-        "price": "₹288",
+        "price": "1288",
         "originprice": "",
         "offer": "",
         "id": 11
@@ -135,7 +135,7 @@ const product = [
         "image1": "https://images.meesho.com/images/products/251011062/ki2xw_512.webp",
         "brand": "Loungewear",
         "details": "SHADORA Printed Men & Boy T-shirt | Original | Very Comfortable ",
-        "price": "₹281",
+        "price": "2281",
         "offer": "",
         "originprice": "₹5,999",
         "id": 12

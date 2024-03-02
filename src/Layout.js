@@ -5,6 +5,8 @@ import { IoIosSearch } from "react-icons/io";
 import { FaShoppingCart } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { FaUser } from "react-icons/fa";
+import { UseSelector, useSelector } from "react-redux";
+
 function dropmanu() {
     document.getElementById('dropdown').style.display = "block";
 }
@@ -24,8 +26,10 @@ function drophide() {
 }
 
 const Layout = () => {
+const mycartdata=useSelector(state=>state.mycart.cart);
+var addcartvalue=mycartdata.length   
 
-    return (
+return (
         <>
             <body id="body">
                 <div className="navbar" onMouseLeave={drophide}>
@@ -42,8 +46,8 @@ const Layout = () => {
                     </div>
                     <div id="navright">
                         <Link to="navsearch" className="Rnavbtn1" ><div id="sear-box"><IoIosSearch /></div></Link>
-                        <div id="showcartno">99</div>
-                        <Link to="navsearch" className="Rnavbtn1"><div id="carticon"><FaShoppingCart /></div></Link>
+                        <div id="showcartno">{addcartvalue}</div>
+                        <Link to="addcart" className="Rnavbtn1"><div id="carticon"><FaShoppingCart /></div></Link>
                         <Link to="navlike" className="Rnavbtn1" ><CiHeart color="red" /></Link>
                         <Link to="navsearch" className="Rnavbtn1" ><FaUser /></Link>
                     </div>

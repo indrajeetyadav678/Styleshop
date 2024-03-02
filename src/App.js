@@ -8,6 +8,7 @@ import Home from "./component/Home";
 import Babycollection from "./component/Babycollection";
 import Contact from "./component/Contact";
 import About from "./component/About";
+import Addcart from "./component/Addcart";
 
 
 
@@ -22,11 +23,10 @@ function App() {
       <Route path="men" element={<Men/>} />
       <Route path="women" element={<Women />} />
       <Route path="baby" element={<Babycollection />}>
-
-
       </Route>
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="addcart" element={<Addcart />} />
       </Route>
     </Routes>
     </BrowserRouter>
