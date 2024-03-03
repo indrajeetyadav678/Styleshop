@@ -38,67 +38,68 @@ const PaymentDone = () => {
     }, [])
     return (
         <>
-            {pageloading ?
-                (<div id="payment_procesing">
-                    <span>Please wait Your Payment is being under processing</span>
-                    <ThreeDots
-                        visible={true}
-                        height="80"
-                        width="80"
-                        color="#4fa94d"
-                        radius="9"
-                        ariaLabel="three-dots-loading"
-                        wrapperStyle={{}}
-                        wrapperClass=""
-                    />
-                </div>
-                ) : (
-                    <div id="paymentdone_bill">
-                        <h1>Thank you For Purchasing Our Product</h1>
-                        <h2>Your Product will be Selivered in the 5 to 7 Days</h2>
-                        <div id="Amount_orderno">
-                            <div id="orderno">
-                                <h4> Ordered Number&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;{Output}</h4>
-                                <h4>Date&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;{orderDate}</h4>
-                            </div>
-                            <div id="paidamount">
-                                <h4> Payment Mode&nbsp;&nbsp; :&nbsp;Online</h4>
-                                <h4>Pay Amount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   :&nbsp;Rs&nbsp;13000/-</h4>
-                                <h4>Product Quantity:&nbsp;10</h4>
-                            </div>
-                        </div>
-                        <section id="orderaddress">
-                            <div id="customer">
-                                <h2>Odered by</h2>
-                                <div id="order_by">
-                                    <h4>Customer Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : gautam </h4>
-                                    <h4>Customer contact No.  : 9978666786 </h4>
-                                    <h4>Customer Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  :  cybromfruitshop@gmail.com </h4>
-                                    <h4>Shipping Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Cybromfruitshop MP nagar Bhopal </h4>
-                                    <h4>State  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Madhya pradesh </h4>
-                                    <h4>pinecode  :  462011  </h4>
-                                </div>
-                                <Orderedby />
-                            </div>
-                            <div id="delivery_by">
-                                <h2>Product delivered by</h2>
-                                <div id="order_by">
-                                    <h4>Customer Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Rajiv yaduwanshi </h4>
-                                    <h4>Customer contact No.  : 9978666786 </h4>
-                                    <h4>Customer Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  :  cybromfruitshop@gmail.com </h4>
-                                    <h4>Shipping Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Cybromfruitshop MP nagar Bhopal </h4>
-                                    <h4>State  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Madhya pradesh </h4>
-                                    <h4>pinecode  :  462011  </h4>
-                                </div>
-                            </div>
-                        </section>
+            <div id="paydonehona">
+                {pageloading ?
+                    (<div id="payment_procesing">
+                        <span>Please wait Your Payment is being under processing</span>
+                        <ThreeDots
+                            visible={true}
+                            height="80"
+                            width="80"
+                            color="#4fa94d"
+                            radius="9"
+                            ariaLabel="three-dots-loading"
+                            wrapperStyle={{}}
+                            wrapperClass=""
+                        />
                     </div>
+                    ) : (
+                        <div id="paymentdone_bill">
+                            <h1>Thank you For Purchasing Our Product</h1>
+                            <h2>Your Product will be Selivered in the 5 to 7 Days</h2>
+                            <div id="Amount_orderno">
+                                <div id="orderno">
+                                    <h4> Ordered Number&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;{Output}</h4>
+                                    <h4>Date&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;{orderDate}</h4>
+                                </div>
+                                <div id="paidamount">
+                                    <h4> Payment Mode&nbsp;&nbsp; :&nbsp;Online</h4>
+                                    <h4>Pay Amount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   :&nbsp;Rs&nbsp;13000/-</h4>
+                                    <h4>Product Quantity:&nbsp;10</h4>
+                                </div>
+                            </div>
+                            <section id="orderaddress">
+                                <div id="customer">
+                                    <h2>Odered by</h2>
+                                    <div id="order_by">
+                                        <h4>Customer Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : gautam </h4>
+                                        <h4>Customer contact No.  : 9978666786 </h4>
+                                        <h4>Customer Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  :  cybromfruitshop@gmail.com </h4>
+                                        <h4>Shipping Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Cybromfruitshop MP nagar Bhopal </h4>
+                                        <h4>State  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Madhya pradesh </h4>
+                                        <h4>pinecode  :  462011  </h4>
+                                    </div>
+                                    <Orderedby />
+                                </div>
+                                <div id="delivery_by">
+                                    <h2>Product delivered by</h2>
+                                    <div id="order_by">
+                                        <h4>Customer Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Rajiv yaduwanshi </h4>
+                                        <h4>Customer contact No.  : 9978666786 </h4>
+                                        <h4>Customer Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  :  cybromfruitshop@gmail.com </h4>
+                                        <h4>Shipping Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Cybromfruitshop MP nagar Bhopal </h4>
+                                        <h4>State  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Madhya pradesh </h4>
+                                        <h4>pinecode  :  462011  </h4>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
 
-                )
-            }
-
+                    )
+                }
+            </div>
 
         </>
     );

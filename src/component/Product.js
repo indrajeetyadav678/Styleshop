@@ -1,6 +1,10 @@
 // import { addtocart } from "../contoller/AddcartSlice";
-
+import { useNavigate } from "react-router-dom";
 const Product = (props) => {
+    const Navigate = useNavigate();
+    const OrderNow1=()=>{
+        Navigate("/Orderform");
+    }
     return (
         <>
             <div className="cont_box">
@@ -11,7 +15,7 @@ const Product = (props) => {
                 <span className="detail">{props.price}/-</span>
                 <span className="detail">{props.offer}</span><br/><br/>
                 <button className="cartbtn" onClick={props.function}>Add to cart</button>
-                <button className="buybtn">Buy</button>
+                <button className="buybtn" onClick={OrderNow1}>Buy</button>
             </div>
         </>
     );

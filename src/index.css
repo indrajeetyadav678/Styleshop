@@ -469,6 +469,11 @@
     height: auto;
     border: 1px solid black;
 }
+.bbty{
+ min-height: 300px;
+ max-height: auto;
+
+}
 #carttable tr th{
     text-align: center;
     border: 1px solid black;
@@ -536,14 +541,31 @@
 }
 
 /* ================= Ordered form component ==================== */
+#ordform{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(150, 148, 148);
+    
+
+}
+
 #form{
-    width: 550px;
+    width: 435px;
     height: auto;
     margin-top: 15px;
-    background-color: rgb(242, 228, 209);
+    background-color: rgb(195, 191, 187);
     /* padding-left: 60px; */
     padding-top: 20px;
     text-align: center;
+    border-radius: 20px;
+    color: rgb(254, 253, 253);
+    box-shadow: 10px 10px 70px rgb(255, 255, 255);
+    margin-top: 35px;
+    margin-bottom: 35px;
+
 }
 
 #form h1{
@@ -557,48 +579,53 @@
     letter-spacing: 1px;
     margin-bottom: 10px;
    }
-#form form{
-    margin-left:100px ;
+#form div{
+    margin-left:50px ;
     text-align: justify;
    }
-#form form input{
+#form div input{
     width:350px;
     height: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 15px;
     border-radius: 10px;
+    border: 2px solid rgb(251, 253, 251);
+    background-color: rgb(242, 241, 241);
 }
-#form form #state{
+#form div #state{
     width: 150px;
 }
-#form form #pincode{
+#form div #pincode{
     width: 150px;
     margin-left: 40px;
 }
-#form form label{
+#form div label{
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 1.2px;
-    color: rgb(78, 78, 127);
+    /* color: rgba(105, 243, 63, 0.994); */
+    color: rgb(250, 250, 250);
     text-align: justify;
 }
-#form form #pin{
+#form div #pin{
     margin-left: 150px;
 }
 
-#form form #submitbtn{
+#form div #submitbtn{
     width: 120px;
     height: 30px;
     text-align: center;
     border-radius: 15px;
     font-size: 16px;
     cursor: pointer;
+    border: 2px solid rgb(138, 134, 134);
     padding-left: 2px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 100px;
-    background-color: rgb(233, 198, 198);
+    background-color: rgb(239, 236, 236);
+    box-shadow: 4px 4px 30px rgb(235, 248, 235);
 }
 
 /* ========================= Payment Page ========================= */
@@ -607,19 +634,24 @@
     width:100%;
     height: auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    background-color: rgb(150, 148, 148);
+    padding-top: 30px;
+    padding-bottom: 70px;
 }
 
 #paymentopt1{
     width: 580px;
-    height:630px;
+    height:auto;
     /* border: 1px solid rgb(44, 42, 40); */
-    background-color: rgb(242, 228, 209);
+    background-color: rgb(195, 191, 187);
     margin-top: 20px;
     text-align: center;
+    box-shadow: 10px 10px 60px white;
+    color: rgb(12, 244, 12);
+    padding-bottom: 40px;
 }
 #paymentopt1 h1{
     text-align: center;
@@ -627,13 +659,17 @@
     margin-bottom: 22px;
     margin-top: 20px;
     font-size: 28px;
-    color: rgb(79, 150, 79);
+    color: rgb(250, 251, 250);
 }
 #paymentopt1 input{
     cursor: pointer;
     margin: auto;
 }
 /* ================= Payment_card page =============== */
+#bycardpayment{
+  background-color:rgb(195, 191, 187) ;
+  width:
+}
 
 #cardpaymeth{
     margin-bottom: 30px;
@@ -660,7 +696,7 @@
 
 }
 #card_hold_name{
-    width: 200px;
+    width: 210px;
     height: 30px;
     border-radius: 10px;
     padding-left: 15px;
@@ -681,47 +717,70 @@
 #payment_form{
     text-align: left;
     padding-left: 100px;
+    color:rgb(41, 251, 41);
 }
 #payment_form label{
     font-size: 18px;
+    color:rgb(41, 251, 41);
 }
 #button_design{
-    width:121px;
+    width:126px;
     height: 36px;
     border-radius: 15px;
     border: 4px solid rgb(60, 64, 58);
-    background-color: rgb(241, 202, 168);
+    background-color: rgb(223, 216, 206);
     cursor: pointer;
     position: relative;
 }
 #button_design::after{
     content: "";
-    width:125px;
+    width:130px;
     height: 40px;
     border-radius: 17px;
     border: 2px solid rgb(67, 247, 6);
     position: absolute;
     box-sizing:border-box;
+    box-shadow: 5px 5px 50px rgb(72, 255, 72);
     top:-5px;
     left: -5px;
 }
+
+#button_design:hover{
+   background-color: rgb(226, 255, 214);
+   color: rgb(61, 125, 61);
+   font-weight: bold;
+}
+
 /* =========================== Payment done component ============================== */
+#paydonehona{
+    width: 100%;
+    height: auto;
+    background-color: rgb(217, 215, 215);
+}
+
+
 #payment_procesing{
     width:100%;
     height:60vh;
+    background-color:rgb(218, 212, 212) ;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #payment_procesing span{
-    font-size: 25px;
+    font-size: 16px;
 }
 #paymentdone_bill{
     width:90%;
     height: auto;
     margin: auto;
-    background-color: rgb(252, 250, 246);
+    background-color:rgb(202, 201, 201) ;
+    box-shadow: 7px 7px 60px white;
+    border-radius: 20px;
+    /* background-color: rgb(252, 250, 246); */
     padding: 25px;
+    margin-bottom: 50px;
+    color: rgb(85, 255, 85);
 }
 #paymentdone_bill h1, #paymentdone_bill h2{
     text-align: center;
@@ -741,7 +800,7 @@
 }
 #orderno h4, #paidamount h4{
     margin-top: 5px;
-    font-size: 22px;
+    font-size: 16px;
 }
 #orderaddress{
     width: 100%;
@@ -923,4 +982,59 @@ text-align: left;
 .shoesgif{
     width:100%;
     height:350px;
+}
+
+/* ========================= Search page Component =========================== */
+#search_inputbox{
+    width:35%;
+    height:38px;
+    border: 1px solid black;
+    padding: 0;
+    margin: 50px 35%;
+    border-radius: 18px;
+}
+#search_inputbox input{
+    width:93%;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 18px;
+    padding-left: 15px;
+}
+
+#searchoutputbox{
+    width: 100%;
+    min-height: 400px;
+    max-height: auto;
+}
+
+#search_inputbox #searchbtn{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* ============================ LiKE page component ===============  */
+
+#likepage{
+    width:100%;
+    min-height: 500px;
+    max-height: auto;
+}
+
+/*=================== Phone pay page ============================= */
+
+#phonepayQr{
+    margin: 25px;
+}
+
+#Cashon_delivery_payment img{
+    width:200px;
+    height: 200px;
+}
+
+#upiidinputbox{
+    width:350px;
+    height:30px;
+    border-radius:15px;
+    padding-left: 15px;
 }

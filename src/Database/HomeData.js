@@ -345,7 +345,138 @@ const sliderimg6 = [
 
 
 
-const KidsProduct = [
+const product1 = [
+    
+    {
+        "image1": "https://websitedemos.net/fashion-designer-boutique-02/wp-content/uploads/sites/917/2021/07/fashion-designer-template-product-img-13-400x533.jpg",
+        "image2": "",
+        "image3": "",
+        "image4": "",
+        "brand": "",
+        "details": "Spark night party dress one piece dress, stylish dress ",
+        "price": "1300",
+        "originprice": "₹5,999",
+        "offer": "",
+        "id": 1
+    },
+    {
+        "image1": "https://websitedemos.net/fashion-designer-boutique-02/wp-content/uploads/sites/917/2021/07/fashion-designer-template-product-img-8-600x800.jpg",
+        "image2": "",
+        "image3": "",
+        "image4": "",
+        "brand": "",
+        "details": "Alnich night dress navy one piece dress, stylish dress",
+        "price": "12000",
+        "originprice": "₹5,999",
+        "offer": "",
+        "id": 2
+    },
+    {
+        "image1": "https://websitedemos.net/fashion-designer-boutique-02/wp-content/uploads/sites/917/2021/07/fashion-designer-template-product-img-9.jpg",
+        "image2": "",
+        "image3": "",
+        "image4": "",
+        "brand": "",
+        "details": "Eterna log dress Black one piece dress, stylish dress",
+        "price": "1900",
+        "originprice": "₹5,999",
+        "offer": "",
+        "id": 3
+    },
+    {
+        "image1": "https://websitedemos.net/fashion-designer-boutique-02/wp-content/uploads/sites/917/2021/07/fashion-designer-template-product-img-7-400x533.jpg",
+        "image2": "",
+        "image3": "",
+        "image4": "",
+        "brand": "",
+        "details": "Meena dress maroon",
+        "price": "1100",
+        "originprice": "₹5,999",
+        "offer": "",
+        "id": 4
+    },
+    {
+        "image1": "https://rukminim2.flixcart.com/image/832/832/xif0q/sari/3/y/g/free-pure-designer-georgette-party-wear-saree-skibry-unstitched-original-imagybchfgqp7kgg.jpeg?q=70&crop=false",
+        "image2": "",
+        "image3": "",
+        "image4": "",
+        "brand": "skibry",
+        "details": "Self Design Bollywood Georgette Saree  (Grey)",
+        "price": "₹599",
+        "originprice": "₹5,999",
+        "offer": "73% off",
+        "id": 5
+    },
+    {
+        "image1": "https://images.meesho.com/images/products/388850878/jmwtn_512.webp",
+        "image2": "https://images.meesho.com/images/products/388850878/p0r1d_512.webp",
+        "image3": "https://images.meesho.com/images/products/388850878/h67ha_512.webp",
+        "image4": "https://images.meesho.com/images/products/388850878/5vh7s_512.webp",
+        "brand": "Denim",
+        "details": "Straight Fit Women Regular Mid Rise Navy Blue Jeans",
+        "price": "467",
+        "originprice": "₹5,999",
+        "offer": "",
+        "id": 6
+    },
+    {
+        "image1": "https://assets.ajio.com/medias/sys_master/root/20230915/rida/650447bfddf7791519db713d/-473Wx593H-443017556-maroon-MODEL.jpg",
+        "brand": "",
+        "details":"Colourblock Regular Fit Sweatshirt",
+        "price": " 450 ",
+        "originprice": "₹1,499",
+        "offer": "70% off",
+        "id": 7
+    },
+    {
+        "image1": "https://rukminim2.flixcart.com/image/832/832/xif0q/trouser/j/n/m/36-el-p-cot-el-cielo-original-imagtha4rgrqmtu3.jpeg?q=70&crop=false",
+        "brand": "Formal pents",
+        "details":"Men Regular Fit Grey Cotton Blend Trousers",
+        "price": " 4619",
+        "originprice": "₹10,998",
+        "offer": "58% off",
+        "id": 8
+    },
+    {
+        "image1": "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/d/a/u/xxl-aut-formal-metronaut-original-imagwmj5gupusyza.jpeg?q=70&crop=false",
+        "brand": "₹500 ",
+        "details":"Men Regular Fit Solid Formal Shirt",
+        "price": " 390 ",
+        "originprice": "₹1,299 ",
+        "offer": "80% off",
+        "id": 9
+    },
+    {
+        "image1": "https://assets.ajio.com/medias/sys_master/root/20230818/2eRV/64df8883ddf77915195286c5/-1117Wx1400H-443021148-navy-MODEL.jpg",
+        "brand": "NETPLAY",
+        "details":"Heathered Slim Fit Single-Breasted Blazer",
+        "price": " 1200",
+        "originprice": "3,999",
+        "offer": "70% off",
+        "id": 10
+    },
+    {
+        "image1": "https://assets.ajio.com/medias/sys_master/root/20240119/GM44/65a9a59716fd2c6e6ab1d059/-473Wx593H-466994285-multi-MODEL2.jpg",
+        "brand": "KISAH",
+        "details":"Men Paisley Woven Regular Fit Sherwani with Kurta & Dhoti Pants",
+        "price": " 9299",
+        "originprice": "18598",
+        "offer": "50% off",
+        "id": 11
+    },
+    {
+        "image1": "https://rukminim2.flixcart.com/image/416/416/xif0q/shirt/e/u/m/xxl-1500-combraided-original-imagyeuqtdghn4bu.jpeg?q=70&crop=false",
+        "brand": "COMBRAIDED ",
+        "details":"Men Regular Fit Color Block Spread Collar Casual Shirt",
+        "price": " 9299",
+        "originprice": "18598",
+        "offer": "50% off",
+        "id": 12
+    }
+
+]
+
+const product2=[
     {
         "image1": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-KHP-010124-BigStylesBigSmiles-Z5-2-GapKids-Upto50.jpg",
         "brand": "",
@@ -412,21 +543,10 @@ const KidsProduct = [
         "offer": "",
         "id": 6
     },
-    {
-        "image1": "",
-        "image2": "",
-        "image3": "",
-        "image4": "",
-        "brand": "",
-        "details": "",
-        "price": "",
-        "originprice": "",
-        "offer": "",
-        "id": 7
-    },
+    
 ]
 
-export { product, sliderimg, sliderimg2,sliderimg3,sliderimg4,sliderimg5,sliderimg6 };
+export { product, product1, product2, sliderimg, sliderimg2,sliderimg3,sliderimg4,sliderimg5,sliderimg6 };
 
 
 

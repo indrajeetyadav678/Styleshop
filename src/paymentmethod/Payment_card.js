@@ -7,7 +7,7 @@ const card3 = "https://clipart-library.com/image_gallery2/ATM-Card-PNG-Clipart.p
 const Paymentcard = () => {
     return (
         <>
-            <body>
+            <body id="bycardpayment">
                 <section id="cardpaymeth">
                     <h1>Payment By Card</h1>
                     <img src={card1} alt="#" />

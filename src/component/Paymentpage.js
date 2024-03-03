@@ -34,7 +34,6 @@ switch(pmethod)
         <>
             <body id="body">
                 <section id="Payment_maindiv">
-                    <Orderform />
                     <section id="paymentopt1">
                         <h1>Select your Payment Method</h1>
                         <input type="radio" name="pay1" value="card" onClick={mypaymentmethod} />

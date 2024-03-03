@@ -16,6 +16,9 @@ import Login from "./component/Login";
 import Kidscollection from "./component/Kidscollection";
 import Babycloths from "./component/Babycloths";
 import Toys from "./component/Toys";
+import SearchProduct from "./component/SearchProduct";
+import Likepage from "./component/Likepage";
+import Orderform from "./component/Orderform";
 
 
 
@@ -26,6 +29,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="shopname"  element={<Home />} />
           <Route path="home" element={<Home />} />
           <Route path="men" element={<Men />} />
           <Route path="women" element={<Women />} />
@@ -40,7 +44,11 @@ function App() {
           <Route path="PaymentDone" element={<PaymentDone />} />
           <Route path="Paymentpage" element={<Paymentpage />} />
           <Route path="navcreateacc" element={<CreateAccount/>}/>
+          <Route path="navsearch"  element={<SearchProduct />} />
+          <Route path="navlike"  element={<Likepage />} />
           <Route path="login" element={<Login />} />
+          <Route path="Orderform" element={<Orderform />} />
+          <Route path="orderpayment" element={<Paymentpage />} />
         </Route>
       </Routes>
     </BrowserRouter>
