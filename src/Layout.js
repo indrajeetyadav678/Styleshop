@@ -6,6 +6,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { FaUser } from "react-icons/fa";
 import { UseSelector, useSelector } from "react-redux";
+import { FaBars } from "react-icons/fa6";
 
 function dropmanu() {
     document.getElementById('dropdown').style.display = "block";
@@ -15,13 +16,13 @@ function dropnone() {
 }
 function drophide() {
     let track = window.event.clientY;
-    // console.log(track)
+    console.log(track)
     if (track < 5 ) {
         document.getElementById('dropdown').style.display = "none";
     }
-    // if (track <-5 ) {
-    //     document.getElementById('dropdown').style.display = "none";
-    // }
+    else if (track >55 ) {
+        document.getElementById('dropdown').style.display = "none";
+    }
  
 }
 
@@ -31,7 +32,7 @@ var addcartvalue=mycartdata.length
 
 return (
         <>
-            <body id="body">
+            <body id="body1">
                 <div className="navbar" onMouseLeave={drophide}>
                     <div id="navleft">
                         <Link to="shopname" className="nabbtn1">Styleshop</Link>
@@ -49,7 +50,7 @@ return (
                         <div id="showcartno">{addcartvalue}</div>
                         <Link to="addcart" className="Rnavbtn1"><div id="carticon"><FaShoppingCart /></div></Link>
                         <Link to="navlike" className="Rnavbtn1" ><CiHeart color="red" /></Link>
-                        <Link to="navsearch" className="Rnavbtn1" ><FaUser /></Link>
+                        <Link to="navcreateacc" className="Rnavbtn1" ><FaUser /></Link>
                     </div>
                 </div>
                 <ul id="dropdown" onMouseLeave={dropnone}>

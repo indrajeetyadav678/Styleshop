@@ -11,21 +11,23 @@ let slide5 = "https://www.sliderrevolution.com/wp-content/uploads/2023/06/sneake
 const Women = () => {
     return (
         <>
-            <h1 className="heading">Women product</h1>
-            <div className="landing">
-                <Product img={image1}
-                    nam="Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch"
-                    price="Rs 350  85% off"
-                />
-                <Product img={image2}
-                    nam="Casual Regular Sleeves Embellished Women Black Top"
-                    price="₹279 86% off
+            <div id="body">
+                <h1 className="heading">Women product</h1>
+                <div className="landing">
+                    <Product img={image1}
+                        nam="Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch"
+                        price="Rs 350  85% off"
+                    />
+                    <Product img={image2}
+                        nam="Casual Regular Sleeves Embellished Women Black Top"
+                        price="₹279 86% off
       "
-                />
-                <Product img={image3}
-                    nam="Spring Edge Alpha 2 Sneakers For Men  (White, Blue)"
-                    price="₹1,335 59% off"
-                />
+                    />
+                    <Product img={image3}
+                        nam="Spring Edge Alpha 2 Sneakers For Men  (White, Blue)"
+                        price="₹1,335 59% off"
+                    />
+                </div>
             </div>
         </>
     );

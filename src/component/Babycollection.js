@@ -11,22 +11,24 @@ const image3 = "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/z/l/r/7-
 const Babycollection = () => {
     return (
         <>
-            <h1 className="heading">Babycollection product</h1>
+            <div id="body">
+                <h1 className="heading">Babycollection product</h1>
 
-            <div className="landing">
-                <Product img={image1}
-                    nam="Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch"
-                    price="Rs 350  85% off"
-                />
-                <Product img={image2}
-                    nam="Casual Regular Sleeves Embellished Women Black Top"
-                    price="₹279 86% off
+                <div className="landing">
+                    <Product img={image1}
+                        nam="Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch"
+                        price="Rs 350  85% off"
+                    />
+                    <Product img={image2}
+                        nam="Casual Regular Sleeves Embellished Women Black Top"
+                        price="₹279 86% off
       "
-                />
-                <Product img={image3}
-                    nam="Spring Edge Alpha 2 Sneakers For Men  (White, Blue)"
-                    price="₹1,335 59% off"
-                />
+                    />
+                    <Product img={image3}
+                        nam="Spring Edge Alpha 2 Sneakers For Men  (White, Blue)"
+                        price="₹1,335 59% off"
+                    />
+                </div>
             </div>
         </>
     );
