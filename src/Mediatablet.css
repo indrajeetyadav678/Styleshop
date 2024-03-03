@@ -1,0 +1,303 @@
+@media (max-width:1022px) {
+    /* #navmiddle {} */
+    #navleft {
+        width: 100px;
+        height: 40px;
+        display:flex;
+        align-items: center;
+        /* border: 2px solid red; */
+    }
+    #navmiddle {
+        width: 400px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 2px solid rgb(15, 60, 243);    */
+    }
+    .nabbtn1 {
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+
+    .nabbtn2,
+    .nabbtn3,
+    .nabbtn4,
+    .nabbtn5,
+    .nabbtn6,
+    .nabbtn7 {
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    #navright {
+        width: 110px;
+        height: 60px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 2px solid red; */
+    }
+
+    .Rnavbtn1 {
+        font-size: 14px;
+        color: rgb(36, 36, 188);
+    }
+
+    #sear-box {
+        width: 22px;
+        height: 22px;
+    box-shadow: 1px 1px 12px rgb(205, 77, 245);
+
+    }
+
+    #sear-box:hover {
+        background-color: rgb(174, 244, 192);
+        color: rgb(141, 128, 128);
+        box-shadow: 2px 3px 25px rgb(146, 241, 169);
+    }
+
+    #addcartwrapper {
+        width: 24px;
+        height: 30px;
+        /* border: 1px solid rgb(133, 126, 126); */
+    }
+
+    #showcartno {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        right: 1px;
+        top: -7px;
+        font-size: 10px;
+        font-weight: 500;
+    }
+    /* =============== footer ===================== */
+
+    .footerbox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 240px;
+        background-color: rgb(61, 60, 60);
+    }
+    
+    .linkbox {
+        width: 140px;
+        /* border: 1px solid red; */
+    }
+    
+    .foottitle {
+        font-size: 14px;
+    }
+    
+    .footlink2 {
+        font-size: 10px;
+    }
+    
+    .shopname {
+        width: 90px;
+        font-size: 16px;
+        color: rgb(218, 214, 236);
+        font-weight: bold;
+        /* border: 1px solid rgb(127, 123, 123); */
+    }
+
+    /* ======== landing Product =============== */
+.landing {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid black; */
+    background-color: rgb(251, 251, 251);
+    border-bottom: none;
+}
+
+.cont_box {
+    width: 320px;
+    height: 480px;
+    border: 2px solid rgb(243, 239, 239);
+    background-color: rgba(237, 237, 236, 0.9);
+    box-shadow: 2px 2px 8px rgb(222, 223, 216);
+    border-radius: 15px;
+    margin: 50px 15px;
+    overflow:hidden;
+}
+
+.cont_box:hover {
+    scale: 1.02;
+}
+
+.img {
+    width: 320px;
+    height: 300px;
+    /* text-align: center; */
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    /* overflow:visible; */
+}
+
+.img img {
+    width: 316px;
+    height: 300px;
+    border-radius: 15px;
+    
+    /* z-index: -1; */
+}
+
+.img img:hover {
+    /* scale: 1.06; */
+    /* transition: 1s; */
+    border-radius: 20px;
+    transform: rotateY(180deg);
+}
+
+.prod_name {
+    width: 300px;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 0px 5px;
+    text-align: center;
+}
+
+.detail {
+    width: 300px;
+    font-size: 16px;
+    font-weight: 800;
+    margin-left: 70px;
+}
+
+.cartbtn,
+.buybtn {
+    padding: 3px 10px;
+    background-color: rgb(3, 3, 24);
+    border-radius: 10px;
+    color: white;
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+.buybtn {
+    margin-left: 120px;
+}
+
+.heading {
+    background-color: rgb(223, 215, 215);
+    text-align: center;
+
+}
+}
+
+
+/* ================= Media quiry width = 674px ================ */
+
+@media (max-width:674px) {
+    /* #navmiddle {} */
+    #navleft {
+        width: 70px;
+        height: 40px;
+        /* border: 2px solid red; */
+    }
+    #navmiddle {
+        width: 330px;
+        height: 40px;
+        /* border: 2px solid rgb(15, 60, 243);    */
+    }
+    .nabbtn1 {
+        font-size: 12px;    
+    }
+
+    .nabbtn2,
+    .nabbtn3,
+    .nabbtn4,
+    .nabbtn5,
+    .nabbtn6,
+    .nabbtn7 {
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    #navright {
+        width: 80px;
+        height: 60px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 2px solid red; */
+    }
+
+    .Rnavbtn1 {
+        font-size: 12px;
+        color: rgb(36, 36, 188);
+    }
+
+    #sear-box {
+        width: 18px;
+        height: 18px;
+    box-shadow: 1px 1px 10px rgb(205, 77, 245);
+    }
+
+    #addcartwrapper {
+        width: 24px;
+        height: 30px;
+        /* border: 1px solid rgb(133, 126, 126); */
+    }
+
+    #showcartno {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        right: 1px;
+        top: -7px;
+        font-size: 8px;
+        font-weight: 400;
+    }
+    /* =============== footer ===================== */
+
+    .footerbox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 240px;
+        background-color: rgb(61, 60, 60);
+    }
+    
+    .linkbox {
+        width: 100px;
+        /* border: 1px solid red; */
+    }
+    
+    .foottitle {
+        font-size: 10px;
+    }
+    
+    .footlink2 {
+        font-size: 8px;
+    }
+    
+    .shopname {
+        width: 70px;
+        font-size: 12px;
+        font-weight: bold;
+        /* border: 1px solid rgb(127, 123, 123); */
+    }
+    .developer {
+        width: 100%;
+        height: 30px;
+        padding-top: 5px;
+        font-size: 10px;
+    }
+}

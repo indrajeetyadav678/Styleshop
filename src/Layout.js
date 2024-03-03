@@ -5,7 +5,7 @@ import { IoIosSearch } from "react-icons/io";
 import { FaShoppingCart } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { FaUser } from "react-icons/fa";
-import { UseSelector, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { FaBars } from "react-icons/fa6";
 
 function dropmanu() {
@@ -17,20 +17,20 @@ function dropnone() {
 function drophide() {
     let track = window.event.clientY;
     console.log(track)
-    if (track < 5 ) {
+    if (track < 5) {
         document.getElementById('dropdown').style.display = "none";
     }
-    else if (track >55 ) {
+    else if (track > 55) {
         document.getElementById('dropdown').style.display = "none";
     }
- 
+
 }
 
 const Layout = () => {
-const mycartdata=useSelector(state=>state.mycart.cart);
-var addcartvalue=mycartdata.length   
+    const mycartdata = useSelector(state => state.mycart.cart);
+    var addcartvalue = mycartdata.length
 
-return (
+    return (
         <>
             <body id="body1">
                 <div className="navbar" onMouseLeave={drophide}>
@@ -47,11 +47,17 @@ return (
                     </div>
                     <div id="navright">
                         <Link to="navsearch" className="Rnavbtn1" ><div id="sear-box"><IoIosSearch /></div></Link>
-                        <div id="showcartno">{addcartvalue}</div>
-                        <Link to="addcart" className="Rnavbtn1"><div id="carticon"><FaShoppingCart /></div></Link>
+
+                        <Link to="addcart" className="Rnavbtn1">
+                            <div id="addcartwrapper">
+                                <div id="showcartno">{addcartvalue}</div>
+                                <div id="carticon"><FaShoppingCart /></div>
+                            </div>
+                        </Link>
                         <Link to="navlike" className="Rnavbtn1" ><CiHeart color="red" /></Link>
                         <Link to="navcreateacc" className="Rnavbtn1" ><FaUser /></Link>
                     </div>
+                    <FaBars id="linemanu" />
                 </div>
                 <ul id="dropdown" onMouseLeave={dropnone}>
                     <li> <Link to="shopname" className="dropbtn1">Baby cloths</Link></li>
