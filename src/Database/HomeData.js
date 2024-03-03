@@ -142,45 +142,291 @@ const product = [
     }
 ]
 
-const sliderimg=[
+const sliderimg = [
     {
         "image": "https://mixtas.novaworks.net/wp-content/uploads/2023/12/m6_bg_video.jpg",
-        "id":1
+        "caption":"1/5",
+        "description":"Blooming Beauty in Every Stitch",
+        "id": 1
     },
     {
         "image": "https://mixtas.novaworks.net/wp-content/uploads/2023/12/m6_slide_01-scaled.jpg",
-        "id":2
+        "caption":"2/5",
+        "description":"Winter Wonders in Every Thread",
+        "id": 2
     },
     {
-        "image": "https://mixtas.novaworks.net/wp-content/uploads/2023/12/m6_slide_02-scaled.jpg",
-        "id":3
+        "image1": "https://mixtas.novaworks.net/wp-content/uploads/2023/12/m6_slide_02-scaled.jpg",
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-WHP-010324-TOPBANNER-MON-P2-SUPERDRY-MIN50.jpg",
+        "caption":"3/5",
+        "description":"Effortless Elegance for Seaside Living",
+        "id": 3
     },
     {
-        "image":"https://mixtas.novaworks.net/wp-content/uploads/2023/12/m6_slide_03-scaled.jpg",
-        "id":4
+        "image1": "https://mixtas.novaworks.net/wp-content/uploads/2023/12/m6_slide_03-scaled.jpg",
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-wHP-02032024-SPONSORBANNERCAROUSEL-Z2-ONLY-Veromoda-min60.jpg",
+        "caption":"4/5",
+        "description":"Colorful Styles for Happy Hearts",
+        "id": 4
+    },
+    {
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-WHP-030324-TOPBANNER-BU-Z2-P5-FIG-RIO-MIN50.jpg",
+        "caption":"5/5",
+        "description":"Colorful Styles for Happy Hearts",
+        "id": 5
+    }
+
+]
+        
+const sliderimg2 = [
+    {
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-02032024-MainBannerDailyChanging-Z1-P6-Nike-Puma-min30.jpg",
+        "caption":"1/5",
+        "description":"Blooming Beauty in Every Stitch",
+        "id": 1
+    },
+    {
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-03032024-MainBannerDailyChanging-Z1-P7-Avaasa-Netplay-MIN60.jpg",
+        "caption":"2/5",
+        "description":"Winter Wonders in Every Thread",
+        "id": 2
+    },
+    {
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/03032024-D-1.0-UHP-mainbanner-superdrysuperhours-5070--.jpg",
+        "caption":"3/5",
+        "description":"Effortless Elegance for Seaside Living",
+        "id": 3
+    },
+    {
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-03032024-MainBannerDailyChanging-Z1-P3-M&S-USPA-MIN50.png",
+        "caption":"4/5",
+        "description":"Colorful Styles for Happy Hearts",
+        "id": 4
+    },
+    {
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-03032024-MainBannerDailyChanging-Z1-P6-KVSfab-Hangup-MIN651.jpg",
+        "caption":"5/5",
+        "description":"Colorful Styles for Happy Hearts",
+        "id": 5
     }
 ]
 
-const sliderimg2=[
+const sliderimg3 = [
     {
-        "image":"https://www.sliderrevolution.com/wp-content/uploads/2023/06/sneaker-woocommerce-slider.gif",
-        "id":1
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-MHP-03032024-topbanner-z3-p3-snitch-marksandspencers-upto60.jpg",
+        "caption":"1/5",
+        "description":"Blooming Beauty in Every Stitch",
+        "id": 1
     },
     {
-        "image":"https://rukminim2.flixcart.com/image/832/832/xif0q/watch/4/c/u/-original-imagrcjhgmzuh5dz.jpeg?q=70&crop=false",
-        "id":2
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-MHP-03032024-topbanner-z3-p2-leecooper-budajeand-min40.jpg",
+        "caption":"2/5",
+        "description":"Winter Wonders in Every Thread",
+        "id": 2
     },
     {
-        "image":"https://rukminim2.flixcart.com/image/832/832/xif0q/top/m/3/s/l-wt-08-rahi-trendz-original-imagz53uvhpgbvz4.jpeg?q=70",
-        "id":3
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-MHP-03032024-dailybannerbu-z6-p3-eyebogler-kryptic-min65.jpg",
+        "caption":"3/5",
+        "description":"Effortless Elegance for Seaside Living",
+        "id": 3
     },
     {
-        "image":"https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/z/l/r/7-rkt-18222-blue-white-7-atom-white-original-imagugk6yghdpgpm.jpeg?q=70&crop=false",
-        "id":4
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-MHP-03032024-dailybannerbu-z6-p4-veirdo-breakbounce-min50.jpg",
+        "caption":"4/5",
+        "description":"Colorful Styles for Happy Hearts",
+        "id": 4
+    },
+    {
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-MHP-03032024-topbanner-z3-p4-Dennislingo-Yovish-flat70.jpg",
+        "caption":"5/5",
+        "description":"Colorful Styles for Happy Hearts",
+        "id": 5
     }
 ]
 
- export  {product,sliderimg,sliderimg2} ;
+const sliderimg4 = [
+    {
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-KHP-030324-DailyBanner-Z6-1-and-globaldesi-min60.jpg",
+        "caption":"1/5",
+        "description":"Blooming Beauty in Every Stitch",
+        "id": 1
+    },
+    {
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-KHP-030324-DailyBanner-Z6-5-kooochipoochi-bonkids-flat50.jpg",
+        "caption":"2/5",
+        "description":"Winter Wonders in Every Thread",
+        "id": 2
+    },
+    {
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-KHP-030324-DailyBanner-Z6-4-pepejeans-gini&jony-min50.jpg",
+        "caption":"3/5",
+        "description":"Effortless Elegance for Seaside Living",
+        "id": 3
+    },
+    {
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-KHP-030324-DailyBanner-Z6-2-force-trampoline-under499.jpg",
+        "caption":"4/5",
+        "description":"Colorful Styles for Happy Hearts",
+        "id": 4
+    },
+    {
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-KHP-030324-topbanner-Z4-5-readiprint-hellcat-min60.jpg",
+        "caption":"5/5",
+        "description":"Colorful Styles for Happy Hearts",
+        "id": 5
+    }
+]
+
+const sliderimg5 = [
+    {
+        "image": "https://imgscf.slidemembers.com/docs/1/1/448/baby_fashion_professional_presentation_447637.jpg",
+        "caption":"1/5",
+        "description":"Blooming Beauty in Every Stitch",
+        "id": 1
+    },
+    {
+        "image": "https://m.media-amazon.com/images/S/aplus-media/sota/a0e02c54-3114-439b-a9a9-c1ed10b83d2d.__CR0,0,1464,600_PT0_SX1464_V1___.jpg",
+        "caption":"2/5",
+        "description":"Winter Wonders in Every Thread",
+        "id": 2
+    },
+    {
+        "image": "https://imgscf.slidemembers.com/docs/1/1/448/baby_fashion_professional_presentation_447615.jpg",
+        "caption":"3/5",
+        "description":"Effortless Elegance for Seaside Living",
+        "id": 3
+    },
+    {
+        "image": "https://imgscf.slidemembers.com/docs/1/1/448/baby_fashion_professional_presentation_447621.jpg",
+        "caption":"4/5",
+        "description":"Colorful Styles for Happy Hearts",
+        "id": 4
+    },
+    {
+        "image": "https://imgscf.slidemembers.com/docs/1/1/448/baby_fashion_professional_presentation_447597.jpg",
+        "caption":"5/5",
+        "description":"Colorful Styles for Happy Hearts",
+        "id": 5
+    }
+]
+
+const sliderimg6 = [
+    {
+        "image": "https://content.instructables.com/F18/IS44/II0K4QLO/F18IS44II0K4QLO.jpg?auto=webp&fit=bounds&frame=1&height=1024&width=1024auto=webp&frame=1&height=150",
+        "caption":"1/5",
+        "description":"Blooming Beauty in Every Stitch",
+        "id": 1
+    },
+    {
+        "image": "https://images.thenile.io/r1000/0092389605488.jpg",
+        "caption":"2/5",
+        "description":"Winter Wonders in Every Thread",
+        "id": 2
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/81NSUg2QL4L._AC_UF894,1000_QL80_.jpg",
+        "caption":"3/5",
+        "description":"Effortless Elegance for Seaside Living",
+        "id": 3
+    },
+    {
+        "image": "https://img1.picmix.com/output/stamp/normal/0/9/4/7/1557490_212cb.gif",
+        "caption":"4/5",
+        "description":"Colorful Styles for Happy Hearts",
+        "id": 4
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/71N6RmafJ1L._AC_UF894,1000_QL80_.jpg",
+        "caption":"5/5",
+        "description":"Colorful Styles for Happy Hearts",
+        "id": 5
+    }
+]
+
+
+
+const KidsProduct = [
+    {
+        "image1": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-KHP-010124-BigStylesBigSmiles-Z5-2-GapKids-Upto50.jpg",
+        "brand": "",
+        "details":"Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
+        "price": "Rs 800",
+        "originprice": "",
+        "offer": "85% off",
+        "id": 1
+    },
+    {
+        "image1": "https://rukminim2.flixcart.com/image/832/832/xif0q/top/m/3/s/l-wt-08-rahi-trendz-original-imagz53uvhpgbvz4.jpeg?q=70",
+        "brand": "",
+        "details": "Casual Regular Sleeves Embellished Women Black Top",
+        "price": "₹279",
+        "originprice": "",
+        "offer": "86% off",
+        "id": 2
+    },
+    {
+        "image1": "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/z/l/r/7-rkt-18222-blue-white-7-atom-white-original-imagugk6yghdpgpm.jpeg?q=70&crop=false",
+        "image2": "",
+        "image3": "",
+        "image4": "",
+        "brand": "",
+        "details": "Spring Edge Alpha 2 Sneakers For Men  (White, Blue)",
+        "price": "₹1,335",
+        "originprice": "",
+        "offer": "59% off",
+        "id": 3
+    },
+    {
+        "image1": "https://mixtas.novaworks.net/wp-content/uploads/2023/12/m6_bg_video.jpg",
+        "image2": "https://mixtas.novaworks.net/wp-content/uploads/2023/12/m6_slide_01-scaled.jpg",
+        "image3": "https://mixtas.novaworks.net/wp-content/uploads/2023/12/m6_slide_02-scaled.jpg",
+        "image4": "",
+        "brand": "",
+        "details": "",
+        "price": "",
+        "originprice": "",
+        "offer": "",
+        "id": 4
+    },
+    {
+        "image1": "https://ithinkbigger.com/wp-content/uploads/2022/03/eCommerce-Website-Components-photo.jpg",
+        "image2": "",
+        "image3": "",
+        "image4": "",
+        "brand": "",
+        "details": "",
+        "price": "",
+        "originprice": "",
+        "offer": "",
+        "id": 5
+    },
+    {
+        "image1": "https://mixtas.novaworks.net/wp-content/uploads/2023/12/m6_slide_03-scaled.jpg",
+        "image2": "https://www.sliderrevolution.com/wp-content/uploads/2023/06/sneaker-woocommerce-slider.gif",
+        "image3": "",
+        "image4": "",
+        "brand": "",
+        "details": "",
+        "price": "",
+        "originprice": "",
+        "offer": "",
+        "id": 6
+    },
+    {
+        "image1": "",
+        "image2": "",
+        "image3": "",
+        "image4": "",
+        "brand": "",
+        "details": "",
+        "price": "",
+        "originprice": "",
+        "offer": "",
+        "id": 7
+    },
+]
+
+export { product, sliderimg, sliderimg2,sliderimg3,sliderimg4,sliderimg5,sliderimg6 };
 
 
 

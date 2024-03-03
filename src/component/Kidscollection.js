@@ -1,4 +1,4 @@
-import { sliderimg} from "../Database/HomeData";
+import { sliderimg4} from "../Database/HomeData";
 import Carouselslider from "./Carouselslider";
 import Product from "./Product";
 import { MenProduct } from "../Database/ClothsData";
@@ -9,10 +9,11 @@ const image1 = "https://rukminim2.flixcart.com/image/832/832/xif0q/watch/4/c/u/-
 const image2 = "https://rukminim2.flixcart.com/image/832/832/xif0q/top/m/3/s/l-wt-08-rahi-trendz-original-imagz53uvhpgbvz4.jpeg?q=70";
 const image3 = "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/z/l/r/7-rkt-18222-blue-white-7-atom-white-original-imagugk6yghdpgpm.jpeg?q=70&crop=false";
 // let slide5 = "https://www.sliderrevolution.com/wp-content/uploads/2023/06/sneaker-woocommerce-slider.gif";
+const image4="https://imgscf.slidemembers.com/docs/1/1/448/baby_fashion_professional_presentation_447665.jpg";
 
 
+const Kidscollection = () => {
 
-const Women = () => {
     const mycartdata=useSelector(state=>state.mycart.cart);
     const dispatch=useDispatch()
  
@@ -36,14 +37,11 @@ const Women = () => {
     return (
         <>
             <div id="body">
-            
                 <div className="sliderbox">
-                    <Carouselslider slider={sliderimg} />
+                    <Carouselslider slider={sliderimg4} />
                 </div>
-
-
                 <div className="landing">
-                {productans}
+                    {productans}
                     <Product img={image1}
                         nam="Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch"
                         price="Rs 350  85% off"
@@ -63,4 +61,4 @@ const Women = () => {
     );
 }
 
-export default Women;
+export default Kidscollection;
