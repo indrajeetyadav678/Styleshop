@@ -19,6 +19,7 @@ import Toys from "./component/Toys";
 import SearchProduct from "./component/SearchProduct";
 import Likepage from "./component/Likepage";
 import Orderform from "./component/Orderform";
+import JsonData from "./Jsonfile_datafillForm";
 
 
 
@@ -49,6 +50,7 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="Orderform" element={<Orderform />} />
           <Route path="orderpayment" element={<Paymentpage />} />
+          <Route path="Dataform" element={<JsonData />} />
         </Route>
       </Routes>
     </BrowserRouter>

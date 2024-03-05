@@ -2,10 +2,40 @@
 import { ThreeDots } from "react-loader-spinner";
 import { useEffect, useState } from "react";
 import Orderedby from "./Orderedby";
+import { useSelector } from "react-redux";
 
 const PaymentDone = () => {
+    const mycartdata = useSelector(state => state.mycart.cart);
+    // const dispatch = useDispatch();
+    let total_pay_amount = 0;
+    let Total_quantity=0;
+    for (let i = 0; i < mycartdata.length; ++i) {
+        total_pay_amount = total_pay_amount + mycartdata.price * mycartdata.Quantity;
+        Total_quantity=Total_quantity+mycartdata.Quantity;
+    }
+    console.log(total_pay_amount)
+    console.log(Total_quantity)
+
     const [Output, setOuput] = useState("")
-    const [orderDate, setorderDate] = useState("")
+    const [orderDate, setOrderDate] = useState("");
+    const getCurrentDateTime = () => {
+        const currentdate = new Date();
+        const datetime =
+            currentdate.getDate() +
+            "/" +
+            (currentdate.getMonth() + 1) +
+            "/" +
+            currentdate.getFullYear() +
+            "  @  " +
+            currentdate.getHours() +
+            ":" +
+            currentdate.getMinutes() +
+            ":" +
+            currentdate.getSeconds();
+
+        return datetime;
+    };
+
     const [pageloading, setPageLoading] = useState(true)
     const orderNo = () => {
         let output = '';
@@ -22,19 +52,14 @@ const PaymentDone = () => {
             orderNo();
         }
         setOuput(output);
-        var currentdate = new Date();
-        var datetime = currentdate.getDay() + "/" + currentdate.getMonth()
-            + "/" + currentdate.getFullYear() + "  @  "
-            + currentdate.getHours() + ":"
-            + currentdate.getMinutes() + ":" + currentdate.getSeconds();
-        console.log(datetime)
-        setorderDate(datetime)
+
     }
     useEffect(() => {
         setTimeout(() => {
             setPageLoading(false);
         }, 5000)
         orderNo();
+        setOrderDate(getCurrentDateTime());
     }, [])
     return (
         <>
@@ -64,8 +89,8 @@ const PaymentDone = () => {
                                 </div>
                                 <div id="paidamount">
                                     <h4> Payment Mode&nbsp;&nbsp; :&nbsp;Online</h4>
-                                    <h4>Pay Amount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   :&nbsp;Rs&nbsp;13000/-</h4>
-                                    <h4>Product Quantity:&nbsp;10</h4>
+                                    <h4>Pay Amount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   :&nbsp;Rs&nbsp;{total_pay_amount}/-</h4>
+                                    <h4>Product Quantity:&nbsp;{Total_quantity}</h4>
                                 </div>
                             </div>
                             <section id="orderaddress">

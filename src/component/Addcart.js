@@ -73,7 +73,7 @@ const Addcart = () => {
                         <td colspan="2" id="tttam">Rs&nbsp;&nbsp;{NetAmount}.00/-</td>
                     </tr>
                     <tr>
-                        <td id="tdorderbtn" colSpan="7"><Link to="/odernow" id="button">Place Your Order Now</Link></td>
+                        <td id="tdorderbtn" colSpan="7"><Link to="/Orderform" id="button">Place Your Order Now</Link></td>
                     </tr>
                 </table>
             </body>

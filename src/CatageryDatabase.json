@@ -1,0 +1,184 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "Shirts": [
+    {
+      "Image": "https://example.com/shirt1.jpg",
+      "name": "Casual Shirt",
+      "brand_name": "Fashion Hub",
+      "description": "Classic casual shirt for a stylish look.",
+      "price": "$34.99",
+      "offer": "15% off",
+      "MRP": "$41.99",
+      "id": 1
+    }
+  ],
+  "Pents": [
+    {
+      "Image": "https://example.com/pent1.jpg",
+      "name": "Formal Pants",
+      "brand_name": "Office Style",
+      "description": "Formal pants for a professional appearance.",
+      "price": "$44.99",
+      "offer": "10% off",
+      "MRP": "$49.99",
+      "id": 1
+    }
+  ],
+  "kurta": [
+    {
+      "Image": "https://example.com/kurta1.jpg",
+      "name": "Traditional Kurta",
+      "brand_name": "Ethnic Elegance",
+      "description": "Traditional kurta for cultural events.",
+      "price": "$39.99",
+      "offer": "20% off",
+      "MRP": "$49.99",
+      "id": 1
+    }
+  ],
+  "Pajama": [
+    {
+    "Image": "https://example.com/pajama1.jpg",
+      "name": "Comfortable Pajama",
+      "brand_name": "Relaxation Wear",
+      "description": "Comfortable pajama for a good night's sleep.",
+      "price": "$29.99",
+      "offer": "5% off",
+      "MRP": "$31.99",
+      "id": 1
+    }
+  ],
+  "MenTopwear": [],
+  "Menbottomwear": [],
+  "Sadi": [],
+  "Kurti": [],
+  "Palazzos": [],
+  "Jeans":[
+      {
+        "Image": "https://example.com/jeans1.jpg",
+        "name": "Slim Fit Jeans",
+        "brand_name": "Denim",
+        "description": "Classic slim fit jeans for a modern look.",
+        "price": "$49.99",
+        "offer": "20% off",
+        "MRP": "$62.99",
+        "id": 1
+      },
+      {
+        "Image": "https://example.com/jeans2.jpg",
+        "name": "Straight Leg Jeans",
+        "brand_name": "Denim Co.",
+        "description": "Comfortable straight leg jeans for everyday wear.",
+        "price": "$54.99",
+        "offer": "15% off",
+        "MRP": "$64.99",
+        "id": 2
+      },
+      {
+        "Image": "https://example.com/jeans3.jpg",
+        "name": "Relaxed Fit Jeans",
+        "brand_name": "Casual Wear",
+        "description": "Relaxed fit jeans for a laid-back style.",
+        "price": "$45.99",
+        "offer": "10% off",
+        "MRP": "$51.99",
+        "id": 3
+      },
+      {
+        "Image": "https://example.com/jeans4.jpg",
+        "name": "Bootcut Jeans",
+        "brand_name": "Fashion Denim",
+        "description": "Trendy bootcut jeans for a versatile look.",
+        "price": "$59.99",
+        "offer": "25% off",
+        "MRP": "$74.99",
+        "id": 4
+      },
+      {
+        "Image": "https://example.com/jeans5.jpg",
+        "name": "High-Rise Skinny Jeans",
+        "brand_name": "Urban Chic",
+        "description": "High-rise skinny jeans for a modern and chic style.",
+        "price": "$64.99",
+        "offer": "30% off",
+        "MRP": "$92.99",
+        "id": 5
+      },
+      {
+        "Image": "https://example.com/jeans6.jpg",
+        "name": "Distressed Jeans",
+        "brand_name": "Vintage Vibes",
+        "description": "Distressed jeans for a cool and edgy look.",
+        "price": "$42.99",
+        "offer": "15% off",
+        "MRP": "$49.99",
+        "id": 6
+      },
+      {
+        "Image": "https://example.com/jeans7.jpg",
+        "name": "Jogger Jeans",
+        "brand_name": "Athleisure",
+        "description": "Comfortable jogger jeans for an active lifestyle.",
+        "price": "$39.99",
+        "offer": "10% off",
+        "MRP": "$44.99",
+        "id": 7
+      },
+      {
+        "Image": "https://example.com/jeans8.jpg",
+        "name": "Cropped Flare Jeans",
+        "brand_name": "Boho Chic",
+        "description": "Cropped flare jeans for a bohemian and stylish look.",
+        "price": "$49.99",
+        "offer": "20% off",
+        "MRP": "$62.99",
+        "id": 8
+      },
+      {
+        "Image": "https://example.com/jeans9.jpg",
+        "name": "Cargo Jeans",
+        "brand_name": "Utility Style",
+        "description": "Cargo jeans for a utilitarian and trendy appearance.",
+        "price": "$57.99",
+        "offer": "15% off",
+        "MRP": "$68.99",
+        "id": 9
+      },
+      {
+        "Image": "https://example.com/jeans10.jpg",
+        "name": "Floral Embroidered Jeans",
+        "brand_name": "Feminine Flair",
+        "description": "Floral embroidered jeans for a touch of femininity.",
+        "price": "$52.99",
+        "offer": "25% off",
+        "MRP": "$70.99",
+        "id": 10
+      },
+    {
+      "Image":"",
+      "name":"jeans",
+      "brand_name":"Dennim",
+      "description":"",
+      "price":"",
+      "offer":"",
+       "MRP":"",
+       "id":11
+    }
+  ]
+}

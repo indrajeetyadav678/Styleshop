@@ -1038,3 +1038,20 @@ text-align: left;
     border-radius:15px;
     padding-left: 15px;
 }
+
+
+/* =========================== Jsondatabase form ===================== */
+#formbox input{
+    width:400px;
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+#formbox{background-color: rgb(192, 178, 178);
+padding: 30px 40px;}
+#formbox button{
+    width:150px;
+    height: 30px;
+    border-radius: 15px;
+
+}
