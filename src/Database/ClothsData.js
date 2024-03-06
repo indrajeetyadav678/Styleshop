@@ -39,7 +39,7 @@ const MenProduct=[
     {
         "image1": "https://images.meesho.com/images/products/290280429/vdqgw_512.webp",
         "brand": " Denim",
-        "details":" Men Denim Printed Black Jeans manufaturing jeans in awesome quality",
+        "details":" Men Denim Black Jeans manufaturing jeans in awesome quality",
         "price": " 600",
         "originprice": "1100",
         "offer": "45% off",
@@ -48,7 +48,7 @@ const MenProduct=[
     {
         "image1": "https://images.meesho.com/images/products/394196769/5b23s_512.webp",
         "brand": "Denim",
-        "details":"Jeans for men Fabric : Denim Pattern : Solid",
+        "details":"Jeans for men Fabric Denim Pattern : Solid",
         "price": " 800",
         "originprice": "",
         "offer": "85% off",

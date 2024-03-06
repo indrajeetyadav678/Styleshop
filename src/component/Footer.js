@@ -4,8 +4,8 @@ import {Link} from "react-router-dom";
 const Footer=()=>{
     return(
         <>
+        <div className="shopname">Styleshop</div>
         <div className="footerbox">
-            <div className="shopname">Styleshop</div>
             <ul className="linkbox">
                 <li className="foottitle">Men</li>
                 <li className="footlink1"><Link to="cloth" className="footlink2">Clothing Fashion</Link></li>

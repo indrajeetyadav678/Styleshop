@@ -20,6 +20,7 @@ import SearchProduct from "./component/SearchProduct";
 import Likepage from "./component/Likepage";
 import Orderform from "./component/Orderform";
 import JsonData from "./Jsonfile_datafillForm";
+import Footerlink from "./component/Footerlink";
 
 
 
@@ -30,11 +31,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="shopname"  element={<Home />} />
+          <Route path="shopname" element={<Home />} />
           <Route path="home" element={<Home />} />
           <Route path="men" element={<Men />} />
           <Route path="women" element={<Women />} />
-          <Route path="kids" element={<Kidscollection />}/>
+          <Route path="kids" element={<Kidscollection />} />
           <Route path="kids" element={<Kidscollection />} />
           <Route path="baby" element={<Babycloths />} />
           <Route path="babytoy" element={<Toys />} />
@@ -44,13 +45,19 @@ function App() {
           <Route path="odernow" element={<Paymentpage />} />
           <Route path="PaymentDone" element={<PaymentDone />} />
           <Route path="Paymentpage" element={<Paymentpage />} />
-          <Route path="navcreateacc" element={<CreateAccount/>}/>
-          <Route path="navsearch"  element={<SearchProduct />} />
-          <Route path="navlike"  element={<Likepage />} />
+          <Route path="navcreateacc" element={<CreateAccount />} />
+          <Route path="navsearch" element={<SearchProduct />} />
+          <Route path="navlike" element={<Likepage />} />
           <Route path="login" element={<Login />} />
           <Route path="Orderform" element={<Orderform />} />
           <Route path="orderpayment" element={<Paymentpage />} />
           <Route path="Dataform" element={<JsonData />} />
+          //footer Links
+          <Route path="cloth" element={<Footerlink />} />
+          <Route path="summer" element={<Footerlink />} />
+          <Route path="winter" element={<Footerlink />} />
+          <Route path="farmal" element={<Footerlink />} />
+          <Route path="casual" element={<Footerlink />} />
         </Route>
       </Routes>
     </BrowserRouter>

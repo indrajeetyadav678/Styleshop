@@ -23,7 +23,7 @@
     text-align: center;
     width: 100%;
     height: 60px;
-    display:inline-flex;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     padding-right: 2%;
@@ -53,7 +53,7 @@
     align-items: center;
     justify-content: space-between;
     /* border: 2px solid rgb(15, 60, 243); */
-    
+
 }
 
 #navright {
@@ -129,8 +129,9 @@
     color: rgb(141, 128, 128);
     box-shadow: 2px 3px 25px rgb(146, 241, 169);
 }
-#addcartwrapper{
-    width:30px;
+
+#addcartwrapper {
+    width: 30px;
     height: 35px;
     position: relative;
     /* border: 1px solid rgb(133, 126, 126); */
@@ -188,21 +189,21 @@
 
 /* ================================ Media quiry ======================== */
 
-#shownavmiddle{
-    width:100%;
+#shownavmiddle {
+    width: 100%;
     margin: 0%;
     /* border: 1px solid black; */
     height: auto;
     padding-top: 15px;
     padding-bottom: 15px;
     position: absolute;
-    top:55px;
+    top: 55px;
     left: 0;
-   background-color: whitesmoke;
+    background-color: whitesmoke;
     display: none;
 }
 
-#linemanu{
+#linemanu {
     display: none;
     position: relative;
 }
@@ -214,19 +215,21 @@
     align-items: center;
     height: 250px;
     background-color: rgb(61, 60, 60);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .linkbox {
-    width: 200px;
+    width: 220px;
     list-style: none;
 }
 
 .foottitle {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
     color: rgb(196, 196, 212);
-    letter-spacing: 1.4px;
-    /* text-decoration: underline; */
+    letter-spacing: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
 }
 
 .footlink2 {
@@ -234,6 +237,8 @@
     color: white;
     letter-spacing: 1.4px;
     text-decoration: none;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .developer {
@@ -245,13 +250,16 @@
 }
 
 .shopname {
-    width: 120px;
+    width: 100%;
+    padding-top: 25px;
     font-size: 25px;
     color: rgb(207, 207, 41);
-    /* font-family:Gabriola ; */
-    font-family: Harlow Solid;
+    font-family: Gabriola;
+    /* font-family: Harlow Solid; */
     letter-spacing: 2px;
     font-weight: bolder;
+    text-align: center;
+    background-color: rgb(61, 60, 60);
     /* border: 1px solid rgb(127, 123, 123); */
 }
 
@@ -266,38 +274,43 @@
     position: relative;
     /* top: px; */
 }
-#leftarrow{
+
+#leftarrow {
     z-index: 4;
     font-size: 35px;
-    background-color: rgba(242, 232, 232,0.3);
+    background-color: rgba(242, 232, 232, 0.3);
     padding: 5px;
     border-radius: 50%;
     color: rgb(171, 169, 169);
     cursor: pointer;
     position: absolute;
-    top:50vh;
-    left:50px
+    top: 50vh;
+    left: 50px
 }
-#leftarrow:hover{
-    background-color: rgb(57, 54, 54);
-    color: white;  
-}
-#rightarrow{
-    z-index: 4;
-    font-size: 35px;
-    background-color: rgba(242, 232, 232,0.3);
-    padding: 5px;
-    border-radius: 50%;
-    color: rgb(171, 169, 169);
-    position: absolute;
-    top:50vh;
-    right:50px;
-    cursor: pointer;
-}
-#rightarrow:hover{
+
+#leftarrow:hover {
     background-color: rgb(57, 54, 54);
     color: white;
 }
+
+#rightarrow {
+    z-index: 4;
+    font-size: 35px;
+    background-color: rgba(242, 232, 232, 0.3);
+    padding: 5px;
+    border-radius: 50%;
+    color: rgb(171, 169, 169);
+    position: absolute;
+    top: 50vh;
+    right: 50px;
+    cursor: pointer;
+}
+
+#rightarrow:hover {
+    background-color: rgb(57, 54, 54);
+    color: white;
+}
+
 .sliderbox::-webkit-scrollbar {
     display: none;
 }
@@ -392,12 +405,12 @@
     box-shadow: 8px 8px 40px rgb(150, 151, 149);
     border-radius: 15px;
     margin: 50px 15px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .cont_box:hover {
     scale: 1.02;
-    transform:rotateY(20deg);
+    transform: rotateY(20deg);
 }
 
 .img {
@@ -416,7 +429,7 @@
     width: 316px;
     height: 300px;
     border-radius: 15px;
-    
+
     /* z-index: -1; */
 }
 
@@ -464,45 +477,52 @@
 
 /* ================================ addcart component ======================== */
 
-#carttable{
+#carttable {
     width: 100%;
     height: auto;
     border: 1px solid black;
 }
-.bbty{
- min-height: 300px;
- max-height: auto;
+
+.bbty {
+    min-height: 300px;
+    max-height: auto;
 
 }
-#carttable tr th{
+
+#carttable tr th {
     text-align: center;
     border: 1px solid black;
     background-color: rgb(226, 228, 230);
 }
-#carttable tr td{
+
+#carttable tr td {
     text-align: center;
     border: 1px solid black;
     background-color: whitesmoke;
 }
-#tdimage{
+
+#tdimage {
     width: 150px;
     height: 150px;
 }
-#tdimage img{
-    width:150px;
+
+#tdimage img {
+    width: 150px;
     height: 150px;
 }
-#tdQuantity{
+
+#tdQuantity {
     display: flex;
     height: 156px;
     justify-content: space-evenly;
     align-items: center;
 }
 
-#tdQuantity #adding{
+#tdQuantity #adding {
     border: none;
 }
-#tdQuantity div #button{
+
+#tdQuantity div #button {
     cursor: pointer;
     /* border-radius: 50%; */
     display: inline-block;
@@ -511,19 +531,23 @@
     font-size: 23px;
     font-weight: 500;
 }
-#tdQuantity div{
-    width:25px;
+
+#tdQuantity div {
+    width: 25px;
     height: 25px;
     border: 1px solid rgb(165, 160, 160);
 }
-#tdnetamount #tttam{
+
+#tdnetamount #tttam {
     background-color: rgb(125, 119, 119);
     color: white;
 }
-#tdorderbtn{
+
+#tdorderbtn {
     height: 50px;
 }
-#tdorderbtn #button{
+
+#tdorderbtn #button {
     width: 150px;
     height: 35px;
     border: 2px solid rgb(229, 249, 101);
@@ -531,28 +555,29 @@
     padding: 5px 10px;
     background-color: rgb(106, 106, 102);
     color: whitesmoke;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
-#tdorderbtn #button:hover{
+
+#tdorderbtn #button:hover {
     border: 2px solid rgb(199, 150, 245);
     background-color: rgb(133, 77, 223);
     color: rgb(253, 251, 251);
 }
 
 /* ================= Ordered form component ==================== */
-#ordform{
+#ordform {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(150, 148, 148);
-    
+
 
 }
 
-#form{
+#form {
     width: 435px;
     height: auto;
     margin-top: 15px;
@@ -568,23 +593,26 @@
 
 }
 
-#form h1{
- font-size: 20px;
- letter-spacing: 1px;
- margin-bottom: 5px;
- font-weight: 600;
+#form h1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-weight: 600;
 }
-#form h3{
+
+#form h3 {
     font-size: 16px;
     letter-spacing: 1px;
     margin-bottom: 10px;
-   }
-#form div{
-    margin-left:50px ;
+}
+
+#form div {
+    margin-left: 50px;
     text-align: justify;
-   }
-#form div input{
-    width:350px;
+}
+
+#form div input {
+    width: 350px;
     height: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -593,14 +621,17 @@
     border: 2px solid rgb(251, 253, 251);
     background-color: rgb(242, 241, 241);
 }
-#form div #state{
+
+#form div #state {
     width: 150px;
 }
-#form div #pincode{
+
+#form div #pincode {
     width: 150px;
     margin-left: 40px;
 }
-#form div label{
+
+#form div label {
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 1.2px;
@@ -608,11 +639,12 @@
     color: rgb(250, 250, 250);
     text-align: justify;
 }
-#form div #pin{
+
+#form div #pin {
     margin-left: 150px;
 }
 
-#form div #submitbtn{
+#form div #submitbtn {
     width: 120px;
     height: 30px;
     text-align: center;
@@ -630,8 +662,8 @@
 
 /* ========================= Payment Page ========================= */
 
-#Payment_maindiv{
-    width:100%;
+#Payment_maindiv {
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -642,9 +674,9 @@
     padding-bottom: 70px;
 }
 
-#paymentopt1{
+#paymentopt1 {
     width: 580px;
-    height:auto;
+    height: auto;
     /* border: 1px solid rgb(44, 42, 40); */
     background-color: rgb(195, 191, 187);
     margin-top: 20px;
@@ -653,7 +685,8 @@
     color: rgb(12, 244, 12);
     padding-bottom: 40px;
 }
-#paymentopt1 h1{
+
+#paymentopt1 h1 {
     text-align: center;
     letter-spacing: 2px;
     margin-bottom: 22px;
@@ -661,70 +694,81 @@
     font-size: 28px;
     color: rgb(250, 251, 250);
 }
-#paymentopt1 input{
+
+#paymentopt1 input {
     cursor: pointer;
     margin: auto;
 }
+
 /* ================= Payment_card page =============== */
-#bycardpayment{
-  background-color:rgb(195, 191, 187) ;
-  width:
+#bycardpayment {
+    background-color: rgb(195, 191, 187);
+    width:
 }
 
-#cardpaymeth{
+#cardpaymeth {
     margin-bottom: 30px;
 }
 
-#cardpaymeth img{
-  width:150px;
+#cardpaymeth img {
+    width: 150px;
 }
-#phonepebtn img{
+
+#phonepebtn img {
     width: 450px;
     height: 200px;
 }
-#cardno{
+
+#cardno {
     padding-left: 15px;
     width: 150px;
     height: 30px;
     border-radius: 10px;
 }
-#card_cvv{
+
+#card_cvv {
     width: 60px;
     border-radius: 8px;
     height: 30px;
     padding-left: 15px;
 
 }
-#card_hold_name{
+
+#card_hold_name {
     width: 210px;
     height: 30px;
     border-radius: 10px;
     padding-left: 15px;
 }
-#ex_month{
+
+#ex_month {
     width: 45px;
     height: 30px;
     border-radius: 8px;
-    padding-left:7px;
+    padding-left: 7px;
     font-weight: 400;
 }
-#ex_year{
+
+#ex_year {
     width: 60px;
     height: 30px;
-    padding-left:10px;
+    padding-left: 10px;
     border-radius: 8px;
 }
-#payment_form{
+
+#payment_form {
     text-align: left;
     padding-left: 100px;
-    color:rgb(41, 251, 41);
+    color: rgb(41, 251, 41);
 }
-#payment_form label{
+
+#payment_form label {
     font-size: 18px;
-    color:rgb(41, 251, 41);
+    color: rgb(41, 251, 41);
 }
-#button_design{
-    width:126px;
+
+#button_design {
+    width: 126px;
     height: 36px;
     border-radius: 15px;
     border: 4px solid rgb(60, 64, 58);
@@ -732,49 +776,52 @@
     cursor: pointer;
     position: relative;
 }
-#button_design::after{
+
+#button_design::after {
     content: "";
-    width:130px;
+    width: 130px;
     height: 40px;
     border-radius: 17px;
     border: 2px solid rgb(67, 247, 6);
     position: absolute;
-    box-sizing:border-box;
+    box-sizing: border-box;
     box-shadow: 5px 5px 50px rgb(72, 255, 72);
-    top:-5px;
+    top: -5px;
     left: -5px;
 }
 
-#button_design:hover{
-   background-color: rgb(226, 255, 214);
-   color: rgb(61, 125, 61);
-   font-weight: bold;
+#button_design:hover {
+    background-color: rgb(226, 255, 214);
+    color: rgb(61, 125, 61);
+    font-weight: bold;
 }
 
 /* =========================== Payment done component ============================== */
-#paydonehona{
+#paydonehona {
     width: 100%;
     height: auto;
     background-color: rgb(217, 215, 215);
 }
 
 
-#payment_procesing{
-    width:100%;
-    height:60vh;
-    background-color:rgb(218, 212, 212) ;
+#payment_procesing {
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(218, 212, 212);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#payment_procesing span{
+
+#payment_procesing span {
     font-size: 16px;
 }
-#paymentdone_bill{
-    width:90%;
+
+#paymentdone_bill {
+    width: 90%;
     height: auto;
     margin: auto;
-    background-color:rgb(202, 201, 201) ;
+    background-color: rgb(202, 201, 201);
     box-shadow: 7px 7px 60px white;
     border-radius: 20px;
     /* background-color: rgb(252, 250, 246); */
@@ -782,11 +829,14 @@
     margin-bottom: 50px;
     color: rgb(85, 255, 85);
 }
-#paymentdone_bill h1, #paymentdone_bill h2{
+
+#paymentdone_bill h1,
+#paymentdone_bill h2 {
     text-align: center;
     margin-bottom: 20px;
 }
-#Amount_orderno{
+
+#Amount_orderno {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -795,14 +845,19 @@
     padding-left: 2%;
 
 }
-#orderno,#paidamount{
+
+#orderno,
+#paidamount {
     margin-top: 10px;
 }
-#orderno h4, #paidamount h4{
+
+#orderno h4,
+#paidamount h4 {
     margin-top: 5px;
     font-size: 16px;
 }
-#orderaddress{
+
+#orderaddress {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -811,24 +866,27 @@
 }
 
 
-#customer{
+#customer {
     width: 550px;
     height: auto;
     padding: 20px;
     /* border: 1px solid wheat; */
 }
-#delivery_by{
+
+#delivery_by {
     width: 470px;
     height: auto;
     padding: 20px;
     /* border: 1px solid wheat; */
 }
+
 /* ==================== Orderedby component ========================= */
-#order_by{
-text-align: left;
+#order_by {
+    text-align: left;
 }
-#order_by h4{
-    margin-top: 8px; 
+
+#order_by h4 {
+    margin-top: 8px;
 }
 
 /* ===================================== CreateAccount component =========================== */
@@ -860,13 +918,14 @@ text-align: left;
     border: 2px solid blue;
     background-color: black;
     border-top-left-radius: 15px;
-    border-bottom-left-radius:15px;
+    border-bottom-left-radius: 15px;
 }
-#Acc_imagebox img{
+
+#Acc_imagebox img {
     width: 300px;
     height: 395px;
     border-top-left-radius: 15px;
-    border-bottom-left-radius:15px;
+    border-bottom-left-radius: 15px;
 }
 
 #Acc_createbox {
@@ -877,16 +936,19 @@ text-align: left;
     text-align: center;
     padding-top: 30px;
     border-top-right-radius: 15px;
-    border-bottom-right-radius:15px;
+    border-bottom-right-radius: 15px;
 }
 
-#Acc_createbox h2{
+#Acc_createbox h2 {
     margin-bottom: 20px;
     color: white;
     letter-spacing: 1.5px;
     text-shadow: 5px 5px 10px rgb(210, 58, 34);
 }
-#Rone,#Rtwo,#Rthree{
+
+#Rone,
+#Rtwo,
+#Rthree {
     width: 260px;
     height: 32px;
     border: 1px solid rgb(79, 77, 77);
@@ -897,7 +959,10 @@ text-align: left;
     background-color: white;
     box-shadow: 2px 2px 15px rgb(106, 43, 43);
 }
-#Rone input,#Rtwo input,#Rthree input{
+
+#Rone input,
+#Rtwo input,
+#Rthree input {
     width: 230px;
     height: 30px;
     padding-left: 15px;
@@ -906,29 +971,34 @@ text-align: left;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-#login_rem_box{
+
+#login_rem_box {
     width: 300px;
     height: 50px;
     text-align: left;
     margin-left: 20px;
 }
-#login_rem_box label,#login_rem_box input{
+
+#login_rem_box label,
+#login_rem_box input {
     color: white;
     letter-spacing: 1px;
     cursor: pointer;
 }
-#login_rem_box button{
- padding: 8px 5px;
- background-color: transparent;
- border: none;
- color: rgb(11, 11, 75);
- font-weight: 700;
- font-size: 16px;
- text-decoration: underline;
- margin-left: 20%;
- cursor: pointer;
+
+#login_rem_box button {
+    padding: 8px 5px;
+    background-color: transparent;
+    border: none;
+    color: rgb(11, 11, 75);
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: underline;
+    margin-left: 20%;
+    cursor: pointer;
 }
-#signupbtn{
+
+#signupbtn {
     padding: 6px 15px;
     border-radius: 15px;
     color: rgb(139, 30, 30);
@@ -937,9 +1007,11 @@ text-align: left;
     cursor: pointer;
     box-shadow: 2px 2px 15px rgb(6, 6, 235);
 }
-#signupbtn:hover{
-  border: 2px solid gradeint-linear(0,0,0 golden);
+
+#signupbtn:hover {
+    border: 2px solid gradeint-linear(0, 0, 0 golden);
 }
+
 /* ==================== login page =========================== */
 
 /* #userid{
@@ -964,37 +1036,38 @@ text-align: left;
     border-bottom-right-radius: 10px;
 } */
 /* ============================================= women page component ========================== */
-#womenpageherovideo{
-    width:100%;
+#womenpageherovideo {
+    width: 100%;
     height: 95vh;
 
 }
 
 
 /* ========================= men page component ================================= */
-#shoesgif_box{
-    width:60%;
-    height:350px;
+#shoesgif_box {
+    width: 60%;
+    height: 350px;
     margin: 50px 20%;
     box-shadow: 5px 5px 30px rgb(143, 132, 132);
 }
 
-.shoesgif{
-    width:100%;
-    height:350px;
+.shoesgif {
+    width: 100%;
+    height: 350px;
 }
 
 /* ========================= Search page Component =========================== */
-#search_inputbox{
-    width:35%;
-    height:38px;
+#search_inputbox {
+    width: 35%;
+    height: 38px;
     border: 1px solid black;
     padding: 0;
     margin: 50px 35%;
     border-radius: 18px;
 }
-#search_inputbox input{
-    width:93%;
+
+#search_inputbox input {
+    width: 93%;
     height: 35px;
     border: none;
     outline: none;
@@ -1002,56 +1075,66 @@ text-align: left;
     padding-left: 15px;
 }
 
-#searchoutputbox{
+#searchoutputbox {
     width: 100%;
     min-height: 400px;
     max-height: auto;
 }
 
-#search_inputbox #searchbtn{
+#search_inputbox #searchbtn {
     font-size: 25px;
     cursor: pointer;
 }
 
 /* ============================ LiKE page component ===============  */
 
-#likepage{
-    width:100%;
+#likepage {
+    width: 100%;
     min-height: 500px;
     max-height: auto;
 }
 
 /*=================== Phone pay page ============================= */
 
-#phonepayQr{
+#phonepayQr {
     margin: 25px;
 }
 
-#Cashon_delivery_payment img{
-    width:200px;
+#Cashon_delivery_payment img {
+    width: 200px;
     height: 200px;
 }
 
-#upiidinputbox{
-    width:350px;
-    height:30px;
-    border-radius:15px;
+#upiidinputbox {
+    width: 350px;
+    height: 30px;
+    border-radius: 15px;
     padding-left: 15px;
 }
 
 
 /* =========================== Jsondatabase form ===================== */
-#formbox input{
-    width:400px;
+#formbox input {
+    width: 400px;
     height: 30px;
     border-radius: 15px;
     padding-left: 10px;
 }
-#formbox{background-color: rgb(192, 178, 178);
-padding: 30px 40px;}
-#formbox button{
-    width:150px;
+
+#formbox {
+    background-color: rgb(192, 178, 178);
+    padding: 30px 40px;
+}
+
+#formbox button {
+    width: 150px;
     height: 30px;
     border-radius: 15px;
-
+}
+#Footerlink{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
