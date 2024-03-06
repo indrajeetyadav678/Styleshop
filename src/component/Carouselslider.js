@@ -12,7 +12,7 @@ const Carouselslider = (props) => {
         <Carousel activeIndex={index} onSelect={handleSelect}>
             {(props.slider).map((slide, i) => {
                 return (
-                    <Carousel.Item>
+                    <Carousel.Item >
                         <img
                             className="d-block"
                             id="sliderimgcarousel"

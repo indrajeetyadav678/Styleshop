@@ -40,7 +40,7 @@ const product = [
         "image2": "",
         "image3": "",
         "image4": "",
-        "brand": "",
+        "brand": "Meena dress",
         "details": "Meena dress maroon",
         "price": "1100",
         "originprice": "₹5,999",
