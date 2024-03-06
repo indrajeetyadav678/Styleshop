@@ -29,7 +29,7 @@ const MenProduct=[
     },
     {
         "image1": "https://images.meesho.com/images/products/366583107/92f6r_512.webp",
-        "brand": "",
+        "brand": "shirt",
         "details":"Men's black shirt ",
         "price": " 400",
         "originprice": "600",
@@ -57,7 +57,7 @@ const MenProduct=[
 
     {
         "image1": "https://assets.ajio.com/medias/sys_master/root/20230915/rida/650447bfddf7791519db713d/-473Wx593H-443017556-maroon-MODEL.jpg",
-        "brand": "",
+        "brand": "shirt",
         "details":"Colourblock Regular Fit Sweatshirt",
         "price": " 450 ",
         "originprice": "₹1,499",
@@ -75,16 +75,16 @@ const MenProduct=[
     },
     {
         "image1": "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/d/a/u/xxl-aut-formal-metronaut-original-imagwmj5gupusyza.jpeg?q=70&crop=false",
-        "brand": "₹500 ",
+        "brand": "formal shirt ",
         "details":"Men Regular Fit Solid Formal Shirt",
         "price": " 390 ",
-        "originprice": "₹1,299 ",
+        "originprice": "1,299 ",
         "offer": "80% off",
         "id": 9
     },
     {
         "image1": "https://assets.ajio.com/medias/sys_master/root/20230818/2eRV/64df8883ddf77915195286c5/-1117Wx1400H-443021148-navy-MODEL.jpg",
-        "brand": "NETPLAY",
+        "brand": "Blazer",
         "details":"Heathered Slim Fit Single-Breasted Blazer",
         "price": " 1200",
         "originprice": "3,999",
