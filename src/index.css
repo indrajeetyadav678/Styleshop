@@ -430,12 +430,12 @@
     height: 300px;
     border-radius: 15px;
 
+    transition: 1s;
     /* z-index: -1; */
 }
 
 .img img:hover {
     /* scale: 1.06; */
-    /* transition: 1s; */
     border-radius: 20px;
     transform: rotateY(180deg);
 }
@@ -703,7 +703,7 @@
 /* ================= Payment_card page =============== */
 #bycardpayment {
     background-color: rgb(195, 191, 187);
-    width:
+    /* width: */
 }
 
 #cardpaymeth {
