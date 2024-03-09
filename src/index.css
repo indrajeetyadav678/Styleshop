@@ -405,6 +405,7 @@
     border-radius: 15px;
     margin: 50px 15px;
     overflow: hidden;
+
 }
 
 .cont_box:hover {
@@ -423,6 +424,15 @@
     align-items: center;
     z-index: 3;
     /* overflow:visible; */
+    position: relative;
+}
+.likeheart{
+    position: absolute;
+    top:20px;
+    right:20px;
+    z-index: 10;
+    color:#e4e0e0;
+    font-size: 25px;
 }
 
 .img img {

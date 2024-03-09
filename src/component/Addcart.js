@@ -56,7 +56,6 @@ const Addcart = () => {
     return (
         <>
             <body id="body" className="bbty">
-                <h1>Product in cart added</h1>
                 <table id="carttable">
                     <tr>
                         <th></th>
