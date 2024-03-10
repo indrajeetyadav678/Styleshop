@@ -15,7 +15,8 @@ const AddlikeSlice = createSlice({
             }
         },
         delet: (state, action) => {
-            state.cart = state.cart.filter(item => item.id !== action.payload)
+            state.likes = state.likes.filter(item => item.id !== action.payload)
+            // state.likes.find(action.payload)
         }
     }
 
