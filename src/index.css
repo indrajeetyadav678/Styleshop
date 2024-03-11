@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family:Candara;
+    font-family: Candara;
     /* font-family: Comic Sans MS; */
 
 }
@@ -120,7 +120,7 @@
 }
 
 #addlikewrapper {
-    width:30px;
+    width: 30px;
     height: 40px;
     /* border:1px solid red; */
     position: relative;
@@ -1185,36 +1185,199 @@
 }
 
 /* ==================== About Us =============================== */
+.About_us-page {
+    background-color: rgba(100, 99, 99, 0.8);
+    padding-bottom: 50px;
+    /* background-color: black; */
 
-#aboutdiv1{
-    width:100%;
+}
+
+#aboutdiv1 {
     height: auto;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     padding: 100px 50px;
-}
-#aboutdiv1 #one{
-    width:400px;
-    height:460px;
-    border:3px solid rgb(212, 199, 199);
-    /* position:relative; */
+    /* background-color: black; */
 }
 
-#aboutdiv1 #one img::after{
-    contain:"";
-    width:500px;
-    height:560px;
-    /* display:block; */
+#aboutdiv1 #one {
+    width: 400px;
+    height: 460px;
+    border: 3px solid rgb(254, 253, 253);
+    border-radius: 15px;
+    background-image: url("https://data2.nssmag.com/images/galleries/9606/thumbs/pleingif.gif");
+    background-size: 400px 460px;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 80px;
+    box-shadow: 5px 5px 30px white;
+
+}
+
+/* #aboutdiv1 #one::after {
+    contain: "";
+    width: 500px;
+    height: 560px;
+    display:block;
     position: absolute;
-    top:-15px;
-    right:-15px;
-    /* transform: rotateY('30deg'); */
-    border:3px solid rgb(225, 29, 29);
+    top: -15px;
+    right: -15px;
+    border: 3px solid rgb(225, 29, 29);
     background-color: aqua;
 
-}
-#aboutdiv1 #one img{
+} */
+
+/* #aboutdiv1 #one img{
     width:393.5px;
     height:453px;
     object-fit:fill;
+} */
+#aboutdiv1 #two {
+    width: 410px;
+    height: 460px;
+    border: 1px solid rgb(246, 242, 242);
+    text-align: center;
+    font-weight: 500;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 5px 5px 40px white;
+}
+
+#aboutdiv1 #two label {
+    font-size: 50px;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    font-family: Forte;
+}
+
+#aboutdiv1 #two #content {
+    font-size: 22px;
+    padding: 8px;
+    font-family: Gabriola;
+    letter-spacing: 1px;
+}
+
+#aboutbtn {
+    width: 100px;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 22px;
+    text-align: center;
+}
+
+#aboutdiv2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 50px;
+    /* background-color: black; */
+}
+
+#aboutdiv2 #story {
+    width: 410px;
+    height: 460px;
+    border: 1px solid rgb(246, 242, 242);
+    text-align: center;
+    font-weight: 500;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 5px 5px 40px white;
+}
+
+#aboutdiv2 #story label {
+    font-size: 50px;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    font-family: Forte;
+}
+
+#aboutdiv2 #story #content{
+    font-size: 22px;
+    padding: 15px;
+    font-family: Gabriola;
+    letter-spacing: 1px;
+}
+
+/* ==================================== */
+#aboutdiv2 #mission {
+    width: 410px;
+    height: 460px;
+    border: 1px solid rgb(246, 242, 242);
+    text-align: center;
+    font-weight: 500;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 5px 5px 40px white;
+}
+
+#aboutdiv2 #mission label {
+    font-size: 50px;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    font-family: Forte;
+}
+
+#aboutdiv2 #mission #content{
+    font-size: 22px;
+    padding: 15px;
+    font-family: Gabriola;
+    letter-spacing: 1px;
+}
+#aboutaparts{
+    color:white;
+    font-size: 50px;
+    text-align: center;
+}
+#aboutdiv3{
+    width:100%;
+    height: auto;
+    font-size: 20px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+#aboutdiv3 #one h2,#aboutdiv3 #two h2{
+    font-size:28px;
+    color: white;
+    /* text-decoration: underline; */
+}
+#aboutdiv3 #one,#aboutdiv3 #two{
+    width: 500px;
+    height: auto;
+    border: 1px solid rgb(246, 242, 242);
+    text-align: center;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    box-shadow: 5px 5px 40px white;
+    font-size: 22px;
+    font-family: Gabriola;
+    letter-spacing: 1px;
+}
+#aboutdiv4,#aboutdiv5,#aboutdiv6{
+    width: 80%;
+    height: auto;
+    margin-left:10%;
+    border: 1px solid rgb(246, 242, 242);
+    padding: 60px;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    box-shadow: 5px 5px 40px white;
+    font-size: 22px;
+    font-family: Gabriola;
+    letter-spacing: 1px;
+}
+
+#aboutdiv6 #one{
+    border-bottom: 1px solid white;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
