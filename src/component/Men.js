@@ -56,12 +56,6 @@ const Men=()=>{
           <div className="sliderbox">
                     <Carouselslider slider={sliderimg3} />
            </div>
-
-
-
-        <div id="shoesgif_box">
-            <img src={slide5} className="shoesgif"/>
-        </div>
         <div className="landing">
                 {productans}
             </div>

@@ -26,13 +26,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    /* padding-right: 2%; */
-    /* padding-left: 2%; */
-    /* background-color: white; */
     background-color: whitesmoke;
-    /* border: 2px solid red; */
     position: sticky;
-    top: -5px;
     z-index: 100;
 }
 
@@ -42,7 +37,6 @@
     display: flex;
     align-items: center;
     margin-left: 20px;
-    /* justify-content: space-between; */
     /* border: 2px solid red; */
 }
 
@@ -1087,7 +1081,7 @@
 
 
 /* ========================= men page component ================================= */
-#shoesgif_box {
+/* #shoesgif_box {
     width: 60%;
     height: 350px;
     margin: 50px 20%;
@@ -1097,7 +1091,7 @@
 .shoesgif {
     width: 100%;
     height: 350px;
-}
+} */
 
 /* ========================= Search page Component =========================== */
 #search_inputbox {
@@ -1186,64 +1180,43 @@
 
 /* ==================== About Us =============================== */
 .About_us-page {
-    background-color: rgba(100, 99, 99, 0.8);
     padding-bottom: 50px;
-    /* background-color: black; */
+    padding-top: 30px;
+    /* background-color: white; */
 
 }
 
 #aboutdiv1 {
+    width: 80%;
+    margin-left: 10%;
     height: auto;
     display: flex;
-    justify-content: space-around;
-    padding: 100px 50px;
-    /* background-color: black; */
+    justify-content: center;
+    box-shadow: 2px 2px 20px white;
+    border: 3px solid rgb(236, 234, 234);
+    background-color: white;
+
 }
 
 #aboutdiv1 #one {
-    width: 400px;
-    height: 460px;
-    border: 3px solid rgb(254, 253, 253);
+    width: 40%;
     border-radius: 15px;
     background-image: url("https://data2.nssmag.com/images/galleries/9606/thumbs/pleingif.gif");
     background-size: 400px 460px;
     background-repeat: no-repeat;
     border-bottom-left-radius: 80px;
-    box-shadow: 2px 2px 20px white;
-
 }
-
-/* #aboutdiv1 #one::after {
-    contain: "";
-    width: 500px;
-    height: 560px;
-    display:block;
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    border: 3px solid rgb(225, 29, 29);
-    background-color: aqua;
-
-} */
-
-/* #aboutdiv1 #one img{
-    width:393.5px;
-    height:453px;
-    object-fit:fill;
-} */
 #aboutdiv1 #two {
-    width: 410px;
-    height: 460px;
-    border: 1px solid rgb(246, 242, 242);
+    width: 60%;
     text-align: center;
     font-weight: 500;
     border-radius: 15px;
-    color: white;
-    box-shadow: 2px 2px 20px white;
+    padding-bottom: 20px;
+    color: rgb(57, 55, 55);
 }
 
 #aboutdiv1 #two label {
-    font-size: 50px;
+    font-size: 35px;
     letter-spacing: 3px;
     text-decoration: underline;
     font-family: Forte;
@@ -1265,135 +1238,276 @@
 }
 
 #aboutdiv2 {
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
     height: auto;
     display: flex;
     justify-content: space-around;
-    padding: 100px 50px;
+    padding: 30px 0px;
     /* background-color: black; */
 }
 
 #aboutdiv2 #story {
-    width: 410px;
-    height: 460px;
+    width: 40%;
+    height: 300px;
     border: 1px solid rgb(246, 242, 242);
     text-align: center;
     font-weight: 500;
     border-radius: 15px;
-    color: white;
+    background-color: rgb(143, 137, 137);
+    color: rgb(18, 16, 16);
     box-shadow: 2px 2px 20px white;
+    background-color: white;
+
 }
 
 #aboutdiv2 #story label {
-    font-size: 50px;
+    font-size: 35px;
     letter-spacing: 3px;
     text-decoration: underline;
     font-family: Forte;
 }
 
-#aboutdiv2 #story #content{
-    font-size: 22px;
+#aboutdiv2 #story #content {
+    font-size: 20px;
     padding: 15px;
     font-family: Gabriola;
     letter-spacing: 1px;
+    
 }
 
 /* ==================================== */
 #aboutdiv2 #mission {
-    width: 410px;
-    height: 460px;
+    width: 40%;
+    height: 300px;
     border: 1px solid rgb(246, 242, 242);
     text-align: center;
     font-weight: 500;
     border-radius: 15px;
-    color: white;
+    color: rgb(28, 26, 26);
     box-shadow: 2px 2px 20px white;
+    background-color: rgb(143, 137, 137);
+    background-color: white;
+
 }
 
 #aboutdiv2 #mission label {
-    font-size: 50px;
+    font-size: 35px;
     letter-spacing: 3px;
     text-decoration: underline;
     font-family: Forte;
 }
 
-#aboutdiv2 #mission #content{
-    font-size: 22px;
+#aboutdiv2 #mission #content {
+    font-size: 20px;
     padding: 15px;
     font-family: Gabriola;
     letter-spacing: 1px;
 }
-#aboutaparts{
-    color:white;
+
+#aboutaparts {
+    color: rgb(47, 42, 42);
+    width: 100%;
     font-size: 50px;
     text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
 }
-#aboutdiv3{
-    width:100%;
+
+#aboutdiv3 {
+    width: 80%;
+    margin-left: 10%;
     height: auto;
     font-size: 20px;
-    display:flex;
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin-top: 10px;
-    
-}
-#aboutdiv3 #one h2,#aboutdiv3 #two h2{
-    font-size:28px;
-    color: white;
-    /* text-decoration: underline; */
-}
-#aboutdiv3 #one,#aboutdiv3 #two{
-    width: 500px;
-    height: auto;
     border: 1px solid rgb(246, 242, 242);
+    box-shadow: 2px 2px 20px white;
+    border-radius: 30px;
+    background-color: white;
+
+
+
+}
+
+#aboutdiv3 #one h2,
+#aboutdiv3 #two h2 {
+    font-size: 28px;
+    color: rgb(19, 19, 19);
+    text-decoration: underline;
+}
+
+#aboutdiv3 #one,
+#aboutdiv3 #two {
+    width: 50%;
+    height: auto;
     text-align: center;
     font-weight: 500;
     border-radius: 15px;
     padding: 20px;
-    color: white;
-    box-shadow: 2px 2px 20px white;
+    color: rgb(21, 19, 19);
     font-size: 22px;
     font-family: Gabriola;
     letter-spacing: 1px;
 }
-#aboutdiv4,#aboutdiv5,#aboutdiv6{
+
+#aboutdiv4,
+#aboutdiv5,
+#aboutdiv6 {
     width: 80%;
     height: auto;
-    margin-left:10%;
+    margin-left: 10%;
     border: 1px solid rgb(246, 242, 242);
-    padding: 60px;
     text-align: center;
     margin-top: 45px;
     margin-bottom: 45px;
-    font-weight: 500;
+    background-color: rgb(143, 137, 137);
     border-radius: 15px;
-    padding: 20px;
-    color: white;
+    padding: 10px;
+    color: rgb(22, 22, 22);
     font-family: Gabriola;
-    box-shadow: 2px 2px 20px white;
     font-size: 22px;
     letter-spacing: 1px;
+    background-color: white;
+
 }
-#aboutdiv4 #one,#aboutdiv5 #one,#aboutdiv6 #one,#aboutdiv6 label{
+
+#aboutdiv4 #one,
+#aboutdiv5 #one,
+#aboutdiv6 #one,
+#aboutdiv6 label {
     font-family: Gabriola;
 }
-#aboutdiv4 aside, #aboutdiv5 aside{
+
+#aboutdiv4 aside,
+#aboutdiv5 aside {
     float: left;
     margin-right: 30px;
 }
-#aboutdiv4 aside img,#aboutdiv5 aside img{
-  width:200px;
-  height: 200px;
-  
+
+#aboutdiv4 aside img,
+#aboutdiv5 aside img {
+    width: 200px;
+    height: 200px;
+
 }
 
-#aboutdiv6 #one{
+#aboutdiv6 #one {
     border-bottom: 1px solid white;
     padding-bottom: 30px;
     margin-bottom: 30px;
 }
 
-#aboutsocial_icon{
+#aboutsocial_icon {
     font-size: 30px;
+}
+
+
+/* ======================= contact page =========================== */
+#form_div{
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 50px;
+
+}
+#contact_top {
+    width: 100%;
+    min-height: 250px;
+    max-height: auto;
+    border-bottom: 1px solid rgb(240, 235, 235);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(237, 234, 234);
+    align-items: center;
+}
+
+#contact_top #one {
+    width: 65%;
+    height: 250px;
+    padding: 40px;
+
+}
+
+#contact_top #two {
+    width: 35%;
+    height: 250px;
+    background-image: url('https://img.freepik.com/free-photo/portrait-woman-customer-service-worker_144627-37943.jpg?w=740&t=st=1710319715~exp=1710320315~hmac=4850231276c1d004d22c41ddde26e52ada799493528c0aefe5da56f4180024f2');
+    background-size: 100% 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 60%;
+}
+
+#contact_top h1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+#contact_top h5 {
+    text-align: left;
+}
+
+#contactpage_body {
+    width: 100%;
+    height: auto;
+}
+
+#contactpage_body aside {
+    min-width: 38%;
+    max-width: 50%;
+    height: auto;
+    float: right;
+    margin: 5px;
+}
+
+#contactpage_body aside #gmap {
+    width: 100%;
+    min-height: 250px;
+    max-height: 250px;
+    /* border: 1px solid rgb(219, 208, 208); */
+}
+
+#contactpage_body aside #gmap iframe {
+    height: auto;
+    width: auto;
+    /*IE8 bug fix*/
+    vertical-align: middle;
+    width: 100%;
+    min-height: 250px;
+    max-height: 400px;
+}
+
+#contact_form {
+    border: 1px solid rgb(227, 226, 226);
+    /* background-color: rgb(223, 214, 214); */
+    border-radius: 20px;
+    border-top: none;
+    width: 40%;
+    height: auto;
+    margin-left: 10%;
+    text-align: center;
+    padding: 20px;
+}
+
+#contact_form input {
+    width: 70%;
+    height: 40px;
+    padding-left: 15px;
+    border-radius: 10px;
+}
+
+#contact_form textarea {
+    width: 70%;
+    /* height: 40px; */
+    padding-left: 15px;
+    border-radius: 10px;
+}
+
+#contact_form #contact_button {
+    padding: 5px 10px;
+    border-radius: 15px;
 }

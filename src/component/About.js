@@ -27,7 +27,7 @@ const About = () => {
                         We carry up-and-coming student designer pieces and on-trend
                         fashion items, in addition to our own line of branded FIT
                         merchandise , Customer and must-have vintage finds.
-                    </div><br /><br />
+                    </div><br />
                     <button id="aboutbtn">More...</button>
                 </div>
             </div>
@@ -47,7 +47,7 @@ const About = () => {
                 <div id="mission">
                     <label>Our Mission</label><br />
                     <div id="content">
-                        <h2>Empowering Your Style Journey</h2>
+                        <h5>Empowering Your Style Journey</h5>
                         At StyleShop, our mission is to empower individuals
                         to express their unique style through fashion that
                         not only looks good but also feels good. We strive
@@ -56,7 +56,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <h1 id="aboutaparts">What Sets Us Apart</h1>
+            <div id="aboutaparts">What Sets Us Apart</div>
             <div id="aboutdiv3">
                 <div id="one">
                     <h2>Quality Meets Affordability</h2>
@@ -77,7 +77,7 @@ const About = () => {
                     are curated to cater to a wide range of tastes and
                     occasions, ensuring that you find the perfect outfit
                     for every moment.
-                    <br /><br /><br />
+                    <br />
                 </div>
             </div>
             <div id="aboutdiv4">
