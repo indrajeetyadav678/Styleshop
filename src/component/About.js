@@ -1,3 +1,10 @@
+import { FaInstagramSquare } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+
+
 const gif1 = "https://data2.nssmag.com/images/galleries/9606/thumbs/pleingif.gif";
 const img1="https://as1.ftcdn.net/v2/jpg/03/34/79/68/1000_F_334796865_VVTjg49nbLgQPG6rgKDjVqSb5XUhBVsW.jpg";
 const img2="";
@@ -123,6 +130,14 @@ const About = () => {
                 </aside>
                 <h1>Connect With Us</h1>
                 <h3>Join the StyleShop Community</h3>
+                <div id="aboutsocial_icon">
+                   < FaInstagramSquare/>&nbsp;&nbsp;&nbsp;
+                   <IoLogoWhatsapp/>&nbsp;&nbsp;&nbsp;
+                   <FaFacebook />&nbsp;&nbsp;&nbsp;
+                   <FaTwitter />&nbsp;&nbsp;&nbsp;
+                   <FaLinkedinIn />&nbsp;&nbsp;&nbsp;
+                   
+                </div>
                 <div id="one">
                     Stay updated on the latest trends, promotions,
                     and style tips by following us on social media.

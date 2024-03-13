@@ -1370,14 +1370,21 @@
     border-radius: 15px;
     padding: 20px;
     color: white;
+    font-family: Gabriola;
     box-shadow: 5px 5px 40px white;
     font-size: 22px;
-    font-family: Gabriola;
     letter-spacing: 1px;
+}
+#aboutdiv4 #one,#aboutdiv5 #one,#aboutdiv6 #one,#aboutdiv6 label{
+    font-family: Gabriola;
 }
 
 #aboutdiv6 #one{
     border-bottom: 1px solid white;
     padding-bottom: 30px;
     margin-bottom: 30px;
+}
+
+#aboutsocial_icon{
+    font-size: 30px;
 }

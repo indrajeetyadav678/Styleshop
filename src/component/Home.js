@@ -12,23 +12,26 @@ var likeno = 0;
 
 const Home = () => {
     // const mycartdata = useSelector(state => state.mycart.cart);
-    // const mylikeproduct = useSelector(state => state.mylike.likes);
+    const mylikeproduct = useSelector(state => state.mylike.likes);
     // console.log(mylikeproduct)
     const dispatch = useDispatch()
     const likedispatch = useDispatch()
     const setlike = (cid, liked) => {
-        p = p + liked;
+        
+        // p = p + liked;
         let likeproduct = product1.find(item => item.id === cid);
+        let heartcolor=mylikeproduct.find(mylikeproduct.id!==cid);
         console.log(likeproduct)
-        if(p===1){
+        if(heartcolor==="true"){
             document.getElementById('like' + cid).style.color = "red";
             likedispatch(addtolikes({ likeproduct }));
             likeno++;
         }
-        else if(p===2){
+        else{
             document.getElementById('like' + cid).style.color = "#4543431a";
-            likedispatch(delet(likeproduct.id));
-            p = 0;
+            // likedispatch(delet(likeproduct.id));
+            likedispatch(addtolikes({ likeproduct }));
+            // p = 0;
             likeno--;
         }
     }
