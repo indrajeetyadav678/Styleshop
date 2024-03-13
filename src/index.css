@@ -1209,7 +1209,7 @@
     background-size: 400px 460px;
     background-repeat: no-repeat;
     border-bottom-left-radius: 80px;
-    box-shadow: 5px 5px 30px white;
+    box-shadow: 2px 2px 20px white;
 
 }
 
@@ -1239,7 +1239,7 @@
     font-weight: 500;
     border-radius: 15px;
     color: white;
-    box-shadow: 5px 5px 40px white;
+    box-shadow: 2px 2px 20px white;
 }
 
 #aboutdiv1 #two label {
@@ -1281,7 +1281,7 @@
     font-weight: 500;
     border-radius: 15px;
     color: white;
-    box-shadow: 5px 5px 40px white;
+    box-shadow: 2px 2px 20px white;
 }
 
 #aboutdiv2 #story label {
@@ -1307,7 +1307,7 @@
     font-weight: 500;
     border-radius: 15px;
     color: white;
-    box-shadow: 5px 5px 40px white;
+    box-shadow: 2px 2px 20px white;
 }
 
 #aboutdiv2 #mission label {
@@ -1352,7 +1352,7 @@
     border-radius: 15px;
     padding: 20px;
     color: white;
-    box-shadow: 5px 5px 40px white;
+    box-shadow: 2px 2px 20px white;
     font-size: 22px;
     font-family: Gabriola;
     letter-spacing: 1px;
@@ -1371,7 +1371,7 @@
     padding: 20px;
     color: white;
     font-family: Gabriola;
-    box-shadow: 5px 5px 40px white;
+    box-shadow: 2px 2px 20px white;
     font-size: 22px;
     letter-spacing: 1px;
 }
