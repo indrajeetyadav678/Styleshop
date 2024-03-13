@@ -78,7 +78,7 @@ const Layout = () => {
                         </Link>
                         <div id="addlikewrapper" >
                             <div id="liked_p">{addlikedvalue}</div>
-                            <Link to="navlike" className="heartbtn1" ><CiHeart color="red" /></Link>
+                            <Link to="navlike" className="heartbtn1" ><CiHeart color="rgb(68, 68, 125)" style={{fontWeight:"bold"}}/></Link>
                         </div>
                         <Link to="navcreateacc" className="Rnavbtn1" ><FaUser /></Link>
                     </div>

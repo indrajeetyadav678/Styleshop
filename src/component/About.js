@@ -7,8 +7,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const gif1 = "https://data2.nssmag.com/images/galleries/9606/thumbs/pleingif.gif";
 const img1="https://as1.ftcdn.net/v2/jpg/03/34/79/68/1000_F_334796865_VVTjg49nbLgQPG6rgKDjVqSb5XUhBVsW.jpg";
-const img2="";
-const img3="";
+const img2="https://cdn1.vectorstock.com/i/1000x1000/65/80/female-fashion-clothes-icon-vector-18456580.jpg";
+const img3="https://static.vecteezy.com/system/resources/previews/024/772/453/non_2x/fashion-designer-working-on-dress-on-dummy-photo.jpg";
 const img4="";
 const img5="";
 
@@ -33,9 +33,6 @@ const About = () => {
             </div>
             <div id="aboutdiv2">
                 <div id="story">
-                    <aside>
-                        <img src="#" alt="" />
-                    </aside>
                     <label>Our Story</label><br />
                     <div id="content">
                         Welcome to StyleShop, where fashion meets comfort,
@@ -48,9 +45,6 @@ const About = () => {
                     </div>
                 </div>
                 <div id="mission">
-                    <aside>
-                        <img src="#" alt="" />
-                    </aside>
                     <label>Our Mission</label><br />
                     <div id="content">
                         <h2>Empowering Your Style Journey</h2>
@@ -65,9 +59,6 @@ const About = () => {
             <h1 id="aboutaparts">What Sets Us Apart</h1>
             <div id="aboutdiv3">
                 <div id="one">
-                    <aside>
-                        <img src="#" alt="" />
-                    </aside>
                     <h2>Quality Meets Affordability</h2>
                     We understand that fashion is not just
                     about the latest trends; it's about quality too.
@@ -79,9 +70,6 @@ const About = () => {
                     fashion without compromising on quality.
                 </div>
                 <div id="two">
-                    <aside>
-                        <img src="#" alt="" />
-                    </aside>
                     <h2>Diverse Collections for Every Style</h2>
                     Whether you're into casual chic, bohemian vibes,
                     or sophisticated elegance, StyleShop has something
@@ -94,7 +82,7 @@ const About = () => {
             </div>
             <div id="aboutdiv4">
                 <aside>
-                    <img src="#" alt="" />
+                    <img src={img1} alt="" />
                 </aside>
                 <h1>Our Commitment to Sustainability</h1>
                 <h3>Fashion with a Conscience</h3>
@@ -110,7 +98,7 @@ const About = () => {
             </div>
             <div id="aboutdiv5">
                 <aside>
-                    <img src="#" alt="" />
+                    <img src={img2} alt="" />
                 </aside>
                 <h1>Customer-Centric Approach</h1>
                 <h3>Your Satisfaction, Our Priority</h3>
