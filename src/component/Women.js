@@ -1,36 +1,27 @@
 import { sliderimg } from "../Database/HomeData";
 import Carouselslider from "./Carouselslider";
 import Product from "./Product";
-import { MenProduct } from "../Database/ClothsData";
 import { addtocart } from "../contoller/AddcartSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { product } from "../Database/HomeData";
 import { addtolikes, delet } from "../contoller/AddlikeSlice";
-var p = 0;
 var likeno = 0;
-
-
-
 const Women = () => {
-    const mycartdata = useSelector(state => state.mycart.cart);
+    const mylikeproduct = useSelector(state => state.mylike.likes);
     const dispatch = useDispatch()
     const likedispatch = useDispatch()
-    const setlike = (cid, liked) => {
-        p = p + liked;
+    const setlike = (cid) => {
         let likeproduct = product.find(item => item.id === cid);
-        console.log(likeproduct)
-        if (p === 1) {
+        let heartcolor = mylikeproduct.some(item => item.id === cid);
+        if (!heartcolor) {
+            dispatch(addtolikes(likeproduct)); 
             document.getElementById('like' + cid).style.color = "red";
-            likedispatch(addtolikes({ likeproduct }));
-            likeno++;
-        }
-        else if (p === 2) {
+        } else {
             document.getElementById('like' + cid).style.color = "#4543431a";
-            likedispatch(delet(likeproduct.id));
-            p = 0;
-            likeno--;
+            dispatch(delet(likeproduct.id));
         }
     }
+    console.log(mylikeproduct)
 
     const setcarddata = (image1, details, price, offer, originprice, brand, id, quantity1) => {
         let cartdata = { image: image1, detail: details, price: price, offer: offer, originalprice: originprice, brand: brand, id: id, quantity: quantity1 }
@@ -41,7 +32,7 @@ const Women = () => {
         return (
             <>
                 <Product img={key.image1}
-                    func={() => { setlike(key.id, 1) }}
+                    func={()=>setlike(key.id) }
                     pid={"like" + key.id}
                     nam={key.details}
                     price={key.price}
