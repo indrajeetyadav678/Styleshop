@@ -5,10 +5,13 @@ import { addtocart } from "../contoller/AddcartSlice";
 import { useSelector, useDispatch } from "react-redux";
 import Carouselslider from "./Carouselslider";
 import { addtolikes, delet } from "../contoller/AddlikeSlice";
+import { Catagorydata } from '../Database/HomeData';
+import CatagaryComponent from '../CatagaryComponent';
 
 const Home = () => {
     const mylikeproduct = useSelector(state => state.mylike.likes);
     const dispatch = useDispatch()
+    
 
     const setlike = (cid) => {
         let likeproduct = product1.find(item => item.id === cid);

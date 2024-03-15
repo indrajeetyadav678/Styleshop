@@ -21,6 +21,7 @@ import Likepage from "./component/Likepage";
 import Orderform from "./component/Orderform";
 import JsonData from "./Jsonfile_datafillForm";
 import Footerlink from "./component/Footerlink";
+import MenTopWear from "./component/MenCatagory/MenTopWear";
 
 
 
@@ -58,6 +59,9 @@ function App() {
           <Route path="winter" element={<Footerlink />} />
           <Route path="farmal" element={<Footerlink />} />
           <Route path="casual" element={<Footerlink />} />
+          //Catagory Links
+          <Route path="mentopwear" element={<MenTopWear />} />
+
         </Route>
       </Routes>
     </BrowserRouter>
