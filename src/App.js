@@ -22,6 +22,10 @@ import Orderform from "./component/Orderform";
 import JsonData from "./Jsonfile_datafillForm";
 import Footerlink from "./component/Footerlink";
 import MenTopWear from "./component/MenCatagory/MenTopWear";
+import MenBottomWear from "./component/MenCatagory/MenBottomwear";
+import MenEthicWear from "./component/MenCatagory/MenEthicWear";
+import MenFootWear from "./component/MenCatagory/MenFootWear";
+import MenInnerWear from "./component/MenCatagory/MenInnerWear";
 
 
 
@@ -60,7 +64,11 @@ function App() {
           <Route path="farmal" element={<Footerlink />} />
           <Route path="casual" element={<Footerlink />} />
           //Catagory Links
-          <Route path="mentopwear" element={<MenTopWear />} />
+          <Route path="mencat1" element={<MenTopWear />} />
+          <Route path="mencat2" element={<MenBottomWear />} />
+          <Route path="mencat3" element={<MenEthicWear />} />
+          <Route path="mencat4" element={<MenFootWear />} />
+          <Route path="mencat5" element={<MenInnerWear />} />
 
         </Route>
       </Routes>

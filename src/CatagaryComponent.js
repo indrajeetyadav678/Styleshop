@@ -1,14 +1,16 @@
 
-
+import { Link } from "react-router-dom";
 
 
 const CatagaryComponent = (props) => {
     return (
         <>
-            <div className="catcomp_box" id={props.catfunction}>
-                    <img src={props.catimage} atl="" /><br/>
-                <label>{props.catname}</label>
-            </div>
+            <Link to={props.link}>
+                <div className="catcomp_box">
+                    <img src={props.catimage} atl="" /><br />
+                    <label>{props.catname}</label>
+                </div>
+            </Link>
         </>
     );
 }

@@ -8,35 +8,38 @@ import { addtolikes, delet } from "../contoller/AddlikeSlice";
 import { Catagorydata } from '../Database/HomeData';
 import CatagaryComponent from '../CatagaryComponent';
 import { useNavigate } from "react-router";
+import MenTopWear from "./MenCatagory/MenTopWear";
+import { useRef } from "react";
 
 let slide5 = "https://www.sliderrevolution.com/wp-content/uploads/2023/06/sneaker-woocommerce-slider.gif";
-
 
 const Men = () => {
     const mylikeproduct = useSelector(state => state.mylike.likes);
     const dispatch = useDispatch()
-    const catnavigate= useNavigate();
-    const Mencat1=()=>{
-        catnavigate("mentopwear");
-    };
-    const Mencat2=()=>{
+    // const catnavigate= useNavigate();
+    // const myref1=useRef();
+    // document.getElementById('Mencat1').addEventListener("onClick",MenTopWear);
+    // const MenTopWear=()=>{
+    //     catnavigate("/mentopwear");
+    // };
+    // const Mencat2=()=>{
 
-    };
-    const Mencat3=()=>{
+    // };
+    // const Mencat3=()=>{
 
-    };
-    const Mencat4=()=>{
+    // };
+    // const Mencat4=()=>{
 
-    };
-    
+    // };
+    // const Mencat5=()=>{
+
+    // };
 
     const catans = Catagorydata.Menpagecat.map(key => {
-        const Mencat5=()=>{
-
-        };
+        
         return (
             <>
-                <CatagaryComponent catimage={key.catimage} catname={key.catname} catfunction={Mencat1} />
+                <CatagaryComponent catimage={key.catimage} catname={key.catname} link={"/mencat"+key.id} />
             </>
         );
     })
