@@ -337,14 +337,15 @@
 
 #sliderimgcarousel {
     width: 100%;
-    height: 500px;
+    height: 470px;
 }
+
 /* #sliderimgcarousel {
     width: 100%;
     height: 450px;
 } */
 
-.slider {
+/* .slider {
     width: 400%;
     height: 92vh;
     display: flex;
@@ -352,11 +353,11 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    /* animation: carousel 8s infinite; */
     animation: carousel 8s ease-in-out infinite;
-    /* border: 2px solid red; */
+    border: 2px solid red;
 }
-
+*/
+/*
 @keyframes carousel {
     0% {
         left: 0;
@@ -377,12 +378,12 @@
         left: -300%;
         top: 0px;
     }
-}
+} */
 
-.slide1 {
+/* .slide1 {
     width: 25%;
     height: 80vh;
-}
+} */
 
 .dot_box {
     width: 400px;
@@ -408,24 +409,26 @@
 }
 
 /* ==================== catagory component page ===================== */
-#cattype_link_box{
+#cattype_link_box {
     width: 100%;
-    height: 75px;
+    height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.catcomp_box{
-    width:140px;
+
+.catcomp_box {
+    width: 140px;
     height: 50px;
     /* border: 1px solid black; */
     text-align: center;
     cursor: pointer;
-    
+
 }
-.catcomp_box img{
-    box-shadow: 2px 2px 15px rgb(199, 195, 195); 
-    width:40px;
+
+.catcomp_box img {
+    box-shadow: 2px 2px 15px rgb(199, 195, 195);
+    width: 40px;
     height: 40px;
     object-fit: cover;
     /* border: 1px solid black;   */
@@ -1230,6 +1233,7 @@
     background-repeat: no-repeat;
     border-bottom-left-radius: 80px;
 }
+
 #aboutdiv1 #two {
     width: 60%;
     text-align: center;
@@ -1297,7 +1301,7 @@
     padding: 15px;
     font-family: Gabriola;
     letter-spacing: 1px;
-    
+
 }
 
 /* ==================================== */
@@ -1430,13 +1434,14 @@
 
 
 /* ======================= contact page =========================== */
-#form_div{
+#form_div {
     width: 100%;
     height: auto;
     background-color: rgb(255, 255, 255);
     padding-bottom: 50px;
 
 }
+
 #contact_top {
     width: 100%;
     min-height: 250px;
@@ -1534,4 +1539,64 @@
 #contact_form #contact_button {
     padding: 5px 10px;
     border-radius: 15px;
+}
+
+/* ================================ catagory page ======================== */
+#catpage_product_wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* ====================== Likepage ==================== */
+#like_page_product_wrapper {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    border: 1px solid rgb(197, 192, 192);
+    margin-bottom: 10px;
+   background-color: rgb(237, 237, 237);
+}
+
+#like_page_product_image {
+    width: 200px;
+    min-height: 200px;
+    /* max-height: 250px; */
+}
+
+#like_page_product_image img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(109, 105, 105);
+}
+
+#like_page_product_details {
+    text-align: center;
+    width: 30%;
+    height: auto;
+    padding: 15px;
+    border-right: 1px solid rgb(203, 196, 196);
+}
+
+#like_page_product_description {
+    width: 50%;
+    height: 200px;
+    padding: 8px;
+    text-align: center;
+    border-right: 1px solid rgb(203, 196, 196);
+    position: relative;
+
+}
+#like_page_product_deletebtn{
+width: 40px;
+height: 40px;
+font-size: 30px;
+position: absolute;
+top:-8px;
+right:8px;
+/* text-align: right; */
 }

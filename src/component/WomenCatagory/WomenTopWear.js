@@ -1,19 +1,17 @@
-import { sliderimg6 } from "../Database/HomeData";
-import Carouselslider from "./Carouselslider";
-import Product from "./Product";
-import { MenProduct } from "../Database/ClothsData";
-import { addtocart } from "../contoller/AddcartSlice";
+import Product from "../Product";
+import { MenProduct } from "../../Database/ClothsData";
 import { useDispatch } from "react-redux";
+import { addtocart } from "../../contoller/AddcartSlice";
+import { Catagorydata } from '../../Database/HomeData';
+import CatagaryComponent from '../CatagaryComponent';
 
 
-
-const Toys = () => {
-    const dispatch = useDispatch();
+const WomenTopWear=()=>{
+    const dispatch = useDispatch()
     const setcarddata = (image1, details, price, offer, originprice, brand, id, quantity1) => {
         let cartdata = { image: image1, detail: details, price: price, offer: offer, originalprice: originprice, brand: brand, id: id, quantity: quantity1 }
         dispatch(addtocart(cartdata));
     }
-
     const productans = MenProduct.map((key) => {
         return (
             <>
@@ -28,17 +26,24 @@ const Toys = () => {
                 />
             </>
         );
-    })
+    });
+    const catans = Catagorydata.Womenpagecat.map(key => {
+        return (
+            <>
+                <CatagaryComponent catimage={key.catimage} catname={key.catname} link={"/mencat" + key.id} />
+            </>
+        );
+    });
     return (
         <>
-            <div className="sliderbox">
-                <Carouselslider slider={sliderimg6} />
+            {/* <h1> this is Men Bottom Wear page</h1> */}
+            <div id="cattype_link_box">
+                {catans}
             </div>
-            <div className="landing">
+            <div id="catpage_product_wrapper">
                 {productans}
-
             </div>
         </>
     );
 }
-export default Toys;
+export default WomenTopWear;

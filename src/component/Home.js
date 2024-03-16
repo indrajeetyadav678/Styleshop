@@ -2,39 +2,19 @@ import React from 'react';
 import Product from "./Product";
 import { sliderimg2, product1 } from "../Database/HomeData";
 import { addtocart } from "../contoller/AddcartSlice";
-import { useSelector, useDispatch } from "react-redux";
+import {useDispatch } from "react-redux";
 import Carouselslider from "./Carouselslider";
-import { addtolikes, delet } from "../contoller/AddlikeSlice";
-import { Catagorydata } from '../Database/HomeData';
-import CatagaryComponent from '../CatagaryComponent';
-
 const Home = () => {
-    const mylikeproduct = useSelector(state => state.mylike.likes);
-    const dispatch = useDispatch()
-    
-
-    const setlike = (cid) => {
-        let likeproduct = product1.find(item => item.id === cid);
-        let heartcolor = mylikeproduct.some(item => item.id === cid);
-        if (!heartcolor) {
-            dispatch(addtolikes(likeproduct)); 
-            document.getElementById('like' + cid).style.color = "red";
-        } else {
-            document.getElementById('like' + cid).style.color = "#4543431a";
-            dispatch(delet(likeproduct.id));
-        }
-    }
-    console.log(mylikeproduct)
-    
+    const dispatch = useDispatch();
     const setcarddata = (image1, details, price, offer, originprice, brand, id, quantity1) => {
         let cartdata = { image: image1, detail: details, price: price, offer: offer, originalprice: originprice, brand: brand, id: id, quantity: quantity1 }
         dispatch(addtocart(cartdata));
     }
-
     const productans = product1.map((key) => (
         <Product
+            Pdatabase={product1}
+            Pid={key.id}
             img={key.image1}
-            func={() => setlike(key.id)}
             pid={"like" + key.id}
             nam={key.details}
             price={key.price}

@@ -27,6 +27,23 @@ import MenEthicWear from "./component/MenCatagory/MenEthicWear";
 import MenFootWear from "./component/MenCatagory/MenFootWear";
 import MenInnerWear from "./component/MenCatagory/MenInnerWear";
 
+import WomenTopWear from "./component/WomenCatagory/WomenTopWear";
+import WomenEthicWear from "./component/WomenCatagory/WomenEthicWear";
+import WomenFootWear from "./component/WomenCatagory/WomenFootWear";
+import WomenInnerWear from "./component/WomenCatagory/WomenInnerWear";
+import WomenBottomwear from "./component/WomenCatagory/WomenBottomwear";
+
+import KidwearBottomwear from "./component/KidwearCatagory/KidwearBottomwear";
+import KidwearEthicWear from "./component/KidwearCatagory/KidwearEthicWear";
+import KidwearFootWear from "./component/KidwearCatagory/KidwearFootWear";
+import KidwearInnerWear from "./component/KidwearCatagory/KidwearInnerWear";
+import KidwearTopWear from "./component/KidwearCatagory/KidwearTopWear";
+
+import BornBaby from "./component/BabyCatagory/BornBaby";
+import SixMonthBaby from "./component/BabyCatagory/SixMonthBaby";
+import Footwear from "./component/BabyCatagory/Footwear";
+import YearsBaby from "./component/BabyCatagory/YearsBaby";
+import BabyCares from "./component/BabyCatagory/BabyCares";
 
 
 
@@ -69,6 +86,24 @@ function App() {
           <Route path="mencat3" element={<MenEthicWear />} />
           <Route path="mencat4" element={<MenFootWear />} />
           <Route path="mencat5" element={<MenInnerWear />} />
+
+          <Route path="mencat6" element={<WomenTopWear/>} />
+          <Route path="mencat7" element={<WomenBottomwear />} />
+          <Route path="mencat8" element={<WomenEthicWear />} />
+          <Route path="mencat9" element={<WomenFootWear />} />
+          <Route path="mencat10" element={<WomenInnerWear />} />
+
+          <Route path="mencat11" element={<KidwearTopWear />} />
+          <Route path="mencat12" element={<KidwearBottomwear />} />
+          <Route path="mencat13" element={<KidwearEthicWear />} />
+          <Route path="mencat14" element={<KidwearFootWear />} />
+          <Route path="mencat15" element={<KidwearInnerWear />} />
+
+          <Route path="mencat16" element={<BornBaby />} />
+          <Route path="mencat17" element={<SixMonthBaby />} />
+          <Route path="mencat18" element={<YearsBaby />} />
+          <Route path="mencat19" element={<Footwear />} />
+          <Route path="mencat20" element={<BabyCares />} />
 
         </Route>
       </Routes>

@@ -7,7 +7,7 @@ const product = [
         "brand": "party dress",
         "details": "Spark night party dress one piece dress, stylish dress ",
         "price": "1300",
-        "originprice": "₹5,999",
+        "originprice": "5,999",
         "offer": "",
         "id": 1
     },
@@ -549,17 +549,17 @@ const Catagorydata =
 {
     "Menpagecat": [
         {
-            "catimage": "https://images.meesho.com/images/products/395665335/dqtls_512.webp",
+            "catimage": "https://images.meesho.com/images/products/326353038/tcsim_512.webp",
             "catname": "Top Wear",
             "id":1
         },
         {
-            "catimage": "https://images.meesho.com/images/products/396509350/yehph_512.webp",
+            "catimage": "https://images.meesho.com/images/products/313544194/jezol_512.webp",
             "catname": "Bottom Wear",
             "id":2
         },
         {
-            "catimage": "https://images.meesho.com/images/products/275904106/hpk5b_512.webp",
+            "catimage": "https://images.meesho.com/images/products/90922383/1z8j1_512.webp",
             "catname": "Ethic Wear",
             "id":3
         },
@@ -576,13 +576,87 @@ const Catagorydata =
 
     ],
     "Womenpagecat": [
+        {
+            "catimage": "https://images.meesho.com/images/products/235669021/gjqzs_512.webp",
+            "catname": "Top Wear",
+            "id":6
+        },
+        {
+            "catimage": "https://images.meesho.com/images/products/61692291/sbu4d_512.webp",
+            "catname": "Bottom Wear",
+            "id":7
+        },
+        {
+            "catimage": "https://images.meesho.com/images/products/335770918/lkslj_512.webp",
+            "catname": "Ethic Wear",
+            "id":8
+        },
+        {
+            "catimage": "https://w7.pngwing.com/pngs/446/61/png-transparent-pair-of-women-shoe-bride-red-high-heeled-footwear-wedding-female-shoes-hd-fashion-court-shoe-outdoor-shoe.png",
+            "catname": "Foot Wear",
+            "id":9
+        },
+        {
+            "catimage": "https://images.meesho.com/images/products/283795979/yu22u_512.webp",
+            "catname": "inner & Sleep Wear",
+            "id":10
+        },
 
     ],
     "Kidcollectionpagecat": [
+        {
+            "catimage": "https://rukminim2.flixcart.com/image/832/832/l1tmf0w0/shirt/w/y/s/13-14-years-821-cloud-kids-original-imagdbyhycsnqyy5.jpeg?q=70&crop=false",
+            "catname": "Top Wear",
+            "id":11
+        },
+        {
+            "catimage": "https://rukminim2.flixcart.com/image/832/832/xif0q/kids-track-pant/w/z/d/9-10-years-pro-kt13-navy-provogue-original-imagzvgzpa6w6vgx.jpeg?q=70&crop=false",
+            "catname": "Bottom Wear",
+            "id":12
+        },
+        {
+            "catimage": "https://rukminim2.flixcart.com/image/832/832/xif0q/kids-ethnic-set/j/j/n/3-4-years-whitejabla-ftc-fashions-original-imaft8pzfzegxtyb-bb.jpeg?q=70&crop=false",
+            "catname": "Ethic Wear",
+            "id":13
+        },
+        {
+            "catimage": "https://rukminim2.flixcart.com/image/832/832/xif0q/kids-shoe/o/t/y/4c-hike-led-shoes-hooh-now-comfort-in-fashion-original-imagqc4ajhc5n2jh.jpeg?q=70&crop=false",
+            "catname": "Foot Wear",
+            "id":14
+        },
+        {
+            "catimage": "https://rukminim2.flixcart.com/image/832/832/kirr24w0-0/kids-vest/s/r/g/12-18-months-k-white-vest-11111-kiyo-original-imafyh8zhvvaaj32.jpeg?q=70&crop=false",
+            "catname": "inner & Sleep Wear",
+            "id":15
+        },
 
     ],
     "Babypagecat": [
-
+        {
+            "catimage": "https://asset1.cxnmarksandspencer.com/is/image/mands/SD_04_T92_2019C_A4_X_EC_2?$Intl_PDP_Desk$",
+            "catname": "1-30 Days Baby",
+            "id":16
+        },
+        {
+            "catimage": "https://asset1.cxnmarksandspencer.com/is/image/mands/SD_04_T92_2527N_QA_X_EC_0?$Intl_PDP_Desk$ ",
+            "catname": "1-12 Month Baby",
+            "id":17
+        },
+        {
+            "catimage": "https://www.marksandspencer.in/on/demandware.static/-/Sites-mnsindia-Library/default/dw5115965a/2024/Springlaunch-two/Web/Kids/navCir-ToodlerBoys-SP-two.jpg",
+            "catname": "1-5 year Baby",
+            "id":18
+        },
+        {
+            "catimage": "https://images.meesho.com/images/products/395476749/hwt18_512.webp",
+            "catname": "Foot Wear",
+            "id":19
+        },
+        {
+            "catimage": "https://images.meesho.com/images/products/395476749/hwt18_512.webp",
+            "catname": "Baby All cares",
+            "id":20
+        }
     ]
 }
 
