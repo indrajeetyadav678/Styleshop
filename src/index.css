@@ -109,24 +109,33 @@
 }
 
 .heartbtn1 {
-    font-size: 30px;
-    color: rgb(36, 36, 188);
+    font-size: 23px;
+    color: rgb(247, 30, 88);
 }
 
 #addlikewrapper {
     width: 30px;
-    height: 45px;
+    height: 40px;
     /* border:1px solid red; */
     position: relative;
+    top: 5px
 }
 
 #liked_p {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(243, 242, 242);
     position: absolute;
-    top: 10px;
-    right: 37%;
+    top: -4px;
+    right: 18%;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
     color: rgb(117, 107, 107);
+    border-radius: 50%;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -138,14 +147,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 1px 20px rgb(36, 36, 36);
+    box-shadow: 1px 1px 12px rgb(147, 144, 144);
 }
 
 #sear-box:hover {
-    background-color: rgb(243, 239, 239);
-    color: rgb(108, 109, 108);
+    background-color: rgb(203, 235, 248);
+    color: rgb(108, 109, 109);
     font-weight: bolder;
-    box-shadow: 2px 3px 25px rgb(255, 255, 255);
+    box-shadow: 2px 3px 25px rgb(138, 180, 238);
 }
 
 #addcartwrapper {
@@ -159,8 +168,8 @@
 }
 
 #showcartno {
-    width: 25px;
-    height: 25px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     /* border: 1px solid rgb(133, 126, 126); */
     position: absolute;
@@ -171,7 +180,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: rgb(244, 244, 244);
     color: rgb(152, 134, 130);
     z-index: 2;
 }
@@ -966,7 +976,7 @@
 
 #Acc_mainbox {
     width: 600px;
-    height: 400px;
+    height: 450px;
     /* border: 1px solid blue; */
     border-radius: 15px;
     display: flex;
@@ -978,7 +988,7 @@
 
 #Acc_imagebox {
     width: 300px;
-    height: 400px;
+    height: 450px;
     border: 2px solid blue;
     background-color: black;
     border-top-left-radius: 15px;
@@ -987,14 +997,14 @@
 
 #Acc_imagebox img {
     width: 300px;
-    height: 395px;
+    height: 445px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
 
 #Acc_createbox {
     width: 300px;
-    height: 400px;
+    height: 450px;
     border: 2px solid rgb(24, 24, 241);
     background-color: rgb(123, 123, 155);
     text-align: center;
@@ -1012,21 +1022,22 @@
 
 #Rone,
 #Rtwo,
-#Rthree {
+#Rthree,#Rthre {
     width: 260px;
     height: 32px;
     border: 1px solid rgb(79, 77, 77);
     margin: auto;
     padding-left: 5px;
     border-radius: 15px;
-    margin-bottom: 20px;
+    /* margin-bottom: 5px; */
     background-color: white;
-    box-shadow: 2px 2px 15px rgb(106, 43, 43);
+    box-shadow: 1px 1px 3px rgb(245, 245, 245);
+    position: relative;
 }
 
 #Rone input,
 #Rtwo input,
-#Rthree input {
+#Rthree input,#Rthre input {
     width: 230px;
     height: 30px;
     padding-left: 15px;
@@ -1035,6 +1046,35 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
+#Ronecorect,#Rtwocorect,#Rthreecorect,#Rthrecorect {
+    position: absolute;
+    top: 7px;
+    right:8px;
+    color: rgb(14, 191, 14);
+    display: none;
+}
+
+#Roneerror,#Rtwoerror,#Rthreeerror,#Rthreerror{
+    position: absolute;
+    top: 7px;
+    right:8px;
+    color: red;
+    display: none;
+}
+#errormsgbox{
+    width: 300px;
+    height: 30px;
+    padding: 3px;
+    text-align: left;
+}
+#Roneerrormsg,#Rtwoerrormsg,#Rthreeerrormsg,#Rthreerrormsg1,#Rthreerrormsg2{
+    display: none;
+    color: rgb(255, 68, 68);
+    font-size: 12px;
+    margin-left: 20px;
+}
+
 
 #login_rem_box {
     width: 300px;
@@ -1559,7 +1599,7 @@
     margin-left: 15%;
     border: 1px solid rgb(197, 192, 192);
     margin-bottom: 10px;
-   background-color: rgb(237, 237, 237);
+    background-color: rgb(237, 237, 237);
 }
 
 #like_page_product_image {
@@ -1591,12 +1631,151 @@
     position: relative;
 
 }
-#like_page_product_deletebtn{
-width: 40px;
-height: 40px;
-font-size: 30px;
-position: absolute;
-top:-8px;
-right:8px;
-/* text-align: right; */
+
+#like_page_product_deletebtn {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    position: absolute;
+    top: -8px;
+    right: 8px;
+    /* text-align: right; */
 }
+/* ========================== Prodect details page ============================== */
+#product_detail_mainwrapper{
+    width:100%;
+    height: auto;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid rgb(238, 40, 40); */
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+#product_detail_imagepack{
+    width:20%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 5px solid rgb(23, 237, 58); */
+}
+#product_detail_imagepack img{
+    width:150px;
+    height:auto;
+    margin-bottom: 20px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+
+}
+#product_detail_show_box{
+    width:40%;
+    height: auto;
+    display: block;
+    /* border: 1px solid black; */
+    position: relative;
+
+}
+#product_detail_show_box img{
+    width:90%;
+    height: 450px;
+    border:1px solid rgb(110, 107, 107);
+    margin-bottom: 35px;
+}
+#detailpage_likeheart{
+    position: absolute;
+    top:13px;
+    right:80px;
+    font-size: 40px;
+    color: rgb(165, 161, 161);
+}
+#product_detail_show_box button{
+    width:170px;
+    height:35px;
+}
+#product_inform_wrapper{
+    width:40%;
+    height: auto;
+    /* border: 1px solid black; */
+
+}
+#product_inform_wrapper #one{
+    width:100%;
+    height: auto;
+    padding: 25px;
+    text-align: left;
+    font-size: 16px;
+    border: 1px solid rgb(208, 205, 205);
+    margin-bottom: 10px;
+
+}
+#product_inform_wrapper #two{
+    width:100%;
+    height: auto;
+    padding: 25px;
+    text-align: left;
+    margin-bottom: 10px;
+    border: 1px solid rgb(208, 205, 205);
+}
+#product_inform_wrapper #two button{
+    margin-left: 15px;
+    padding: 3px 8px;
+}
+#product_inform_wrapper #three{
+    width:100%;
+    height: auto;
+    padding: 25px;
+    margin-bottom: 10px;
+    text-align: left;
+    border: 1px solid rgb(208, 205, 205);
+}
+#product_inform_wrapper #four{
+    width:100%;
+    height: auto;
+    padding: 25px;
+    text-align: left;
+    margin-bottom: 10px;
+    border: 1px solid rgb(208, 205, 205);
+}
+#product_inform_wrapper #five{
+    width:100%;
+    height: auto;
+    padding: 25px;
+    text-align: left;
+    margin-bottom: 10px;
+    border: 1px solid rgb(208, 205, 205);
+}
+#product_inform_wrapper #six{
+    width:100%;
+    height: auto;
+    padding: 25px;
+    text-align: left;
+    margin-bottom: 10px;
+    border: 1px solid rgb(208, 205, 205);
+}
+#product_inform_wrapper #six #colorbox_wrapper{
+    width:70%;
+    height: auto;
+    padding: 25px;
+    text-align: left;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid rgb(130, 122, 122); */
+}
+#product_inform_wrapper #six #colorbox_wrapper div{
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid rgb(138, 134, 134);
+}
+
+
+
+
+
+
+

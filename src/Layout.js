@@ -3,7 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 import Footer from "./component/Footer";
 import { IoIosSearch } from "react-icons/io";
 import { FaShoppingCart } from "react-icons/fa";
-import { CiHeart } from "react-icons/ci";
+import { FaHeart } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { FaBars } from "react-icons/fa6";
@@ -78,7 +78,7 @@ const Layout = () => {
                         </Link>
                         <div id="addlikewrapper" >
                             <div id="liked_p">{addlikedvalue}</div>
-                            <Link to="navlike" className="heartbtn1" ><CiHeart color="rgb(68, 68, 125)" style={{fontWeight:"bold"}}/></Link>
+                            <Link to="navlike" className="heartbtn1" ><FaHeart  /></Link>
                         </div>
                         <Link to="navcreateacc" className="Rnavbtn1" ><FaUser /></Link>
                     </div>

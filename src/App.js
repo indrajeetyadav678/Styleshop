@@ -44,6 +44,7 @@ import SixMonthBaby from "./component/BabyCatagory/SixMonthBaby";
 import Footwear from "./component/BabyCatagory/Footwear";
 import YearsBaby from "./component/BabyCatagory/YearsBaby";
 import BabyCares from "./component/BabyCatagory/BabyCares";
+import Product_info from "./component/Product_info";
 
 
 
@@ -104,6 +105,7 @@ function App() {
           <Route path="mencat18" element={<YearsBaby />} />
           <Route path="mencat19" element={<Footwear />} />
           <Route path="mencat20" element={<BabyCares />} />
+          <Route path="productinfo" element={<Product_info />} />
 
         </Route>
       </Routes>

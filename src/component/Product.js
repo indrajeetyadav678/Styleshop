@@ -2,6 +2,7 @@
 import { useNavigate } from "react-router-dom";
 import { FaHeart } from "react-icons/fa";
 import { addtolikes, delet } from "../contoller/AddlikeSlice";
+import { Detailpage_call,remove } from "../contoller/Product_detailpageSlice";
 import { useSelector, useDispatch } from "react-redux";
 
 
@@ -20,19 +21,25 @@ const Product = (props) => {
             dispatch(delet(likeproduct.id));
         }
     }
-    console.log(mylikeproduct)
+    // console.log(mylikeproduct)
 
     const Navigate = useNavigate();
     const OrderNow1 = () => {
         Navigate("/Orderform");
     }
+    const productdetailpage=(product_id)=>{
+        var call_product=props.Pdatabase.find(item => item.id === product_id)
+        dispatch(remove(product_id))
+        dispatch(Detailpage_call(call_product))
+        Navigate("/productinfo");
+    }
 
 
     return (
 
-        <div className="cont_box">
+        <div className="cont_box" >
             <div className="img">
-                <img src={props.img} alt="#" />
+                <img src={props.img} alt="#" onClick={()=>{productdetailpage(props.Pid)}} />
                 <FaHeart className="likeheart" id={props.pid} onClick={() => setlike(props.Pid)} />
             </div>
             <div className="prod_name">{props.nam}</div><br />
