@@ -42,9 +42,12 @@ const Product = (props) => {
                 <img src={props.img} alt="#" onClick={()=>{productdetailpage(props.Pid)}} />
                 <FaHeart className="likeheart" id={props.pid} onClick={() => setlike(props.Pid)} />
             </div>
-            <div className="prod_name">{props.nam}</div><br />
-            <span className="detail">{props.price}/-</span>
-            <span className="detail">{props.offer}</span><br /><br />
+            <div className="prod_name">{props.nam}</div>
+            <div id="prod_rate_wrapper">
+            <div className="detail">₹&nbsp;&nbsp;{props.price}/-</div>
+            <div className="detail" id="Mrp_price">₹&nbsp;&nbsp;{props.MRP}/-</div>
+            <div className="detail">{props.offer}</div>
+            </div>  
             <button className="cartbtn" onClick={props.function}>Add to cart</button>
             <button className="buybtn" onClick={OrderNow1}>Buy</button>
         </div>

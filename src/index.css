@@ -425,6 +425,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow: scroll;
+}
+
+#cattype_link_box::-webkit-scrollbar {
+    display: none;
 }
 
 .catcomp_box {
@@ -433,7 +438,6 @@
     /* border: 1px solid black; */
     text-align: center;
     cursor: pointer;
-
 }
 
 .catcomp_box img {
@@ -463,7 +467,7 @@
     height: 480px;
     /* border: 2px solid rgb(243, 239, 239); */
     background-color: rgba(237, 237, 236, 0.9);
-    box-shadow: 8px 8px 40px rgb(150, 151, 149);
+    box-shadow: 3px 3px 15px rgb(150, 151, 149);
     border-radius: 15px;
     margin: 50px 15px;
     overflow: hidden;
@@ -477,7 +481,7 @@
 
 .img {
     width: 320px;
-    height: 300px;
+    height: 290px;
     object-fit: cover;
     /* text-align: center; */
     margin-bottom: 10px;
@@ -501,7 +505,7 @@
 
 .img img {
     width: 316px;
-    height: 300px;
+    height: 290px;
     border-radius: 15px;
 
     /* transition: 1s; */
@@ -515,18 +519,39 @@
 }
 
 .prod_name {
-    width: 300px;
+    width: 100%;
+    height: 70px;
     font-size: 16px;
-    font-weight: 800;
-    padding: 0px 5px;
-    text-align: center;
+    padding:0px 15px;
+    /* border: 1px solid rgb(220, 181, 181); */
+   overflow: hidden;
+    font-weight: 100;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#prod_rate_wrapper {
+    width: 100%;
+    height: 40px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid rgb(220, 181, 181); */
+    margin-bottom: 10px;
+    padding-left: 25px;
 }
 
 .detail {
+    font-family: Arial, Helvetica, sans-serif;
     width: 300px;
     font-size: 16px;
     font-weight: 800;
-    margin-left: 70px;
+    margin-left: 10px;
+}
+
+#Mrp_price {
+    text-decoration: line-through;
+    /* color: aqua; */
 }
 
 .cartbtn,
@@ -1022,7 +1047,8 @@
 
 #Rone,
 #Rtwo,
-#Rthree,#Rthre {
+#Rthree,
+#Rthre {
     width: 260px;
     height: 32px;
     border: 1px solid rgb(79, 77, 77);
@@ -1037,7 +1063,8 @@
 
 #Rone input,
 #Rtwo input,
-#Rthree input,#Rthre input {
+#Rthree input,
+#Rthre input {
     width: 230px;
     height: 30px;
     padding-left: 15px;
@@ -1047,28 +1074,40 @@
     border-bottom-right-radius: 10px;
 }
 
-#Ronecorect,#Rtwocorect,#Rthreecorect,#Rthrecorect {
+#Ronecorect,
+#Rtwocorect,
+#Rthreecorect,
+#Rthrecorect {
     position: absolute;
     top: 7px;
-    right:8px;
+    right: 8px;
     color: rgb(14, 191, 14);
     display: none;
 }
 
-#Roneerror,#Rtwoerror,#Rthreeerror,#Rthreerror{
+#Roneerror,
+#Rtwoerror,
+#Rthreeerror,
+#Rthreerror {
     position: absolute;
     top: 7px;
-    right:8px;
+    right: 8px;
     color: red;
     display: none;
 }
-#errormsgbox{
+
+#errormsgbox {
     width: 300px;
     height: 30px;
     padding: 3px;
     text-align: left;
 }
-#Roneerrormsg,#Rtwoerrormsg,#Rthreeerrormsg,#Rthreerrormsg1,#Rthreerrormsg2{
+
+#Roneerrormsg,
+#Rtwoerrormsg,
+#Rthreeerrormsg,
+#Rthreerrormsg1,
+#Rthreerrormsg2 {
     display: none;
     color: rgb(255, 68, 68);
     font-size: 12px;
@@ -1161,12 +1200,20 @@
 } */
 
 /* ========================= Search page Component =========================== */
+#search_box_wrapper {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #search_inputbox {
-    width: 35%;
+    width: 400px;
     height: 38px;
     border: 1px solid black;
     padding: 0;
-    margin: 50px 35%;
+    /* margin-top: ; */
     border-radius: 18px;
 }
 
@@ -1180,6 +1227,13 @@
     background-color: white;
 }
 
+#show_serachproduct_quantity {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
 #searchoutputbox {
     width: 100%;
     min-height: 400px;
@@ -1187,7 +1241,7 @@
 }
 
 #search_inputbox #searchbtn {
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -1641,9 +1695,10 @@
     right: 8px;
     /* text-align: right; */
 }
+
 /* ========================== Prodect details page ============================== */
-#product_detail_mainwrapper{
-    width:100%;
+#product_detail_mainwrapper {
+    width: 100%;
     height: auto;
     padding: 0px;
     display: flex;
@@ -1652,56 +1707,94 @@
     flex-wrap: wrap;
     margin-top: 30px;
 }
-#product_detail_imagepack{
-    width:20%;
+
+/* ========= part-1 =============== */
+#product_detail_imagepack {
+    width: 200px;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     /* border: 5px solid rgb(23, 237, 58); */
 }
-#product_detail_imagepack img{
-    width:150px;
-    height:auto;
-    margin-bottom: 20px;
+
+#product_detail_imagepack img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
     object-fit: cover;
     cursor: pointer;
     border: 1px solid rgb(255, 255, 255);
 
 }
-#product_detail_show_box{
-    width:40%;
+
+/* ============= part-2 ============= */
+#product_detail_show_box {
+    width: 480px;
     height: auto;
     display: block;
     /* border: 1px solid black; */
     position: relative;
 
 }
-#product_detail_show_box img{
-    width:90%;
-    height: 450px;
-    border:1px solid rgb(110, 107, 107);
+
+#product_detail_show_box img {
+    width: 430px;
+    height: 430px;
+    border: 1px solid rgb(110, 107, 107);
     margin-bottom: 35px;
+    object-fit: cover;
 }
-#detailpage_likeheart{
+
+#detailpage_likeheart {
     position: absolute;
-    top:13px;
-    right:80px;
+    top: 13px;
+    right: 80px;
     font-size: 40px;
     color: rgb(165, 161, 161);
 }
-#product_detail_show_box button{
-    width:170px;
-    height:35px;
+
+#add_buy_btnwrapper {
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
-#product_inform_wrapper{
-    width:40%;
+
+#prod_detai_addtocard {
+    width: 170px;
+    height: 40px;
+}
+
+#prod_detai_buy {
+    width: 170px;
+    height: 40px;
+}
+
+#prod_detai_addtocard button,
+#prod_detai_buy button {
+    width: 150px;
+    height: 35px;
+    background-color: rgb(3, 3, 24);
+    border-radius: 10px;
+    color: white;
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+/* =========== part -3 ================= */
+#product_inform_wrapper {
+    width: 550px;
     height: auto;
     /* border: 1px solid black; */
 
 }
-#product_inform_wrapper #one{
-    width:100%;
+
+#product_inform_wrapper #one {
+    width: 100%;
     height: auto;
     padding: 25px;
     text-align: left;
@@ -1710,72 +1803,74 @@
     margin-bottom: 10px;
 
 }
-#product_inform_wrapper #two{
-    width:100%;
+
+#product_inform_wrapper #two {
+    width: 100%;
     height: auto;
     padding: 25px;
     text-align: left;
     margin-bottom: 10px;
     border: 1px solid rgb(208, 205, 205);
 }
-#product_inform_wrapper #two button{
+
+#product_inform_wrapper #two .clothsize {
     margin-left: 15px;
     padding: 3px 8px;
 }
-#product_inform_wrapper #three{
-    width:100%;
+
+#product_inform_wrapper #three {
+    width: 100%;
     height: auto;
     padding: 25px;
     margin-bottom: 10px;
     text-align: left;
     border: 1px solid rgb(208, 205, 205);
 }
-#product_inform_wrapper #four{
-    width:100%;
+
+#product_inform_wrapper #four {
+    width: 100%;
     height: auto;
     padding: 25px;
     text-align: left;
     margin-bottom: 10px;
     border: 1px solid rgb(208, 205, 205);
 }
-#product_inform_wrapper #five{
-    width:100%;
+
+#product_inform_wrapper #five {
+    width: 100%;
     height: auto;
     padding: 25px;
     text-align: left;
     margin-bottom: 10px;
     border: 1px solid rgb(208, 205, 205);
 }
-#product_inform_wrapper #six{
-    width:100%;
+
+#product_inform_wrapper #six {
+    width: 100%;
     height: auto;
     padding: 25px;
     text-align: left;
     margin-bottom: 10px;
     border: 1px solid rgb(208, 205, 205);
 }
-#product_inform_wrapper #six #colorbox_wrapper{
-    width:70%;
+
+#product_inform_wrapper #six #colorbox_wrapper {
+    width: 370px;
     height: auto;
     padding: 25px;
     text-align: left;
     margin-bottom: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    /* border: 2px solid rgb(130, 122, 122); */
+    border: 2px solid rgb(130, 122, 122);
 }
-#product_inform_wrapper #six #colorbox_wrapper div{
-    width:30px;
+
+#product_inform_wrapper #six #colorbox_wrapper #color1 {
+    width: 30px;
     height: 30px;
     border-radius: 50%;
+    margin-right: 10px;
     cursor: pointer;
     border: 2px solid rgb(138, 134, 134);
 }
-
-
-
-
-
-
-

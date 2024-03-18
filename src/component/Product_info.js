@@ -22,6 +22,12 @@ const Product_info = () => {
                 price={key.price}
                 MRP={key.originalprice}
                 offer={key.offer}
+                details={key.details}
+                name={key.names}
+                color={key.color}
+                oigin={key.origin}
+                Quantity={key.quantity}
+
                 />
             </>
         );

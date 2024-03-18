@@ -18,6 +18,7 @@ const Home = () => {
             pid={"like" + key.id}
             nam={key.details}
             price={key.price}
+            MRP={key.MRP}
             offer={key.offer}
             function={() => setcarddata(key.image1, key.details, key.price, key.offer, key.originprice, key.brand, key.id, 1)} 
         />

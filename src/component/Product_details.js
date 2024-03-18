@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FaHeart } from "react-icons/fa";
 import { addtolikes, delet } from "../contoller/AddlikeSlice";
 
-const showimage="https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/z/b/s/xxl-st10-vebnor-original-imagnvrqqgz6hvnf.jpeg?q=70&crop=false";
+const showimage = "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/z/b/s/xxl-st10-vebnor-original-imagnvrqqgz6hvnf.jpeg?q=70&crop=false";
 
 const Product_details = (props) => {
     var showboximage;
@@ -13,7 +13,7 @@ const Product_details = (props) => {
         let likeproduct = props.Pdatabase.find(item => item.id === cid);
         let heartcolor = mylikeproduct.some(item => item.id === cid);
         if (!heartcolor) {
-            dispatch(addtolikes(likeproduct)); 
+            dispatch(addtolikes(likeproduct));
             document.getElementById('like' + cid).style.color = "red";
         } else {
             document.getElementById('like' + cid).style.color = "#4543431a";
@@ -39,42 +39,48 @@ const Product_details = (props) => {
                     <img src={props.image4} alt="" onClick={() => { changeimage(props.image4) }} />
                 </div>
                 <div id="product_detail_show_box">
-                    <img src={showimage} alt="" /><br/>
-                    <FaHeart  id="detailpage_likeheart" onClick={()=>setlike(props.Pid)}/>
-                    <button className="cartbtn" onClick={props.function}>Add to cart</button>
-                    <button className="buybtn" onClick={OrderNow}>Buy</button>
+                    <img src={showimage} alt="" /><br />
+                    <FaHeart id="detailpage_likeheart" onClick={() => setlike(props.Pid)} />
+                    <div id="add_buy_btnwrapper">
+                        <div id="prod_detai_addtocard">
+                            <button className="btncart" onClick={props.function}>Add to cart</button>
+                        </div>
+                        <div id="prod_detai_buy">
+                            <button className="btnbuy" onClick={OrderNow}>Buy</button>
+                        </div>
+                    </div>
                 </div>
                 <div id="product_inform_wrapper">
                     <div id="one">
-                        <label style={{fontSize:"20px"}}>{props.brand}</label><br />
+                        <label style={{ fontSize: "20px" }}>{props.brand}</label><br />
                         <div className="Price">
-                            <span style={{fontSize:"20px"}}>₹&nbsp;{props.price}</span>&nbsp;&nbsp;&nbsp;
-                            <span style={{fontSize:"20px"}}><delete>₹&nbsp;{props.MRP}</delete>{props.MRP}</span>&nbsp;&nbsp;&nbsp;
-                            <span style={{fontSize:"20px"}}>{props.offer}</span>
+                            <span style={{ fontSize: "20px" }}>₹&nbsp;{props.price}</span>&nbsp;&nbsp;&nbsp;
+                            <span style={{ fontSize: "20px" }}><delete>₹&nbsp;{props.MRP}</delete>{props.MRP}</span>&nbsp;&nbsp;&nbsp;
+                            <span style={{ fontSize: "20px" }}>{props.offer}</span>
                         </div>
-                        <label style={{padding:"3px 8px", border:"1px solid rgb(174, 171, 171)", marginTop:"10px"}}>Free Delivery</label>
+                        <label style={{ padding: "3px 8px", border: "1px solid rgb(174, 171, 171)", marginTop: "10px" }}>Free Delivery</label>
                     </div>
 
                     <div id="two">
                         <h3>Select Size</h3>
-                        <button>01</button>
-                        <button>02</button>
-                        <button>03</button>
-                        <button>04</button>
-                        <button>05</button>
-                        <button>06</button>
+                        <button className="clothsize" >01</button>
+                        <button className="clothsize">02</button>
+                        <button className="clothsize">03</button>
+                        <button className="clothsize">04</button>
+                        <button className="clothsize">05</button>
+                        <button className="clothsize">06</button>
                     </div>
                     <div id="six">
                         <h3>Select Color</h3>
                         <div id="colorbox_wrapper">
-                        <div id="color1" style={{backgroundColor:"red"}}></div>
-                        <div id="color2" style={{backgroundColor:"black"}}></div>
-                        <div id="color3" style={{backgroundColor:"green"}}></div>
-                        <div id="color4" style={{backgroundColor:"orange"}}></div>
-                        <div id="color5" style={{backgroundColor:"white"}}></div>
-                        <div id="color6" style={{backgroundColor:"yellow"}}></div>
-                        <div id="color7" style={{backgroundColor:"pink"}}></div>
-                        <div id="color8" style={{backgroundColor:"brown"}}></div>
+                            <div id="color1" style={{ backgroundColor: "red" }}></div>
+                            <div id="color1" style={{ backgroundColor: "black" }}></div>
+                            <div id="color1" style={{ backgroundColor: "green" }}></div>
+                            <div id="color1" style={{ backgroundColor: "orange" }}></div>
+                            <div id="color1" style={{ backgroundColor: "white" }}></div>
+                            <div id="color1" style={{ backgroundColor: "yellow" }}></div>
+                            <div id="color1" style={{ backgroundColor: "pink" }}></div>
+                            <div id="color1" style={{ backgroundColor: "brown" }}></div>
                         </div>
                     </div>
 
