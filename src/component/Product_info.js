@@ -13,21 +13,24 @@ const Product_info = () => {
     const answer = mylikeproduct.map(key => {
         return (
             <>
-                <Product_details image1={key.image1} 
+                <Product_details 
+                Pdatabase={mylikeproduct}
+                Pid={key.id}
+                pid={"like"+(key.id)}
+                image1={key.image1} 
                 image2={key.image2} 
                 image3={key.image3} 
                 image4={key.image4}
                 function={() => { setcarddata(key.image1, key.details, key.price, key.offer, key.originprice, key.brand, key.id, 1) }}
+                name={key.names}
                 brand={key.brand}
                 price={key.price}
                 MRP={key.originalprice}
                 offer={key.offer}
                 details={key.details}
-                name={key.names}
                 color={key.color}
                 oigin={key.origin}
                 Quantity={key.quantity}
-
                 />
             </>
         );

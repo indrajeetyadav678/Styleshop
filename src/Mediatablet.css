@@ -1,12 +1,14 @@
 @media (max-width:1022px) {
+
     /* #navmiddle {} */
     #navleft {
         width: 100px;
         height: 40px;
-        display:flex;
+        display: flex;
         align-items: center;
         /* border: 2px solid red; */
     }
+
     #navmiddle {
         width: 400px;
         height: 40px;
@@ -15,6 +17,7 @@
         justify-content: space-between;
         /* border: 2px solid rgb(15, 60, 243);    */
     }
+
     .nabbtn1 {
         text-decoration: none;
         font-size: 20px;
@@ -51,7 +54,7 @@
     #sear-box {
         width: 22px;
         height: 22px;
-    box-shadow: 1px 1px 12px rgb(205, 77, 245);
+        box-shadow: 1px 1px 12px rgb(205, 77, 245);
 
     }
 
@@ -77,6 +80,7 @@
         font-size: 10px;
         font-weight: 500;
     }
+
     /* =============== footer ===================== */
 
     .footerbox {
@@ -86,20 +90,20 @@
         height: 240px;
         background-color: rgb(61, 60, 60);
     }
-    
+
     .linkbox {
         width: 140px;
         /* border: 1px solid red; */
     }
-    
+
     .foottitle {
         font-size: 14px;
     }
-    
+
     .footlink2 {
         font-size: 10px;
     }
-    
+
     .shopname {
         width: 90px;
         font-size: 16px;
@@ -108,27 +112,48 @@
         /* border: 1px solid rgb(127, 123, 123); */
     }
 
-    /* ===========================  ========== */
-
+    /* ===========================About page  ========== */
+    #aboutdiv1 {
+        flex-wrap: wrap;
+    }
+    
+    #aboutdiv1 #one {
+        width: 100%;
+        height: 700px;
+        
+    }
+    #aboutdiv1 #one img{
+        min-width: 100%;
+        height: 700px;
+        object-fit: fill;
+        border-bottom-left-radius: 80px;
+    }
+    
+    #aboutdiv1 #two {
+        width: 100%;
+    }
 
 }
 
 /* ================= Media quiry width = 674px ================ */
 
 @media (max-width:674px) {
+
     /* #navmiddle {} */
     #navleft {
         width: 70px;
         height: 40px;
         /* border: 2px solid red; */
     }
+
     #navmiddle {
         width: 330px;
         height: 40px;
         /* border: 2px solid rgb(15, 60, 243);    */
     }
+
     .nabbtn1 {
-        font-size: 12px;    
+        font-size: 12px;
     }
 
     .nabbtn2,
@@ -159,7 +184,7 @@
     #sear-box {
         width: 18px;
         height: 18px;
-    box-shadow: 1px 1px 10px rgb(205, 77, 245);
+        box-shadow: 1px 1px 10px rgb(205, 77, 245);
     }
 
     #addcartwrapper {
@@ -178,6 +203,7 @@
         font-size: 8px;
         font-weight: 400;
     }
+
     /* =============== footer ===================== */
 
     .footerbox {
@@ -187,55 +213,81 @@
         height: 240px;
         background-color: rgb(61, 60, 60);
     }
-    
+
     .linkbox {
         width: 100px;
         /* border: 1px solid red; */
     }
-    
+
     .foottitle {
         font-size: 10px;
     }
-    
+
     .footlink2 {
         font-size: 8px;
     }
-    
+
     .shopname {
         width: 70px;
         font-size: 12px;
         font-weight: bold;
         /* border: 1px solid rgb(127, 123, 123); */
     }
+
     .developer {
         width: 100%;
         height: 30px;
         padding-top: 5px;
         font-size: 10px;
     }
+    /* ======================== About page  ========== */
+    
+    #aboutdiv1 #one {
+        width: 100%;
+        height: 400px;
+        
+    }
+    #aboutdiv1 #one img{
+        min-width: 100%;
+        height: 400px;
+        object-fit: fill;
+        border-bottom-left-radius: 80px;
+    }
+}
+
+/* ======================== About page (special case)  ========== */
+@media (max-width:514px) {
+    #aboutdiv1 #one {
+       display: none;
+    }
+    #aboutdiv1 #one img{
+        display: none;
+    }
 }
 
 /* ==================== media quiry for maxwidth 514px ================= */
 
 @media (max-width:514px) {
-   
-    #linemanu{
+
+    #linemanu {
         display: block;
     }
-    .navbar{
+
+    .navbar {
         position: relative;
     }
+
     #navmiddle {
         display: none;
-        position:absolute;
-        top:60px;
+        position: absolute;
+        top: 60px;
         left: 0;
         width: 100%;
         height: auto;
         background-color: whitesmoke;
         border: 1px solid rgb(249, 249, 249);
-        padding-top:10px;   
-        padding-bottom:10px;   
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     #navleft {
@@ -245,9 +297,9 @@
         justify-content: space-between;
         /* border: 2px solid red; */
     }
-    
+
     .nabbtn1 {
-        font-size: 12px;    
+        font-size: 12px;
     }
 
     .nabbtn2,
@@ -278,7 +330,7 @@
     #sear-box {
         width: 18px;
         height: 18px;
-    box-shadow: 1px 1px 10px rgb(205, 77, 245);
+        box-shadow: 1px 1px 10px rgb(205, 77, 245);
     }
 
     #addcartwrapper {
@@ -297,6 +349,7 @@
         font-size: 8px;
         font-weight: 400;
     }
+
     /* =============== footer ===================== */
 
     .footerbox {
@@ -307,20 +360,20 @@
         height: 300px;
         background-color: rgb(61, 60, 60);
     }
-    
+
     .linkbox {
         width: 100px;
         /* border: 1px solid red; */
     }
-    
+
     .foottitle {
         font-size: 10px;
     }
-    
+
     .footlink2 {
         font-size: 8px;
     }
-    
+
     .shopname {
         width: 70px;
         font-size: 12px;
@@ -328,10 +381,171 @@
         display: none;
         /* border: 1px solid rgb(127, 123, 123); */
     }
+
     .developer {
         width: 100%;
         height: 30px;
         padding-top: 5px;
         font-size: 10px;
+    }
+
+    /* ========================== Prodect details page ============================== */
+
+
+    /* ========= part-1 =============== */
+    #product_detail_imagepack {
+        width: 100px;
+        height: auto;
+        object-fit:cover;
+       
+    }
+
+    #product_detail_imagepack img {
+        width: 150px;
+        height: auto;
+        margin-bottom: 15px;
+        object-fit: cover;
+        cursor: pointer;
+        border: 1px solid rgb(255, 255, 255);
+
+    }
+
+    /* ============= part-2 ============= */
+    #product_detail_show_box {
+        width: 300px;
+        height: auto;
+        display: block;
+        /* border: 1px solid black; */
+        position: relative;
+
+    }
+
+    #product_detail_show_box img {
+        width: 300px;
+        height:auto;
+        border: 1px solid rgb(110, 107, 107);
+        margin-bottom: 35px;
+        object-fit: fill;
+    }
+
+    .detailpage_likeheart {
+        font-size: 35px;
+    }
+
+    #add_buy_btnwrapper {
+        width: 300px;
+    }
+
+    /* =========== part -3 ================= */
+    #product_inform_wrapper {
+        width: 350px;
+        height: auto;
+        /* border: 1px solid black; */
+
+    }
+
+    #product_inform_wrapper #one {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+        text-align: left;
+        font-size: 16px;
+        border: 1px solid rgb(208, 205, 205);
+        margin-bottom: 10px;
+
+    }
+
+    #product_inform_wrapper #two {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+        text-align: left;
+        margin-bottom: 10px;
+        border: 1px solid rgb(199, 196, 196);
+    }
+
+    #product_inform_wrapper #two .clothsize {
+        margin-left: 15px;
+        padding: 3px 15px;
+        border-radius: 15px;
+        margin-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+    }
+
+    #product_inform_wrapper #three {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+        margin-bottom: 10px;
+        text-align: left;
+        border: 1px solid rgb(208, 205, 205);
+    }
+
+    #product_inform_wrapper #four {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+        text-align: left;
+        margin-bottom: 10px;
+        border: 1px solid rgb(208, 205, 205);
+    }
+
+    #seller_shop_wrapper {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #seller_shop_rating {
+        width: 150px;
+        height: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #seller_shop_wrapper #Product_type,
+    #seller_shop_wrapper #Follower {
+        width: 150px;
+        height: 100px;
+    }
+
+    #seller_shop_rating #one1 {
+        width: 100px;
+        height: 35px;
+        text-align: center;
+        border-radius: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: rgb(106, 106, 227);
+        border: 1px solid rgb(222, 217, 217);
+    }
+
+    #seller_shop_wrapper #Follower span,
+    #seller_shop_wrapper #Product_type span {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+   
+
+
+
+    #product_inform_wrapper #six #colorbox_wrapper {
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    #product_inform_wrapper #six #colorbox_wrapper #color1 {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
     }
 }

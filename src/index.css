@@ -444,7 +444,7 @@
     box-shadow: 2px 2px 15px rgb(199, 195, 195);
     width: 40px;
     height: 40px;
-    object-fit: cover;
+    object-fit: fill;
     /* border: 1px solid black;   */
     border-radius: 50%;
 }
@@ -482,7 +482,7 @@
 .img {
     width: 320px;
     height: 290px;
-    object-fit: cover;
+    object-fit: fill;
     /* text-align: center; */
     margin-bottom: 10px;
     display: flex;
@@ -522,11 +522,11 @@
     width: 100%;
     height: 70px;
     font-size: 16px;
-    padding:0px 15px;
+    padding: 0px 15px;
     /* border: 1px solid rgb(220, 181, 181); */
-   overflow: hidden;
+    overflow: hidden;
     font-weight: 100;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #prod_rate_wrapper {
@@ -1312,19 +1312,22 @@
     margin-left: 10%;
     height: auto;
     display: flex;
-    justify-content: center;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
     box-shadow: 2px 2px 20px white;
     border: 3px solid rgb(236, 234, 234);
     background-color: white;
-
 }
 
 #aboutdiv1 #one {
-    width: 40%;
-    border-radius: 15px;
-    background-image: url("https://data2.nssmag.com/images/galleries/9606/thumbs/pleingif.gif");
-    background-size: 400px 460px;
-    background-repeat: no-repeat;
+    min-width: 450px;
+    height: 600px;
+    border-bottom-left-radius: 80px;
+}
+#aboutdiv1 #one img{
+    min-width: 450px;
+    /* max-width: 40%; */
+    height: 600px;
     border-bottom-left-radius: 80px;
 }
 
@@ -1365,21 +1368,24 @@
     height: auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 30px 0px;
     /* background-color: black; */
 }
 
 #aboutdiv2 #story {
-    width: 40%;
-    height: 300px;
+    width: 510px;
+    height: auto;
     border: 1px solid rgb(246, 242, 242);
     text-align: center;
     font-weight: 500;
+    margin-bottom: 20px;
     border-radius: 15px;
     background-color: rgb(143, 137, 137);
     color: rgb(18, 16, 16);
     box-shadow: 2px 2px 20px white;
     background-color: white;
+    padding: 10px;
 
 }
 
@@ -1400,8 +1406,8 @@
 
 /* ==================================== */
 #aboutdiv2 #mission {
-    width: 40%;
-    height: 300px;
+    width: 500px;
+    height: auto;
     border: 1px solid rgb(246, 242, 242);
     text-align: center;
     font-weight: 500;
@@ -1409,6 +1415,7 @@
     color: rgb(28, 26, 26);
     box-shadow: 2px 2px 20px white;
     background-color: rgb(143, 137, 137);
+    padding: 10px;
     background-color: white;
 
 }
@@ -1443,27 +1450,18 @@
     font-size: 20px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 10px;
     border: 1px solid rgb(246, 242, 242);
     box-shadow: 2px 2px 20px white;
     border-radius: 30px;
     background-color: white;
-
-
-
-}
-
-#aboutdiv3 #one h2,
-#aboutdiv3 #two h2 {
-    font-size: 28px;
-    color: rgb(19, 19, 19);
-    text-decoration: underline;
 }
 
 #aboutdiv3 #one,
 #aboutdiv3 #two {
-    width: 50%;
+    width: 500px;
     height: auto;
     text-align: center;
     font-weight: 500;
@@ -1472,7 +1470,15 @@
     color: rgb(21, 19, 19);
     font-size: 22px;
     font-family: Gabriola;
+
     letter-spacing: 1px;
+}
+
+#aboutdiv3 #one h2,
+#aboutdiv3 #two h2 {
+    font-size: 28px;
+    color: rgb(19, 19, 19);
+    text-decoration: underline;
 }
 
 #aboutdiv4,
@@ -1560,7 +1566,7 @@
     height: 250px;
     background-image: url('https://img.freepik.com/free-photo/portrait-woman-customer-service-worker_144627-37943.jpg?w=740&t=st=1710319715~exp=1710320315~hmac=4850231276c1d004d22c41ddde26e52ada799493528c0aefe5da56f4180024f2');
     background-size: 100% 100%;
-    object-fit: cover;
+    object-fit: fill;
     border-bottom-left-radius: 60%;
 }
 
@@ -1702,7 +1708,7 @@
     height: auto;
     padding: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     /* border: 1px solid rgb(238, 40, 40); */
     flex-wrap: wrap;
     margin-top: 30px;
@@ -1722,7 +1728,7 @@
     width: 150px;
     height: auto;
     margin-bottom: 15px;
-    object-fit: cover;
+    object-fit: fill;
     cursor: pointer;
     border: 1px solid rgb(255, 255, 255);
 
@@ -1730,7 +1736,7 @@
 
 /* ============= part-2 ============= */
 #product_detail_show_box {
-    width: 480px;
+    width: 430px;
     height: auto;
     display: block;
     /* border: 1px solid black; */
@@ -1743,13 +1749,13 @@
     height: 430px;
     border: 1px solid rgb(110, 107, 107);
     margin-bottom: 35px;
-    object-fit: cover;
+    object-fit: fill;
 }
 
-#detailpage_likeheart {
+.detailpage_likeheart {
     position: absolute;
     top: 13px;
-    right: 80px;
+    right: 20px;
     font-size: 40px;
     color: rgb(165, 161, 161);
 }
@@ -1783,11 +1789,12 @@
     color: white;
     margin-left: 18px;
     cursor: pointer;
+    margin-bottom: 40px;
 }
 
 /* =========== part -3 ================= */
 #product_inform_wrapper {
-    width: 550px;
+    width: 510px;
     height: auto;
     /* border: 1px solid black; */
 
@@ -1815,7 +1822,9 @@
 
 #product_inform_wrapper #two .clothsize {
     margin-left: 15px;
-    padding: 3px 8px;
+    padding: 3px 15px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #product_inform_wrapper #three {
@@ -1834,6 +1843,47 @@
     text-align: left;
     margin-bottom: 10px;
     border: 1px solid rgb(208, 205, 205);
+}
+
+#seller_shop_wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#seller_shop_rating {
+    width: 140px;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#seller_shop_wrapper #Product_type,
+#seller_shop_wrapper #Follower {
+    width: 80px;
+    height: 100px;
+}
+
+#seller_shop_rating #one1 {
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(106, 106, 227);
+    border: 1px solid rgb(222, 217, 217);
+}
+
+#seller_shop_wrapper #Follower span,
+#seller_shop_wrapper #Product_type span {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 #product_inform_wrapper #five {
@@ -1863,7 +1913,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgb(130, 122, 122);
+    /* border: 2px solid rgb(130, 122, 122); */
 }
 
 #product_inform_wrapper #six #colorbox_wrapper #color1 {

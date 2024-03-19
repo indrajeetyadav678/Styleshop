@@ -2,10 +2,13 @@ import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { FaHeart } from "react-icons/fa";
 import { addtolikes, delet } from "../contoller/AddlikeSlice";
+import { useState } from "react";
+import { FaStar } from "react-icons/fa";
 
 const showimage = "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/z/b/s/xxl-st10-vebnor-original-imagnvrqqgz6hvnf.jpeg?q=70&crop=false";
 
 const Product_details = (props) => {
+    const [changeImage, setChangeImage] = useState(props.image1)
     var showboximage;
     const mylikeproduct = useSelector(state => state.mylike.likes);
     const dispatch = useDispatch();
@@ -25,7 +28,7 @@ const Product_details = (props) => {
         Navigate("/Orderform");
     }
     const changeimage = (imgno) => {
-        showboximage = imgno;
+        setChangeImage(imgno)
     }
 
 
@@ -39,8 +42,8 @@ const Product_details = (props) => {
                     <img src={props.image4} alt="" onClick={() => { changeimage(props.image4) }} />
                 </div>
                 <div id="product_detail_show_box">
-                    <img src={showimage} alt="" /><br />
-                    <FaHeart id="detailpage_likeheart" onClick={() => setlike(props.Pid)} />
+                    <img src={changeImage} alt="" /><br />
+                    <FaHeart className="detailpage_likeheart" id={props.pid} onClick={() => setlike(props.Pid)} />
                     <div id="add_buy_btnwrapper">
                         <div id="prod_detai_addtocard">
                             <button className="btncart" onClick={props.function}>Add to cart</button>
@@ -52,23 +55,23 @@ const Product_details = (props) => {
                 </div>
                 <div id="product_inform_wrapper">
                     <div id="one">
-                        <label style={{ fontSize: "20px" }}>{props.brand}</label><br />
-                        <div className="Price">
-                            <span style={{ fontSize: "20px" }}>₹&nbsp;{props.price}</span>&nbsp;&nbsp;&nbsp;
-                            <span style={{ fontSize: "20px" }}><delete>₹&nbsp;{props.MRP}</delete>{props.MRP}</span>&nbsp;&nbsp;&nbsp;
-                            <span style={{ fontSize: "20px" }}>{props.offer}</span>
+                        <label style={{ fontSize: "20px" }}>{props.details}</label><br />
+                        <div id="prod_rate_wrapper">
+                            <div className="detail">₹&nbsp;&nbsp;{props.price}/-</div>
+                            <div className="detail" id="Mrp_price">₹&nbsp;&nbsp;{props.MRP}/-</div>
+                            <div className="detail">{props.offer}</div>
                         </div>
                         <label style={{ padding: "3px 8px", border: "1px solid rgb(174, 171, 171)", marginTop: "10px" }}>Free Delivery</label>
                     </div>
 
                     <div id="two">
                         <h3>Select Size</h3>
-                        <button className="clothsize" >01</button>
-                        <button className="clothsize">02</button>
-                        <button className="clothsize">03</button>
-                        <button className="clothsize">04</button>
-                        <button className="clothsize">05</button>
-                        <button className="clothsize">06</button>
+                        <button className="clothsize" >32</button>
+                        <button className="clothsize">34</button>
+                        <button className="clothsize">36</button>
+                        <button className="clothsize">38</button>
+                        <button className="clothsize">42</button>
+                        <button className="clothsize">46</button>
                     </div>
                     <div id="six">
                         <h3>Select Color</h3>
@@ -86,15 +89,30 @@ const Product_details = (props) => {
 
                     <div id="three">
                         <h3>Product Details</h3>
-                        <label>{props.details}</label><br />
-                        <label>{props.name}</label><br />
-                        <label>{props.color}</label><br />
-                        <label>{props.oigin}</label><br />
-                        <label>{props.Quantity}</label>
+                        <label>Name &nbsp;:&nbsp; {props.name}</label><br />
+                        <label>Details&nbsp;:&nbsp;{props.details}</label><br />
+                        <label>Color&nbsp;:&nbsp;{props.color}</label><br />
+                        <label>Madein&nbsp;:&nbsp;{props.oigin}</label><br />
+                        <label>Quantity&nbsp;:&nbsp;{props.Quantity}</label>
                     </div>
 
                     <div id="four">
                         <h3>Sold By</h3>
+                        <h4>Styleshop.Com Bhopal </h4>
+                        <div id="seller_shop_wrapper">
+                            <div id="seller_shop_rating">
+                                <div id="one1">3.5 &nbsp;<FaStar /></div>
+                                10,678 Ratings
+                            </div>
+                            <div id="Follower">
+                                <span>34K</span><br/>
+                                <span>Followers</span>
+                            </div>
+                            <div id="Product_type">
+                                <span>78</span><br />
+                                <span>Poducts</span>
+                            </div>
+                        </div>
 
                     </div>
 

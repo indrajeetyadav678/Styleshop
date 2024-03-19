@@ -17,7 +17,9 @@ const About = () => {
     return (
         <div id="" className="About_us-page">
             <div id="aboutdiv1">
-                <div id="one"></div>
+                <div id="one">
+                    <img src={gif1} alt="" />
+                </div>
                 <div id="two">
                     <label>About Us</label>
                     <div id="content">
