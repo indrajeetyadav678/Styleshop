@@ -39,7 +39,7 @@ const Product = (props) => {
 
         <div className="cont_box" >
             <div className="img">
-                <img src={props.img} alt="#" onClick={()=>{productdetailpage(props.Pid)}} />
+                <img src={props.img} className="imageproduct" alt="#" onClick={()=>{productdetailpage(props.Pid)}} />
                 <FaHeart className="likeheart" id={props.pid} onClick={() => setlike(props.Pid)} />
             </div>
             <div className="prod_name">{props.nam}</div>

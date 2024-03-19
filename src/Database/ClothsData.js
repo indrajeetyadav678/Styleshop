@@ -1,16 +1,19 @@
 //===================== Men wears ============================
-const MenProduct=[
+const MenProduct = [
     {
         "image1": "https://assets.ajio.com/medias/sys_master/root/20231122/BG7w/655d2da1afa4cf41f59741c8/-473Wx593H-466816474-pink-MODEL.jpg",
         "image2": "",
         "image3": "",
         "image4": "",
-        "name":"",
+        "name": "",
         "brand": "MANYAVAR",
-        "details":"Men Woven Regular Fit Nehru jacket",
+        "details": "Men Woven Regular Fit Nehru jacket",
         "price": " 3999",
-        "originprice": "4,999",
+        "MRP": "4999",
         "offer": "25% off",
+        "color": "",
+        "size": '',
+        "origin": "india",
         "id": 31
     },
     {
@@ -18,11 +21,11 @@ const MenProduct=[
         "image2": "",
         "image3": "",
         "image4": "",
-        "name":"",
+        "name": "",
         "brand": "nikky",
-        "details":"Slim Fit Shirt with Patch Pocket",
+        "details": "Slim Fit Shirt with Patch Pocket",
         "price": "390",
-        "originprice": "1200",
+        "MRP": "1200",
         "offer": "70% off",
         "id": 32
     },
@@ -31,11 +34,11 @@ const MenProduct=[
         "image2": "",
         "image3": "",
         "image4": "",
-        "name":"",
+        "name": "",
         "brand": "white shirt",
-        "details":" white shirt Fabric : Cotton Linen Sleeve Length : Long Sleeves",
+        "details": " white shirt Fabric : Cotton Linen Sleeve Length : Long Sleeves",
         "price": "800",
-        "originprice": "1300",
+        "MRP": "1300",
         "offer": "65% off",
         "id": 33
     },
@@ -44,11 +47,11 @@ const MenProduct=[
         "image2": "",
         "image3": "",
         "image4": "",
-        "name":"",
+        "name": "",
         "brand": "shirt",
-        "details":"Men's black shirt ",
+        "details": "Men's black shirt ",
         "price": " 400",
-        "originprice": "600",
+        "MRP": "600",
         "offer": "85% off",
         "id": 34
     },
@@ -57,11 +60,11 @@ const MenProduct=[
         "image2": "",
         "image3": "",
         "image4": "",
-        "name":"",
+        "name": "",
         "brand": " Denim",
-        "details":" Men Denim Black Jeans manufaturing jeans in awesome quality",
-        "price": " 600",
-        "originprice": "1100",
+        "details": " Men Denim Black Jeans manufaturing jeans in awesome quality",
+        "price": 600,
+        "MRP": 1100,
         "offer": "45% off",
         "id": 35
     },
@@ -70,11 +73,11 @@ const MenProduct=[
         "image2": "",
         "image3": "",
         "image4": "",
-        "name":"",
+        "name": "",
         "brand": "Denim",
-        "details":"Jeans for men Fabric Denim Pattern : Solid",
-        "price": " 800",
-        "originprice": "",
+        "details": "Jeans for men Fabric Denim Pattern : Solid",
+        "price": 800,
+        "MRP": "",
         "offer": "85% off",
         "id": 36
     },
@@ -84,11 +87,11 @@ const MenProduct=[
         "image2": "",
         "image3": "",
         "image4": "",
-        "name":"",
+        "name": "",
         "brand": "shirt",
-        "details":"Colourblock Regular Fit Sweatshirt",
+        "details": "Colourblock Regular Fit Sweatshirt",
         "price": " 450 ",
-        "originprice": "₹1,499",
+        "MRP": 1499,
         "offer": "70% off",
         "id": 37
     },
@@ -97,11 +100,11 @@ const MenProduct=[
         "image2": "",
         "image3": "",
         "image4": "",
-        "name":"",
+        "name": "",
         "brand": "Formal pents",
-        "details":"Men Regular Fit Grey Cotton Blend Trousers",
+        "details": "Men Regular Fit Grey Cotton Blend Trousers",
         "price": " 4619",
-        "originprice": "₹10,998",
+        "MRP": "₹10,998",
         "offer": "58% off",
         "id": 38
     },
@@ -110,11 +113,11 @@ const MenProduct=[
         "image2": "",
         "image3": "",
         "image4": "",
-        "name":"",
+        "name": "",
         "brand": "formal shirt ",
-        "details":"Men Regular Fit Solid Formal Shirt",
+        "details": "Men Regular Fit Solid Formal Shirt",
         "price": " 390 ",
-        "originprice": "1,299 ",
+        "MRP": "1,299 ",
         "offer": "80% off",
         "id": 39
     },
@@ -123,11 +126,11 @@ const MenProduct=[
         "image2": "",
         "image3": "",
         "image4": "",
-        "name":"",
+        "name": "",
         "brand": "Blazer",
-        "details":"Heathered Slim Fit Single-Breasted Blazer",
+        "details": "Heathered Slim Fit Single-Breasted Blazer",
         "price": " 1200",
-        "originprice": "3,999",
+        "MRP": "3,999",
         "offer": "70% off",
         "id": 40
     },
@@ -136,11 +139,11 @@ const MenProduct=[
         "image2": "",
         "image3": "",
         "image4": "",
-        "name":"",
+        "name": "",
         "brand": "KISAH",
-        "details":"Men Paisley Woven Regular Fit Sherwani with Kurta & Dhoti Pants",
+        "details": "Men Paisley Woven Regular Fit Sherwani with Kurta & Dhoti Pants",
         "price": " 9299",
-        "originprice": "18598",
+        "MRP": "18598",
         "offer": "50% off",
         "id": 41
     },
@@ -149,73 +152,107 @@ const MenProduct=[
         "image2": "",
         "image3": "",
         "image4": "",
-        "name":"",
+        "name": "",
         "brand": "COMBRAIDED ",
-        "details":"Men Regular Fit Color Block Spread Collar Casual Shirt",
-        "price": " 9299",
-        "originprice": "18598",
+        "details": "Men Regular Fit Color Block Spread Collar Casual Shirt",
+        "price":            ```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````" 9299",
+        "MRP": "18598",
         "offer": "50% off",
         "id": 42
-    }
+    },
+    {
+        "image1": "https://assets.ajio.com/medias/sys_master/root/20230624/e4ea/649663cfeebac147fcf20d64/-473Wx593H-465324816-tan-MODEL.jpg",
+        "image2": "https://assets.ajio.com/medias/sys_master/root/20230624/yOBx/649663d5eebac147fcf20dc8/-473Wx593H-465324816-tan-MODEL6.jpg",
+        "image3": "https://assets.ajio.com/medias/sys_master/root/20230624/yOBx/649663d5eebac147fcf20dc8/-473Wx593H-465324816-tan-MODEL6.jpg",
+        "image4": "https://assets.ajio.com/medias/sys_master/root/20230624/oaK4/649663d5eebac147fcf20dc3/-473Wx593H-465324816-tan-MODEL7.jpg",
+        "name": "Zip-Front Bomber Jacket",
+        "brand": "Winterwear",
+        "detail": "Wear this stylish Suede jacket from the house of Campus Sutra. The Suede jacket is comfortable to wear as the fabrics are light on the skin. Using stellar quality solvents,",
+        "details": "Long Sleeve : Winter Wear : Solid Jacket : Smoth Jacket : Casual Wear : Western ",
+        "price": 1750,
+        "MRP": 3499,
+        "offer": "50% OFF",
+        "color": "Brown",
+        "size": 'L',
+        "origin":"india",
+        "id": 43
+    },
+    {
+        "image1": "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/s/v/3/l-nvk-4444-nivick-original-imags6frqegpxe7q.jpeg?q=70&crop=false",
+        "image2": "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/y/y/i/l-nvk-4444-nivick-original-imags6frvhhc3vy4.jpeg?q=70&crop=false",
+        "image3": "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/w/u/u/l-nvk-4444-nivick-original-imags6fr669gcnbw.jpeg?q=70&crop=false",
+        "image4": "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/z/p/a/l-nvk-4444-nivick-original-imags6frasenz7w3.jpeg?q=70&crop=false",
+        "name": "Formal Shirt",
+        "brand": "NIVICK",
+        "detail":"Closure: Button Fit :Slim Fabric Cotton Blend Sleeve Full Sleeve Patter Solid  Fabric Care Regular Machine Wash, Hand wash",   
+        "details": "Men Slim Fit Solid Spread Collar Formal Shirt",
+        "price": 500,
+        "MRP":800,
+        "color": " Blue",
+        "size": 'M, L, S, XL',
+        "origin":"india",
+        "offer": "63% OFF",
+        "id": 44
+    },
 
 
 ]
-const MenProduct1=[
+const MenProduct1 = [
     {
         "image1": "",
         "image2": "",
         "image3": "",
         "image4": "",
-        "name":"",
+        "name": "",
         "brand": "",
-        "details":"Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
+        "details": "Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
         "id": 43
     },
     {
         "image1": "",
         "brand": "",
-        "details":"Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
+        "details": "Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
         "id": 44
     },
     {
         "image1": "",
         "brand": "",
-        "details":"Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
+        "details": "Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
         "id": 45
     },
     {
         "image1": "",
         "brand": "",
-        "details":"Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
+        "details": "Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
         "id": 46
     },
     {
         "image1": "",
         "brand": "",
-        "details":"Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
+        "details": "Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
         "id": 47
     },
     {
         "image1": "",
         "brand": "",
-        "details":"Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
+        "details": "Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
         "id": 48
     },
     {
         "image1": "",
         "brand": "",
-        "details":"Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
+        "details": "Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
         "id": 49
     }
 
 ]
-const MenProduct2=[
+const MenProduct2 = [
     {
         "image1": "",
         "brand": "",
-        "details":"Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
+        "details": "Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
         "price": "Rs 800",
-        "originprice": "",
+        "MRP": "",
         "offer": "85% off",
         "id": 1
     },
@@ -223,34 +260,34 @@ const MenProduct2=[
 
 // ============================ Women wears ==================
 
-const WomenProduct=[
+const WomenProduct = [
     {
         "image1": "",
         "brand": "",
-        "details":"Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
+        "details": "Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
         "price": "Rs 800",
-        "originprice": "",
+        "MRP": "",
         "offer": "85% off",
         "id": 1
     },
 ]
 
-const WomenProduct1=[
+const WomenProduct1 = [
     {
         "image1": "",
         "brand": "",
-        "details":"Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
+        "details": "Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
         "id": 1
     },
 ]
 
-const WomenProduct2=[
+const WomenProduct2 = [
     {
         "image1": "",
         "brand": "",
-        "details":"Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
+        "details": "Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
         "price": "Rs 800",
-        "originprice": "",
+        "MRP": "",
         "offer": "85% off",
         "id": 1
     },
@@ -258,41 +295,41 @@ const WomenProduct2=[
 
 // ======================== Kids wears ========================
 
-const KidsProduct=[
+const KidsProduct = [
     {
         "image1": "",
         "brand": "",
-        "details":"Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
+        "details": "Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
         "price": "Rs 800",
-        "originprice": "",
+        "MRP": "",
         "offer": "85% off",
         "id": 1
     },
 ]
 
-const KidsProduct1=[
+const KidsProduct1 = [
     {
         "image1": "",
         "brand": "",
-        "details":"Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
-        "id":1
+        "details": "Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
+        "id": 1
     },
 ]
 
-const KidsProduct2=[
+const KidsProduct2 = [
     {
         "image1": "",
         "brand": "",
-        "details":"Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
+        "details": "Bleed Blue Day and Date Functioning Strap Adult Quartz Analog Watch",
         "price": "Rs 800",
-        "originprice": "",
+        "MRP": "",
         "offer": "85% off",
         "id": 1
     },
 ]
 
 
-export {MenProduct,MenProduct1,MenProduct2,WomenProduct,WomenProduct1,WomenProduct2,KidsProduct,KidsProduct1,KidsProduct2}
+export { MenProduct, MenProduct1, MenProduct2, WomenProduct, WomenProduct1, WomenProduct2, KidsProduct, KidsProduct1, KidsProduct2 }
 
 
 

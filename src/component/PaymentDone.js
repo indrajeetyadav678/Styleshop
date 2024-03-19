@@ -2,19 +2,20 @@
 import { ThreeDots } from "react-loader-spinner";
 import { useEffect, useState } from "react";
 import Orderedby from "./Orderedby";
-import { useSelector } from "react-redux";
-
+import { useSelector, useDispatch } from "react-redux";
+var total_pay_amount = 0;
+var Total_quantity=0;
 const PaymentDone = () => {
     const mycartdata = useSelector(state => state.mycart.cart);
-    // const dispatch = useDispatch();
-    let total_pay_amount = 0;
-    let Total_quantity=0;
+    const dispatch = useDispatch();
+    
     for (let i = 0; i < mycartdata.length; ++i) {
-        total_pay_amount = total_pay_amount + mycartdata.price * mycartdata.Quantity;
-        Total_quantity=Total_quantity+mycartdata.Quantity;
+        total_pay_amount = total_pay_amount + mycartdata[i].price * mycartdata[i].quantity;
+        Total_quantity=Total_quantity+mycartdata[i].quantity;
     }
-    console.log(total_pay_amount)
-    console.log(Total_quantity)
+    console.log(mycartdata)
+    console.log(mycartdata.price)
+    console.log(mycartdata.Quantity)
 
     const [Output, setOuput] = useState("")
     const [orderDate, setOrderDate] = useState("");
@@ -80,45 +81,44 @@ const PaymentDone = () => {
                     </div>
                     ) : (
                         <div id="paymentdone_bill">
-                            <h1>Thank you For Purchasing Our Product</h1>
-                            <h2>Your Product will be Selivered in the 5 to 7 Days</h2>
+                            <h4>Thank you For Purchasing Our Product</h4>
+                            <h6>Your Product will be Selivered in the 5 to 7 Days</h6>
                             <div id="Amount_orderno">
                                 <div id="orderno">
-                                    <h4> Ordered Number&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;{Output}</h4>
-                                    <h4>Date&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;{orderDate}</h4>
+                                    <span> Ordered Number&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;{Output}</span><br/>
+                                    <span>Date&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;{orderDate}</span>
                                 </div>
                                 <div id="paidamount">
-                                    <h4> Payment Mode&nbsp;&nbsp; :&nbsp;Online</h4>
-                                    <h4>Pay Amount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   :&nbsp;Rs&nbsp;{total_pay_amount}/-</h4>
-                                    <h4>Product Quantity:&nbsp;{Total_quantity}</h4>
+                                    <span> Payment Mode&nbsp;&nbsp; :&nbsp;Online</span><br/>
+                                    <span>Pay Amount &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   :&nbsp;Rs &nbsp;{total_pay_amount}/-</span><br/>
+                                    <span>Product Quantity:&nbsp;{Total_quantity}</span>
                                 </div>
                             </div>
                             <section id="orderaddress">
                                 <div id="customer">
-                                    <h2>Odered by</h2>
+                                    <span id="spanhead">Odered by</span>
                                     <div id="order_by">
-                                        <h4>Customer Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : gautam </h4>
-                                        <h4>Customer contact No.  : 9978666786 </h4>
-                                        <h4>Customer Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  :  cybromfruitshop@gmail.com </h4>
-                                        <h4>Shipping Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Cybromfruitshop MP nagar Bhopal </h4>
-                                        <h4>State  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Madhya pradesh </h4>
-                                        <h4>pinecode  :  462011  </h4>
+                                        <span>Customer Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : gautam </span><br/>
+                                        <span>Customer contact No.  : 9978666786 </span><br/>
+                                        <span>Customer Email &nbsp;&nbsp;  :  cybromfruitshop@gmail.com </span><br/>
+                                        <span>Shipping Address &nbsp; : Cybromfruitshop MP nagar Bhopal </span><br/>
+                                        <span>State  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Madhya pradesh </span>
+                                        <span>pinecode  :  462011  </span>
                                     </div>
                                     <Orderedby />
                                 </div>
-                                <div id="delivery_by">
+                                {/* <div id="delivery_by">
                                     <h2>Product delivered by</h2>
                                     <div id="order_by">
-                                        <h4>Customer Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Rajiv yaduwanshi </h4>
-                                        <h4>Customer contact No.  : 9978666786 </h4>
-                                        <h4>Customer Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  :  cybromfruitshop@gmail.com </h4>
-                                        <h4>Shipping Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Cybromfruitshop MP nagar Bhopal </h4>
-                                        <h4>State  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Madhya pradesh </h4>
-                                        <h4>pinecode  :  462011  </h4>
+                                        <span>Customer Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Rajiv yaduwanshi </span>
+                                        <span>Customer contact No.  : 9978666786 </span>
+                                        <span>Customer Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  :  cybromfruitshop@gmail.com </span>
+                                        <span>Shipping Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Cybromfruitshop MP nagar Bhopal </span>
+                                        <span>State  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Madhya pradesh </span>
+                                        <span>pinecode  :  462011  </span>
                                     </div>
-                                </div>
+                                </div> */}
                             </section>
                         </div>
 
