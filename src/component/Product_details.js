@@ -42,7 +42,9 @@ const Product_details = (props) => {
                     <img src={props.image4} alt="" onClick={() => { changeimage(props.image4) }} />
                 </div>
                 <div id="product_detail_show_box">
-                    <img src={changeImage} alt="" /><br />
+                    <div id="show_image_box">
+                    <img src={changeImage} alt="" />
+                    </div>
                     <FaHeart className="detailpage_likeheart" id={props.pid} onClick={() => setlike(props.Pid)} />
                     <div id="add_buy_btnwrapper">
                         <div id="prod_detai_addtocard">
@@ -93,7 +95,7 @@ const Product_details = (props) => {
                         <label>Details&nbsp;:&nbsp;{props.details}</label><br />
                         <label>Color&nbsp;:&nbsp;{props.color}</label><br />
                         <label>Madein&nbsp;:&nbsp;{props.oigin}</label><br />
-                        <label>Quantity&nbsp;:&nbsp;{props.Quantity}</label>
+                        <label>Quantity&nbsp;:&nbsp;1</label>
                     </div>
 
                     <div id="four">

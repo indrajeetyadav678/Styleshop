@@ -22,7 +22,7 @@ const Product_info = () => {
                 image3={key.image3} 
                 image4={key.image4}
                 function={() => { setcarddata(key.image1, key.details, key.price, key.offer, key.originprice, key.brand, key.id, 1) }}
-                name={key.names}
+                name={key.name}
                 brand={key.brand}
                 price={key.price}
                 MRP={key.originalprice}
@@ -30,7 +30,6 @@ const Product_info = () => {
                 details={key.details}
                 color={key.color}
                 oigin={key.origin}
-                Quantity={key.quantity}
                 />
             </>
         );

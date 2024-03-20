@@ -14,7 +14,7 @@ const SearchProduct = () => {
     const inputhandle = (e) => {
         let value = e.target.value;
         if (value === "") {
-            document.getElementById('show_serachproduct_quantity').innerHTML = "No Data Found";
+            document.getElementById('show_serachproduct_quantity').innerHTML = "Search your Prodect";
             setSearchValue([])
         }
         else {

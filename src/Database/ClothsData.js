@@ -155,7 +155,7 @@ const MenProduct = [
         "name": "",
         "brand": "COMBRAIDED ",
         "details": "Men Regular Fit Color Block Spread Collar Casual Shirt",
-        "price":            ```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````" 9299",
+        "price": 9299,
         "MRP": "18598",
         "offer": "50% off",
         "id": 42
@@ -193,9 +193,7 @@ const MenProduct = [
         "origin":"india",
         "offer": "63% OFF",
         "id": 44
-    },
-
-
+    }
 ]
 const MenProduct1 = [
     {
@@ -329,11 +327,4 @@ const KidsProduct2 = [
 ]
 
 
-export { MenProduct, MenProduct1, MenProduct2, WomenProduct, WomenProduct1, WomenProduct2, KidsProduct, KidsProduct1, KidsProduct2 }
-
-
-
-
-
-
-
+export {MenProduct, MenProduct1, MenProduct2, WomenProduct, WomenProduct1, WomenProduct2, KidsProduct, KidsProduct1, KidsProduct2 };
