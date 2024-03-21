@@ -4,6 +4,7 @@ import Product from "./Product";
 import { MenProduct } from "../Database/ClothsData";
 import { addtocart } from "../contoller/AddcartSlice";
 import { useDispatch } from "react-redux";
+import { Toyproduct } from "../Database/Kidsdatabase";
 
 
 
@@ -14,11 +15,11 @@ const Toys = () => {
         dispatch(addtocart(cartdata));
     }
 
-    const productans = MenProduct.map((key) => {
+    const productans = Toyproduct.map((key) => {
         return (
             <>
                 <Product img={key.image1}
-                    Pdatabase={MenProduct}
+                    Pdatabase={Toyproduct}
                     Pid={key.id}
                     pid={"like" + key.id}
                     nam={key.details}

@@ -1,4 +1,5 @@
 import { sliderimg4 } from "../Database/HomeData";
+import { KidsProduct } from "../Database/Kidsdatabase";
 import Carouselslider from "./Carouselslider";
 import Product from "./Product";
 import { MenProduct } from "../Database/ClothsData";
@@ -6,6 +7,7 @@ import { addtocart } from "../contoller/AddcartSlice";
 import { useDispatch } from "react-redux";
 import { Catagorydata } from '../Database/HomeData';
 import CatagaryComponent from './CatagaryComponent';
+
 
 const Kidscollection = () => {
     const dispatch = useDispatch()
@@ -21,11 +23,11 @@ const Kidscollection = () => {
         );
     });
 
-    const productans = MenProduct.map((key) => {
+    const productans = KidsProduct.map((key) => {
         return (
             <>
                 <Product img={key.image1}
-                    Pdatabase={MenProduct}
+                    Pdatabase={KidsProduct}
                     Pid={key.id}
                     pid={"like" + key.id}
                     nam={key.details}

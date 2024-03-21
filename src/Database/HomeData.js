@@ -1,4 +1,4 @@
-const datakeyvalueset= 
+const datakeyvalueset= [
 {
     "image1": "",
     "image2": "",
@@ -14,7 +14,26 @@ const datakeyvalueset=
     "size": "",
     "origin":"india",
     "id": 1
+},
+{
+    "image1": "",
+    "image2": "",
+    "image3": "",
+    "image4": "",
+    "name": "Lehenga Choli",
+    "brand": "PURVAJA ",
+    "detail":"Occasion Wedding & Festive Lehenga Fabric Cotton Blend Type Lehenga Choli Dupatta Fabric Art Silk Neck Sweetheart Neck Sleeve Short Sleeve",
+    "details": "Solid, Embellished Semi Stitched Lehenga Choli  (Black)",
+    "price": 898,
+    "MRP": 6999,
+    "offer": "87% OFF",
+    "color": "Black",
+    "size": "34",
+    "origin":"india",
+    "id": 4
 }
+
+]
 // =========================== Women Wear Main Page Data =======================================
 
 const product = [

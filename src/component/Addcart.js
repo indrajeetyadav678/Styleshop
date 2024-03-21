@@ -37,7 +37,7 @@ const Addcart = () => {
             <>
                 <tr>
                     <td id="tdimage"><img src={key.image} alt="" /></td>
-                    <td>{key.product_brand}</td>
+                    <td>{key.name}</td>
                     <td id="tddetails">{key.detail}</td>
                     <td >Rs&nbsp;{key.price}&nbsp;</td>
                     <td id="tdQuantity">

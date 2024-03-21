@@ -7,6 +7,7 @@ import { useDispatch ,useSelector} from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { VscError } from "react-icons/vsc";
 import { TiTick } from "react-icons/ti";
+import { FaUserCircle } from "react-icons/fa";
 const CreateAccountimg ="https://images.pexels.com/photos/157675/fashion-men-s-individuality-black-and-white-157675.jpeg"
 
 
@@ -43,8 +44,9 @@ const CreateAccount=()=>{
                     <div id="Acc_imagebox">
                         <img src={CreateAccountimg} alt="" />
                     </div>
-                    <div id="Acc_createbox" className="acc_createbox"><br/><br/>
-                        <h2> Sign in</h2>
+                    <div id="Acc_createbox" className="acc_createbox">
+<FaUserCircle className="userloginform_icon"/>
+                        <h3> Sign in</h3>
                         <div id="Rtwo"><MdEmail />
                             <input type="text" name="email" value={input.email} placeholder="Enter Your Email" onChange={inputhandle} />
                             <TiTick id="Rtwocorect" /><VscError id="Rtwoerror" />
