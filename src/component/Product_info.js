@@ -21,7 +21,7 @@ const Product_info = () => {
                 image2={key.image2} 
                 image3={key.image3} 
                 image4={key.image4}
-                function={() => { setcarddata(key.image1, key.details, key.price, key.offer, key.originprice, key.brand, key.id, 1) }}
+                function={() => { setcarddata(key.image1, key.details, key.price, key.offer, key.MRP, key.brand, key.id, 1) }}
                 name={key.name}
                 brand={key.brand}
                 price={key.price}

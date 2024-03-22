@@ -100,8 +100,8 @@ const PaymentDone = () => {
                                     <div id="order_by">
                                         <span>Customer Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : gautam </span><br/>
                                         <span>Customer contact No.  : 9978666786 </span><br/>
-                                        <span>Customer Email &nbsp;&nbsp;  :  cybromfruitshop@gmail.com </span><br/>
-                                        <span>Shipping Address &nbsp; : Cybromfruitshop MP nagar Bhopal </span><br/>
+                                        <span>Customer Email &nbsp;&nbsp;  :  Styleshop@gmail.com </span><br/>
+                                        <span>Shipping Address &nbsp; : Styleshop Kolar Road Bhopal </span><br/>
                                         <span>State  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Madhya pradesh </span>
                                         <span>pinecode  :  462011  </span>
                                     </div>

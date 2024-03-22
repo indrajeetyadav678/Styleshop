@@ -23,7 +23,7 @@ const WomenFootWear=()=>{
                     price={key.price}
                     offer={key.offer}
                     MRP={key.MRP}
-                    function={() => { setcarddata(key.image1, key.details, key.price, key.offer, key.originprice, key.brand, key.id, 1) }}
+                    function={() => { setcarddata(key.image1, key.details, key.price, key.offer, key.MRP, key.brand, key.id, 1) }}
                 />
             </>
         );

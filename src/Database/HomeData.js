@@ -238,13 +238,15 @@ const product = [
 
 const sliderimg = [
     {
-        "image": "https://mixtas.novaworks.net/wp-content/uploads/2023/12/m6_bg_video.jpg",
+        "image1": "https://mixtas.novaworks.net/wp-content/uploads/2023/12/m6_bg_video.jpg",
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-WHP-220324-DAILYBANNER-BU-Z5-P6-VANHEUSEN-ALLENSOLLY-UPTO40.jpg",
         "caption": "1/5",
         "description": "Blooming Beauty in Every Stitch",
         "id": 1
     },
     {
-        "image": "https://mixtas.novaworks.net/wp-content/uploads/2023/12/m6_slide_01-scaled.jpg",
+        "image1": "https://mixtas.novaworks.net/wp-content/uploads/2023/12/m6_slide_01-scaled.jpg",
+        "image": "https://assets.ajio.com/cms/AJIO/WEB/D-1.0-WHP-220324-DAILYBANNER-BU-Z5-P5-FIVEBYINC5-AND-MIN55.jpg",
         "caption": "2/5",
         "description": "Winter Wonders in Every Thread",
         "id": 2

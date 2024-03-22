@@ -347,7 +347,12 @@
 
 #sliderimgcarousel {
     width: 100%;
-    height: 470px;
+    /* height: 470px; */
+}
+
+#babycarousel {
+    width: 100%;
+    height: 400px;
 }
 
 /* #sliderimgcarousel {
@@ -581,92 +586,123 @@
 
 /* ================================ addcart component ======================== */
 
-#carttable {
+.bbty {
     width: 100%;
     height: auto;
-    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    /* padding-top: 20px; */
+    /* padding-bottom: 30px; */
+    padding: 20px 15px 30px 15px;
 }
 
-.bbty {
-    min-height: 300px;
-    max-height: auto;
-
+#addcarttable {
+    width: 70%;
+    height: auto;
+    border: 2px solid rgb(187, 183, 183);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    background-color: rgb(245, 241, 241);
+    box-shadow: 2px 2px 8px rgb(230, 221, 221);
 }
 
-#carttable tr th {
-    text-align: center;
-    border: 1px solid black;
-    background-color: rgb(226, 228, 230);
-}
+#addcartwrapper_box {
+    width: 70%;
+    /* display: block; */
+    padding: 10px 15px;
+    padding-right: 15px;
 
-#carttable tr td {
-    text-align: center;
-    border: 1px solid black;
-    background-color: whitesmoke;
 }
 
 #tdimage {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: auto;
+    border-right: 1px solid black;
 }
 
 #tdimage img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    object-fit: cover;
+    /* height: a; */
+}
+
+#addcartwrapper_box div,
+#addcartwrapper_box p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #tdQuantity {
     display: flex;
-    height: 156px;
+    width: 140px;
+    height: 60px;
     justify-content: space-evenly;
     align-items: center;
 }
 
-#tdQuantity #adding {
-    border: none;
+#adding {
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid black; */
+
 }
 
-#tdQuantity div #button {
-    cursor: pointer;
-    /* border-radius: 50%; */
-    display: inline-block;
+#adding #button {
+    font-size: 25px;
+}
+
+#oneproduct_price {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#tddelete {
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    font-size: 30px;
+}
+
+#orderdetail_data {
+    width: 300px;
+    height: 300px;
+    padding: 10px 10px;
+    border: 1px solid black;
+    background-color: rgb(245, 241, 241);
+    box-shadow: 2px 2px 8px rgb(230, 221, 221);
+    /* text-align: center; */
+}
+
+#orderdetail_data h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#order_button_wrapper {
+    width: 240px;
+    height: 50px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 23px;
-    font-weight: 500;
 }
 
-#tdQuantity div {
-    width: 25px;
-    height: 25px;
-    border: 1px solid rgb(165, 160, 160);
-}
-
-#tdnetamount #tttam {
-    background-color: rgb(125, 119, 119);
-    color: white;
-}
-
-#tdorderbtn {
-    height: 50px;
-}
-
-#tdorderbtn #button {
-    width: 150px;
+#order_button {
+    width: 200px;
     height: 35px;
-    border: 2px solid rgb(229, 249, 101);
-    border-radius: 15px;
-    padding: 5px 10px;
-    background-color: rgb(106, 106, 102);
-    color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid blue;
+    background-color: blue;
+    font-weight: 500;
+    margin-left: auto;
+    color: white;
+    text-align: center;
+    padding: 4px 10px;
     text-decoration: none;
-}
-
-#tdorderbtn #button:hover {
-    border: 2px solid rgb(199, 150, 245);
-    background-color: rgb(133, 77, 223);
-    color: rgb(253, 251, 251);
+    border-radius: 15px;
+    margin-top: 20px;
 }
 
 /* ================= Ordered form component ==================== */

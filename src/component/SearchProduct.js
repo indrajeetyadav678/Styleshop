@@ -3,7 +3,7 @@ import { IoMdSearch } from "react-icons/io";
 import Product from "./Product";
 import { product, product1, product2 } from "../Database/HomeData";
 import { MenProduct, MenProduct1, MenProduct2 } from "../Database/ClothsData";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { addtocart } from "../contoller/AddcartSlice";
 import { useDispatch } from "react-redux";
 
@@ -63,7 +63,7 @@ const SearchProduct = () => {
                 price={key.price}
                 MRP={key.MRP}
                 offer={key.offer}
-                function={() => setcarddata(key.image1, key.details, key.price, key.offer, key.originprice, key.brand, key.id, 1)}
+                function={() => setcarddata(key.image1, key.details, key.price, key.offer, key.MRP, key.brand, key.id, 1)}
             />
         )
     })
